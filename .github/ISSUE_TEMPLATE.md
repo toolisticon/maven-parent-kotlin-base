@@ -1,3 +1,3 @@
 Please use one of the following templates:
 
-https://github.com/toolisticon/kotlin-lib-maven-parent/issues/new/choose
+https://github.com/toolisticon/maven-parent-kotlin-base/issues/new/choose
