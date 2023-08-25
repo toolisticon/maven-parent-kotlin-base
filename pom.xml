@@ -32,14 +32,18 @@
     <kp.plugin.skipDeploy>false</kp.plugin.skipDeploy>
     <kp.plugin.generateBackupPoms>false</kp.plugin.generateBackupPoms>
 
+    <kp.compile.useIncrementalKotlinCompiler>false</kp.compile.useIncrementalKotlinCompiler>
+
     <!-- LANGUAGE VERSIONS -->
     <kotlin.version>1.9.10</kotlin.version>
     <kotlin.compiler.languageVersion>1.9</kotlin.compiler.languageVersion>
     <kotlin.compiler.apiVersion>1.9</kotlin.compiler.apiVersion>
-    <kotlin.compiler.incremental>true</kotlin.compiler.incremental>
+    <kotlin.compiler.incremental>${kp.compile.useIncrementalKotlinCompiler}</kotlin.compiler.incremental>
     <kotlin.compiler.jvmTarget>${java.version}</kotlin.compiler.jvmTarget>
     <java.version>11</java.version>
     <jdk.version>11</jdk.version>
+
+    <kotlinx-serialization.version>1.6.0</kotlinx-serialization.version>
     <kotlin-logging.version>3.0.5</kotlin-logging.version>
 
     <!-- TEST -->
@@ -55,7 +59,6 @@
         <groupId>org.jetbrains.kotlin</groupId>
         <artifactId>kotlin-stdlib</artifactId>
         <version>${kotlin.version}</version>
-        <scope>${p}</scope>
       </dependency>
       <dependency>
         <groupId>org.jetbrains.kotlin</groupId>
@@ -230,17 +233,19 @@
           <version>${kotlin.version}</version>
 
           <configuration>
+            <jvmTarget>${java.version}</jvmTarget>
             <!-- Compiler plugins need to be configured on this level for IntelliJ to recognize them -->
             <compilerPlugins>
-              <plugin>spring</plugin>
-              <plugin>jpa</plugin>
+              <!--              <plugin>spring</plugin>-->
+              <!--              <plugin>jpa</plugin>-->
+              <plugin>no-arg</plugin>
               <plugin>all-open</plugin>
             </compilerPlugins>
             <pluginOptions>
               <!-- annotations that open kotlin files. don't hurt even if unused in kotlin project -->
-              <option>all-open:annotation=javax.persistence.Entity</option>
-              <option>all-open:annotation=javax.persistence.MappedSuperclass</option>
-              <option>all-open:annotation=javax.persistence.Embeddable</option>
+              <!--              <option>all-open:annotation=javax.persistence.Entity</option>-->
+              <!--              <option>all-open:annotation=javax.persistence.MappedSuperclass</option>-->
+              <!--              <option>all-open:annotation=javax.persistence.Embeddable</option>-->
               <option>all-open:annotation=io.toolisticon.testing.jgiven.JGivenKotlinStage</option>
             </pluginOptions>
             <annotationProcessorPaths/>
@@ -452,6 +457,13 @@
           </configuration>
         </plugin>
 
+        <!-- [RELEASE] GPG (version)-->
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-gpg-plugin</artifactId>
+          <version>3.1.0</version>
+        </plugin>
+
         <!-- INSTALL (version) -->
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -459,25 +471,11 @@
           <version>3.1.1</version>
         </plugin>
 
-        <!-- SOURCE (version, package/jar-no-fork) -->
+        <!-- SOURCE (version) -->
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-source-plugin</artifactId>
           <version>3.3.0</version>
-          <executions>
-            <execution>
-              <id>attach-sources</id>
-              <phase>package</phase>
-              <goals>
-                <goal>jar-no-fork</goal>
-                <!-- also seen: jar ... which to choose? -->
-              </goals>
-              <configuration>
-                <attach>true</attach>
-                <forceCreation>true</forceCreation>
-              </configuration>
-            </execution>
-          </executions>
         </plugin>
 
         <!-- RESOURCES (version, encoding) -->
@@ -686,21 +684,56 @@
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-source-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>attach-sources</id>
+                <phase>package</phase>
+                <goals>
+                  <goal>jar-no-fork</goal>
+                  <!-- also seen: jar ... which to choose? -->
+                </goals>
+                <configuration>
+                  <attach>true</attach>
+                  <forceCreation>true</forceCreation>
+                </configuration>
+              </execution>
+            </executions>
           </plugin>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-deploy-plugin</artifactId>
+            <configuration>
+              <skip>true</skip>
+            </configuration>
+          </plugin>
+
           <plugin>
             <groupId>org.jetbrains.dokka</groupId>
             <artifactId>dokka-maven-plugin</artifactId>
           </plugin>
+          <!-- Source from Kotlin -->
           <plugin>
             <groupId>org.codehaus.mojo</groupId>
             <artifactId>build-helper-maven-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>add-kotlin-source</id>
+                <phase>generate-sources</phase>
+                <goals>
+                  <goal>add-source</goal>
+                </goals>
+                <configuration>
+                  <sources>
+                    <source>${kp.mainSources}</source>
+                  </sources>
+                </configuration>
+              </execution>
+            </executions>
           </plugin>
-
           <!-- [RELEASE] GPG (version, configuration, execution)-->
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-gpg-plugin</artifactId>
-            <version>3.1.0</version>
             <configuration>
               <!-- pass -Dgpg.keyname=.. and -Dgpg.passphrase=... -->
               <gpgArguments>
