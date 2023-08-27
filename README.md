@@ -5,7 +5,7 @@ A common maven parent for usage in kotlin library or application projects.
 [![stable](https://img.shields.io/badge/lifecycle-STABLE-green.svg)](https://github.com/holisticon#open-source-lifecycle)
 [![Build Status](https://github.com/toolisticon/maven-parent-kotlin-base/workflows/Development%20branches/badge.svg)](https://github.com/toolisticon/maven-parent-kotlin-base/actions)
 [![sponsored](https://img.shields.io/badge/sponsoredBy-Holisticon-RED.svg)](https://holisticon.de/)
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.toolisticon.maven/maven-parent-kotlin-base/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.toolisticon.maven/maven-parent-kotlin-base)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.toolisticon.maven.parent/maven-parent-kotlin-base/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.toolisticon.maven.parent/maven-parent-kotlin-base)
 
 ## About
 
