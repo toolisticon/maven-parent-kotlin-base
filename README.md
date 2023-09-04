@@ -12,7 +12,7 @@ A common maven parent for usage in kotlin library or application projects.
 Maven poms are quite bloated, Most of the settings (how to compile, how to deploy) are repeated over and over.
 This maven-parent aims to reduce the xml in your `pom.xml` to the things you really want to express in your library or application project.
 
-By nature of this module, it is a highly opinionated approach. It might fit your needs, but it is explicitly designed to support popen source library 
+By nature of this module, it is a highly opinionated approach. It might fit your needs, but it is explicitly designed to support open source library 
 projects we are currently building and maintaining under `toolisticon`, `holunda-io` and `holixon`.
 
 ### Versioning
