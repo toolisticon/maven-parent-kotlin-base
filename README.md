@@ -2,17 +2,17 @@
 
 A common maven parent for usage in kotlin library or application projects. 
 
-[![incubating](https://img.shields.io/badge/lifecycle-INCUBATING-orange.svg)](https://github.com/holisticon#open-source-lifecycle)
+[![stable](https://img.shields.io/badge/lifecycle-STABLE-green.svg)](https://github.com/holisticon#open-source-lifecycle)
 [![Build Status](https://github.com/toolisticon/maven-parent-kotlin-base/workflows/Development%20branches/badge.svg)](https://github.com/toolisticon/maven-parent-kotlin-base/actions)
 [![sponsored](https://img.shields.io/badge/sponsoredBy-Holisticon-RED.svg)](https://holisticon.de/)
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.toolisticon.maven/maven-parent-kotlin-base/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.toolisticon.maven/maven-parent-kotlin-base)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.toolisticon.maven.parent/maven-parent-kotlin-base/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.toolisticon.maven.parent/maven-parent-kotlin-base)
 
 ## About
 
 Maven poms are quite bloated, Most of the settings (how to compile, how to deploy) are repeated over and over.
 This maven-parent aims to reduce the xml in your `pom.xml` to the things you really want to express in your library or application project.
 
-By nature of this module, it is a highly opinionated approach. It might fit your needs, but it is explicitly designed to support popen source library 
+By nature of this module, it is a highly opinionated approach. It might fit your needs, but it is explicitly designed to support open source library 
 projects we are currently building and maintaining under `toolisticon`, `holunda-io` and `holixon`.
 
 ### Versioning
