@@ -45,4 +45,11 @@ are included.
 
 ## Versions
 
-* kotlin: 1.9.10 - used in kotlin compiler und kotlin libs. 
+* kotlin: 1.9.10 - used in kotlin compiler und kotlin libs.
+
+## Release
+
+1. on local console: `mvn release:start` - wait for action
+2. on local console: `mvn release:finish` - wait for action - sonatype pipeline will run
+3. close milestone
+4. github release - publish
