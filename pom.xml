@@ -4,7 +4,7 @@
 
   <groupId>io.toolisticon.maven.parent</groupId>
   <artifactId>maven-parent-kotlin-base</artifactId>
-  <version>2023.9.1</version>
+  <version>2023.10.0</version>
 
   <name>Maven Parent - Kotlin Base</name>
   <description>Maven parent for a holistic kotlin lib project.</description>
@@ -26,7 +26,7 @@
     <kp.mainSources>${project.basedir}/src/main/kotlin</kp.mainSources>
     <kp.mainResources>${project.basedir}/src/main/resources</kp.mainResources>
     <kp.testSources>${project.basedir}/src/test/kotlin</kp.testSources>
-    <kp.testResources>${project.basedir}/src/test/kotlin</kp.testResources>
+    <kp.testResources>${project.basedir}/src/test/resources</kp.testResources>
 
     <!-- set to true to skip deployment (of submodule e.g.) -->
     <kp.plugin.skipDeploy>false</kp.plugin.skipDeploy>
@@ -214,6 +214,9 @@
     <testResources>
       <testResource>
         <directory>${kp.testResources}</directory>
+        <includes>
+
+        </includes>
         <excludes>
           <exclude>.gitkeep</exclude>
         </excludes>
@@ -413,7 +416,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-enforcer-plugin</artifactId>
-          <version>3.4.0</version>
+          <version>3.4.1</version>
           <executions>
             <execution>
               <id>enforce-maven</id>
