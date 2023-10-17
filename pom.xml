@@ -385,7 +385,7 @@
         <plugin>
           <groupId>org.apache.avro</groupId>
           <artifactId>avro-maven-plugin</artifactId>
-          <version>1.11.2</version>
+          <version>1.11.3</version>
         </plugin>
 
         <!-- CLEAN (version) -->
