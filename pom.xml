@@ -4,7 +4,7 @@
 
   <groupId>io.toolisticon.maven.parent</groupId>
   <artifactId>maven-parent-kotlin-base</artifactId>
-  <version>2023.10.1</version>
+  <version>2023.10.2</version>
 
   <name>Maven Parent - Kotlin Base</name>
   <description>Maven parent for a holistic kotlin lib project.</description>
@@ -399,7 +399,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-dependency-plugin</artifactId>
-          <version>3.6.0</version>
+          <version>3.6.1</version>
         </plugin>
 
         <!-- DEPLOY (version, config) -->
@@ -441,7 +441,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-failsafe-plugin</artifactId>
-          <version>3.1.2</version>
+          <version>3.2.1</version>
           <executions>
             <execution>
               <id>integration-tests</id>
@@ -495,7 +495,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-surefire-plugin</artifactId>
-          <version>3.1.2</version>
+          <version>3.2.1</version>
 
           <configuration>
             <useSystemClassLoader>false</useSystemClassLoader>
