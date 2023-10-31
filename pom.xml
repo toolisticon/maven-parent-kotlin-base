@@ -4,7 +4,7 @@
 
   <groupId>io.toolisticon.maven.parent</groupId>
   <artifactId>maven-parent-kotlin-base</artifactId>
-  <version>2023.10.2</version>
+  <version>2023.10.3</version>
 
   <name>Maven Parent - Kotlin Base</name>
   <description>Maven parent for a holistic kotlin lib project.</description>
@@ -35,7 +35,7 @@
     <kp.compile.useIncrementalKotlinCompiler>false</kp.compile.useIncrementalKotlinCompiler>
 
     <!-- LANGUAGE VERSIONS -->
-    <kotlin.version>1.9.10</kotlin.version>
+    <kotlin.version>1.9.20</kotlin.version>
     <kotlin.compiler.languageVersion>1.9</kotlin.compiler.languageVersion>
     <kotlin.compiler.apiVersion>1.9</kotlin.compiler.apiVersion>
     <kotlin.compiler.incremental>${kp.compile.useIncrementalKotlinCompiler}</kotlin.compiler.incremental>
@@ -392,7 +392,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-clean-plugin</artifactId>
-          <version>3.3.1</version>
+          <version>3.3.2</version>
         </plugin>
 
         <!-- DEPENDENCY (version) -->
@@ -621,7 +621,7 @@
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>properties-maven-plugin</artifactId>
-          <version>1.2.0</version>
+          <version>1.2.1</version>
           <executions>
             <execution>
               <phase>generate-resources</phase>

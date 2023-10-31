@@ -49,7 +49,7 @@ are included.
 
 ## Release
 
+1. close milestone
 1. on local console: `mvn release:start` - wait for action
-2. on local console: `mvn release:finish` - wait for action - sonatype pipeline will run
-3. close milestone
-4. github release - publish
+1. on local console: `mvn release:finish` - wait for action - sonatype pipeline will run
+1. github release - publish
