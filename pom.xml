@@ -35,7 +35,7 @@
     <kp.compile.useIncrementalKotlinCompiler>false</kp.compile.useIncrementalKotlinCompiler>
 
     <!-- LANGUAGE VERSIONS -->
-    <kotlin.version>1.9.20</kotlin.version>
+    <kotlin.version>1.9.21</kotlin.version>
     <kotlin.compiler.languageVersion>1.9</kotlin.compiler.languageVersion>
     <kotlin.compiler.apiVersion>1.9</kotlin.compiler.apiVersion>
     <kotlin.compiler.incremental>${kp.compile.useIncrementalKotlinCompiler}</kotlin.compiler.incremental>
