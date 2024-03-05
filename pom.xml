@@ -740,6 +740,22 @@
               </execution>
             </executions>
           </plugin>
+
+          <!-- jar -->
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-jar-plugin</artifactId>
+            <version>3.3.0</version>
+            <configuration>
+              <archive>
+                <manifest>
+                  <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+                  <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+                </manifest>
+              </archive>
+            </configuration>
+          </plugin>
+
           <!-- [RELEASE] GPG (version, configuration, execution)-->
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
