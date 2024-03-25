@@ -453,7 +453,7 @@
           <configuration>
             <classesDirectory>${project.build.outputDirectory}</classesDirectory>
             <!--suppress UnresolvedMavenProperty -->
-            <argLine>--illegal-access=permit ${failsafeArgLine}</argLine>
+            <argLine>${failsafeArgLine}</argLine>
             <systemPropertyVariables>
               <jgiven.report.dir>${project.build.directory}/jgiven-reports</jgiven.report.dir>
             </systemPropertyVariables>
@@ -502,7 +502,7 @@
             <shutdown>kill</shutdown>
             <runOrder>random</runOrder>
             <!--suppress UnresolvedMavenProperty -->
-            <argLine>--illegal-access=permit ${surefireArgLine} -Djava.awt.headless=true -XX:+StartAttachListener</argLine>
+            <argLine>${surefireArgLine} -Djava.awt.headless=true -XX:+StartAttachListener</argLine>
             <systemPropertyVariables>
               <jgiven.report.dir>${project.build.directory}/jgiven-reports</jgiven.report.dir>
             </systemPropertyVariables>
