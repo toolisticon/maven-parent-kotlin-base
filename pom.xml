@@ -256,7 +256,6 @@
               <!--              <option>all-open:annotation=javax.persistence.Embeddable</option>-->
               <option>all-open:annotation=io.toolisticon.testing.jgiven.JGivenKotlinStage</option>
             </pluginOptions>
-            <annotationProcessorPaths/>
           </configuration>
 
           <executions>
