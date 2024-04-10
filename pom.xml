@@ -4,7 +4,7 @@
 
   <groupId>io.toolisticon.maven.parent</groupId>
   <artifactId>maven-parent-kotlin-base</artifactId>
-  <version>2024.3.3-SNAPSHOT</version>
+  <version>2024.4.0-SNAPSHOT</version>
 
   <name>Maven Parent - Kotlin Base</name>
   <description>Maven parent for a holistic kotlin lib project.</description>
@@ -31,8 +31,10 @@
     <!-- set to true to skip deployment (of submodule e.g.) -->
     <kp.plugin.skipDeploy>false</kp.plugin.skipDeploy>
     <kp.plugin.generateBackupPoms>false</kp.plugin.generateBackupPoms>
-
     <kp.compile.useIncrementalKotlinCompiler>false</kp.compile.useIncrementalKotlinCompiler>
+    <kp.patternClassITest>**/*ITest.*</kp.patternClassITest>
+    <kp.patternClassTCTest>**/*TCTest.*</kp.patternClassTCTest>
+    <kp.skipITests>false</kp.skipITests>
 
     <!-- LANGUAGE VERSIONS -->
     <kotlin.version>1.9.23</kotlin.version>
@@ -237,6 +239,9 @@
 
           <configuration>
             <jvmTarget>${java.version}</jvmTarget>
+            <apiVersion>1.9</apiVersion>
+            <languageVersion>1.9</languageVersion>
+
             <!-- Compiler plugins need to be configured on this level for IntelliJ to recognize them -->
             <compilerPlugins>
               <!--              <plugin>spring</plugin>-->
@@ -437,11 +442,45 @@
           </executions>
         </plugin>
 
+        <!-- [TEST] SUREFIRE (version, setup) -->
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>3.2.5</version>
+          <configuration>
+            <useSystemClassLoader>false</useSystemClassLoader>
+            <shutdown>kill</shutdown>
+            <runOrder>random</runOrder>
+            <excludes>
+              <exclude>${kp.patternClassITest}</exclude>
+              <exclude>${kp.patternClassTCTest}</exclude>
+            </excludes>
+            <!--suppress UnresolvedMavenProperty -->
+            <argLine>${surefireArgLine} -Djava.awt.headless=true -XX:+StartAttachListener --add-opens=java.base/java.util=ALL-UNNAMED</argLine>
+            <systemPropertyVariables>
+              <jgiven.report.dir>${project.build.directory}/jgiven-reports/json</jgiven.report.dir>
+            </systemPropertyVariables>
+          </configuration>
+        </plugin>
+
         <!-- [TEST] FAILSAFE (version, itest setup) -->
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-failsafe-plugin</artifactId>
           <version>3.2.5</version>
+          <configuration>
+            <classesDirectory>${project.build.outputDirectory}</classesDirectory>
+            <skip>${kp.skipITests}</skip>
+            <includes>
+              <include>${kp.patternClassITest}</include>
+              <include>${kp.patternClassTCTest}</include>
+            </includes>
+            <!--suppress UnresolvedMavenProperty -->
+            <argLine>${failsafeArgLine} --add-opens=java.base/java.util=ALL-UNNAMED</argLine>
+            <systemPropertyVariables>
+              <jgiven.report.dir>${project.build.directory}/jgiven-reports/json</jgiven.report.dir>
+            </systemPropertyVariables>
+          </configuration>
           <executions>
             <execution>
               <id>integration-tests</id>
@@ -450,14 +489,6 @@
               </goals>
             </execution>
           </executions>
-          <configuration>
-            <classesDirectory>${project.build.outputDirectory}</classesDirectory>
-            <!--suppress UnresolvedMavenProperty -->
-            <argLine>${failsafeArgLine}</argLine>
-            <systemPropertyVariables>
-              <jgiven.report.dir>${project.build.directory}/jgiven-reports</jgiven.report.dir>
-            </systemPropertyVariables>
-          </configuration>
         </plugin>
 
         <!-- [RELEASE] GPG (version)-->
@@ -465,6 +496,24 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-gpg-plugin</artifactId>
           <version>3.2.2</version>
+          <configuration>
+            <!-- pass -Dgpg.keyname=.. and -Dgpg.passphrase=... -->
+            <gpgArguments>
+              <arg>--batch</arg>
+              <arg>--yes</arg>
+              <arg>--pinentry-mode</arg>
+              <arg>loopback</arg>
+            </gpgArguments>
+          </configuration>
+          <executions>
+            <execution>
+              <id>sign-artifacts</id>
+              <phase>verify</phase>
+              <goals>
+                <goal>sign</goal>
+              </goals>
+            </execution>
+          </executions>
         </plugin>
 
         <!-- INSTALL (version) -->
@@ -479,6 +528,20 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-source-plugin</artifactId>
           <version>3.3.1</version>
+          <executions>
+            <execution>
+              <id>attach-sources</id>
+              <phase>package</phase>
+              <goals>
+                <goal>jar-no-fork</goal>
+                <!-- also seen: jar ... which to choose? -->
+              </goals>
+              <configuration>
+                <attach>true</attach>
+                <forceCreation>true</forceCreation>
+              </configuration>
+            </execution>
+          </executions>
         </plugin>
 
         <!-- RESOURCES (version, encoding) -->
@@ -491,25 +554,67 @@
           </configuration>
         </plugin>
 
-        <!-- [TEST] SUREFIRE (version, setup) -->
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-surefire-plugin</artifactId>
-          <version>3.2.5</version>
-
-          <configuration>
-            <useSystemClassLoader>false</useSystemClassLoader>
-            <shutdown>kill</shutdown>
-            <runOrder>random</runOrder>
-            <!--suppress UnresolvedMavenProperty -->
-            <argLine>${surefireArgLine} -Djava.awt.headless=true -XX:+StartAttachListener</argLine>
-            <systemPropertyVariables>
-              <jgiven.report.dir>${project.build.directory}/jgiven-reports</jgiven.report.dir>
-            </systemPropertyVariables>
-          </configuration>
+          <artifactId>maven-jar-plugin</artifactId>
+          <version>3.3.0</version>
         </plugin>
 
         <!-- ========== //MAVEN OFFICIAL -->
+        <!-- [TEST] JACOCO (version, setup) -->
+        <plugin>
+          <groupId>org.jacoco</groupId>
+          <artifactId>jacoco-maven-plugin</artifactId>
+          <version>0.8.12</version>
+          <executions>
+            <execution>
+              <id>pre-unit-test</id>
+              <goals>
+                <goal>prepare-agent</goal>
+              </goals>
+              <configuration>
+                <skip>${skipTests}</skip>
+                <destFile>${project.build.directory}/coverage-reports/jacoco-ut.exec</destFile>
+                <propertyName>surefireArgLine</propertyName>
+              </configuration>
+            </execution>
+            <execution>
+              <id>pre-integration-test</id>
+              <goals>
+                <goal>prepare-agent-integration</goal>
+              </goals>
+              <configuration>
+                <skip>${kp.skipITests}</skip>
+                <destFile>${project.build.directory}/coverage-reports/jacoco-it.exec</destFile>
+                <propertyName>failsafeArgLine</propertyName>
+              </configuration>
+            </execution>
+            <execution>
+              <id>post-unit-test</id>
+              <phase>test</phase>
+              <goals>
+                <goal>report</goal>
+              </goals>
+              <configuration>
+                <skip>${skipTests}</skip>
+                <dataFile>${project.build.directory}/coverage-reports/jacoco-ut.exec</dataFile>
+                <outputDirectory>${project.reporting.outputDirectory}/jacoco-ut</outputDirectory>
+              </configuration>
+            </execution>
+            <execution>
+              <id>post-integration-test</id>
+              <phase>post-integration-test</phase>
+              <goals>
+                <goal>report</goal>
+              </goals>
+              <configuration>
+                <skip>${kp.skipITests}</skip>
+                <dataFile>${project.build.directory}/coverage-reports/jacoco-it.exec</dataFile>
+                <outputDirectory>${project.reporting.outputDirectory}/jacoco-it</outputDirectory>
+              </configuration>
+            </execution>
+          </executions>
+        </plugin>
 
         <!-- BUILD HELPER (version) -->
         <plugin>
@@ -538,57 +643,6 @@
             <keepBranch>false</keepBranch>
             <pushRemote>true</pushRemote>
           </configuration>
-        </plugin>
-
-        <!-- [TEST] JACOCO (version, setup) -->
-        <plugin>
-          <groupId>org.jacoco</groupId>
-          <artifactId>jacoco-maven-plugin</artifactId>
-          <version>0.8.12</version>
-          <executions>
-            <execution>
-              <id>pre-unit-test</id>
-              <goals>
-                <goal>prepare-agent</goal>
-              </goals>
-              <configuration>
-                <destFile>${project.build.directory}/coverage-reports/jacoco-ut.exec</destFile>
-                <propertyName>surefireArgLine</propertyName>
-              </configuration>
-            </execution>
-            <execution>
-              <id>pre-integration-test</id>
-              <goals>
-                <goal>prepare-agent-integration</goal>
-              </goals>
-              <configuration>
-                <destFile>${project.build.directory}/coverage-reports/jacoco-it.exec</destFile>
-                <propertyName>failsafeArgLine</propertyName>
-              </configuration>
-            </execution>
-            <execution>
-              <id>post-unit-test</id>
-              <phase>test</phase>
-              <goals>
-                <goal>report</goal>
-              </goals>
-              <configuration>
-                <dataFile>${project.build.directory}/coverage-reports/jacoco-ut.exec</dataFile>
-                <outputDirectory>${project.reporting.outputDirectory}/jacoco-ut</outputDirectory>
-              </configuration>
-            </execution>
-            <execution>
-              <id>post-integration-test</id>
-              <phase>post-integration-test</phase>
-              <goals>
-                <goal>report</goal>
-              </goals>
-              <configuration>
-                <dataFile>${project.build.directory}/coverage-reports/jacoco-it.exec</dataFile>
-                <outputDirectory>${project.reporting.outputDirectory}/jacoco-it</outputDirectory>
-              </configuration>
-            </execution>
-          </executions>
         </plugin>
 
         <!-- [TEST] - JGIVEN (version, configuration, execution) -->
@@ -645,6 +699,11 @@
           </configuration>
         </plugin>
 
+        <plugin>
+          <groupId>org.sonatype.plugins</groupId>
+          <artifactId>nexus-staging-maven-plugin</artifactId>
+          <version>1.6.13</version>
+        </plugin>
       </plugins>
     </pluginManagement>
 
@@ -698,20 +757,6 @@
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-source-plugin</artifactId>
-            <executions>
-              <execution>
-                <id>attach-sources</id>
-                <phase>package</phase>
-                <goals>
-                  <goal>jar-no-fork</goal>
-                  <!-- also seen: jar ... which to choose? -->
-                </goals>
-                <configuration>
-                  <attach>true</attach>
-                  <forceCreation>true</forceCreation>
-                </configuration>
-              </execution>
-            </executions>
           </plugin>
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
@@ -749,7 +794,6 @@
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-jar-plugin</artifactId>
-            <version>3.3.0</version>
             <configuration>
               <archive>
                 <manifest>
@@ -760,35 +804,16 @@
             </configuration>
           </plugin>
 
-          <!-- [RELEASE] GPG (version, configuration, execution)-->
+          <!-- [RELEASE] GPG -->
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-gpg-plugin</artifactId>
-            <configuration>
-              <!-- pass -Dgpg.keyname=.. and -Dgpg.passphrase=... -->
-              <gpgArguments>
-                <arg>--batch</arg>
-                <arg>--yes</arg>
-                <arg>--pinentry-mode</arg>
-                <arg>loopback</arg>
-              </gpgArguments>
-            </configuration>
-            <executions>
-              <execution>
-                <id>sign-artifacts</id>
-                <phase>verify</phase>
-                <goals>
-                  <goal>sign</goal>
-                </goals>
-              </execution>
-            </executions>
           </plugin>
 
           <!-- [RELEASE] NEXUS (version, config, execution) -->
           <plugin>
             <groupId>org.sonatype.plugins</groupId>
             <artifactId>nexus-staging-maven-plugin</artifactId>
-            <version>1.6.13</version>
             <configuration>
               <autoReleaseAfterClose>true</autoReleaseAfterClose>
               <serverId>ossrh</serverId>
