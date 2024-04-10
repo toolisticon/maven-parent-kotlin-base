@@ -34,6 +34,7 @@
     <kp.compile.useIncrementalKotlinCompiler>false</kp.compile.useIncrementalKotlinCompiler>
     <kp.patternClassITest>**/*ITest.*</kp.patternClassITest>
     <kp.patternClassTCTest>**/*TCTest.*</kp.patternClassTCTest>
+    <kp.javaOpenModules>--add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED</kp.javaOpenModules>
     <kp.skipITests>false</kp.skipITests>
 
     <!-- LANGUAGE VERSIONS -->
@@ -455,7 +456,7 @@
               <exclude>${kp.patternClassTCTest}</exclude>
             </excludes>
             <!--suppress UnresolvedMavenProperty -->
-            <argLine>${surefireArgLine} -Djava.awt.headless=true -XX:+StartAttachListener --add-opens=java.base/java.util=ALL-UNNAMED</argLine>
+            <argLine>${surefireArgLine} ${kp.javaOpenModules} -Djava.awt.headless=true -XX:+StartAttachListener</argLine>
             <systemPropertyVariables>
               <jgiven.report.dir>${project.build.directory}/jgiven-reports/json</jgiven.report.dir>
             </systemPropertyVariables>
@@ -475,7 +476,7 @@
               <include>${kp.patternClassTCTest}</include>
             </includes>
             <!--suppress UnresolvedMavenProperty -->
-            <argLine>${failsafeArgLine} --add-opens=java.base/java.util=ALL-UNNAMED</argLine>
+            <argLine>${failsafeArgLine} ${kp.javaOpenModules} -Djava.awt.headless=true -XX:+StartAttachListener</argLine>
             <systemPropertyVariables>
               <jgiven.report.dir>${project.build.directory}/jgiven-reports/json</jgiven.report.dir>
             </systemPropertyVariables>
