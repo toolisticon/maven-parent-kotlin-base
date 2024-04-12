@@ -754,7 +754,7 @@
         <activeByDefault>false</activeByDefault>
       </activation>
       <build>
-        <defaultGoal>integration-test failsafe:verify</defaultGoal>
+        <defaultGoal>verify</defaultGoal>
         <plugins>
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
