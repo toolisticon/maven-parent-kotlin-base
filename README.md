@@ -75,7 +75,7 @@ see [official plugins](https://maven.apache.org/plugins/index.html)
 | [maven-deploy](https://maven.apache.org/plugins/maven-deploy-plugin/)                                                        | 3.1.1   | -                                           |
 | [maven-enforcer](https://maven.apache.org/enforcer/maven-enforcer-plugin/)                                                   | 3.4.1   | enforce project setup                       |
 | [maven-failsafe](https://maven.apache.org/surefire/maven-failsafe-plugin/)                                                   | 3.2.5   | testing                                     |
-| [maven-gpg](https://maven.apache.org/plugins/maven-gpg-plugin/)                                                              | 3.2.1   | sign artifacts for release                  |
+| [maven-gpg](https://maven.apache.org/plugins/maven-gpg-plugin/)                                                              | 3.2.3   | sign artifacts for release                  |
 | [maven-install](https://maven.apache.org/plugins/maven-install-plugin/)                                                      | 3.1.1   | -                                           |
 | [maven-jar-plugin](https://maven.apache.org/plugins/maven-jar-plugin/)                                                       | 3.3.0   | -                                           |
 | [maven-resources](https://maven.apache.org/plugins/maven-resources-plugin/)                                                  | 3.3.1   | filter resources                            |
