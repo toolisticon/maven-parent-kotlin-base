@@ -47,8 +47,11 @@
     <java.version>17</java.version>
     <jdk.version>17</jdk.version>
 
-    <kotlinx-serialization.version>1.6.0</kotlinx-serialization.version>
+    <kotlinx-serialization.version>1.6.3</kotlinx-serialization.version>
+    <kotlinx-coroutines.version>1.8.0</kotlinx-coroutines.version>
     <kotlin-logging.version>3.0.5</kotlin-logging.version>
+
+    <jetbrains-annotations.version>23.0.0</jetbrains-annotations.version>
 
     <!-- TEST -->
     <junit5.version>5.10.2</junit5.version>
@@ -181,6 +184,23 @@
       </dependency>
       <!-- // KOTLIN (from kotlin-bom) -->
 
+      <dependency>
+        <groupId>org.jetbrains.kotlinx</groupId>
+        <artifactId>kotlinx-coroutines-bom</artifactId>
+        <version>${kotlinx-coroutines.version}</version>
+        <scope>import</scope>
+        <type>pom</type>
+      </dependency>
+
+      <dependency>
+        <groupId>org.jetbrains.kotlinx</groupId>
+        <artifactId>kotlinx-serialization-bom</artifactId>
+        <version>${kotlinx-serialization.version}</version>
+        <scope>import</scope>
+        <type>pom</type>
+      </dependency>
+
+
       <!-- KLOGGING (use as default) -->
       <dependency>
         <groupId>io.github.microutils</groupId>
@@ -189,13 +209,19 @@
       </dependency>
 
       <dependency>
+        <groupId>org.jetbrains</groupId>
+        <artifactId>annotations</artifactId>
+        <version>${jetbrains-annotations.version}</version>
+      </dependency>
+
+      <!-- TEST -->
+      <dependency>
         <groupId>org.junit</groupId>
         <artifactId>junit-bom</artifactId>
         <version>${junit5.version}</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
-
     </dependencies>
   </dependencyManagement>
 
@@ -728,7 +754,7 @@
         <activeByDefault>false</activeByDefault>
       </activation>
       <build>
-        <defaultGoal>integration-test failsafe:verify</defaultGoal>
+        <defaultGoal>verify</defaultGoal>
         <plugins>
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
