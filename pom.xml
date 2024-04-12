@@ -51,7 +51,7 @@
     <kotlinx-coroutines.version>1.8.0</kotlinx-coroutines.version>
     <kotlin-logging.version>3.0.5</kotlin-logging.version>
 
-    <jetbrains-annotations.version>23.0.0</jetbrains-annotations.version>
+    <jetbrains-annotations.version>24.1.0</jetbrains-annotations.version>
 
     <!-- TEST -->
     <junit5.version>5.10.2</junit5.version>
