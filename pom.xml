@@ -4,7 +4,7 @@
 
   <groupId>io.toolisticon.maven.parent</groupId>
   <artifactId>maven-parent-kotlin-base</artifactId>
-  <version>2024.4.0</version>
+  <version>2024.4.1</version>
 
   <name>Maven Parent - Kotlin Base</name>
   <description>Maven parent for a holistic kotlin lib project.</description>
@@ -51,7 +51,7 @@
     <kotlinx-coroutines.version>1.8.0</kotlinx-coroutines.version>
     <kotlin-logging.version>3.0.5</kotlin-logging.version>
 
-    <jetbrains-annotations.version>23.0.0</jetbrains-annotations.version>
+    <jetbrains-annotations.version>24.1.0</jetbrains-annotations.version>
 
     <!-- TEST -->
     <junit5.version>5.10.2</junit5.version>
@@ -438,7 +438,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-deploy-plugin</artifactId>
-          <version>3.1.1</version>
+          <version>3.1.2</version>
           <configuration>
             <skip>${kp.plugin.skipDeploy}</skip>
           </configuration>
@@ -522,7 +522,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-gpg-plugin</artifactId>
-          <version>3.2.3</version>
+          <version>3.2.4</version>
           <configuration>
             <!-- pass -Dgpg.keyname=.. and -Dgpg.passphrase=... -->
             <gpgArguments>
@@ -547,7 +547,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-install-plugin</artifactId>
-          <version>3.1.1</version>
+          <version>3.1.2</version>
         </plugin>
 
         <!-- SOURCE (version) -->
@@ -584,7 +584,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-jar-plugin</artifactId>
-          <version>3.3.0</version>
+          <version>3.4.1</version>
         </plugin>
 
         <!-- ========== //MAVEN OFFICIAL -->
@@ -696,7 +696,7 @@
         <plugin>
           <groupId>org.openapitools</groupId>
           <artifactId>openapi-generator-maven-plugin</artifactId>
-          <version>7.4.0</version>
+          <version>7.5.0</version>
         </plugin>
 
         <!-- [GENERATOR]: PROPERTIES (writes maven properties to src) (version,execution) -->
