@@ -49,7 +49,7 @@ are included.
 
 | Type                  | Version | Info                                     | 
 |-----------------------|---------|------------------------------------------|
-| kotlin                | 1.9.23  | used in kotlin compiler und kotlin libs. |
+| kotlin                | 1.9.24  | used in kotlin compiler und kotlin libs. |
 | java                  | 17      | compile target                           |
 | kotlinx-coroutines    | 1.8.0   | BOM                                      |
 | kotlinx-serialization | 1.6.3   | BOM                                      |
