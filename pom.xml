@@ -39,7 +39,7 @@
     <kp.skipITests>false</kp.skipITests>
 
     <!-- LANGUAGE VERSIONS -->
-    <kotlin.version>1.9.23</kotlin.version>
+    <kotlin.version>1.9.24</kotlin.version>
     <kotlin.compiler.languageVersion>1.9</kotlin.compiler.languageVersion>
     <kotlin.compiler.apiVersion>1.9</kotlin.compiler.apiVersion>
     <kotlin.compiler.incremental>${kp.compile.useIncrementalKotlinCompiler}</kotlin.compiler.incremental>
