@@ -4,7 +4,7 @@
 
   <groupId>io.toolisticon.maven.parent</groupId>
   <artifactId>maven-parent-kotlin-base</artifactId>
-  <version>2024.4.1</version>
+  <version>2024.5.0</version>
 
   <name>Maven Parent - Kotlin Base</name>
   <description>Maven parent for a holistic kotlin lib project.</description>
@@ -39,7 +39,7 @@
     <kp.skipITests>false</kp.skipITests>
 
     <!-- LANGUAGE VERSIONS -->
-    <kotlin.version>1.9.23</kotlin.version>
+    <kotlin.version>1.9.24</kotlin.version>
     <kotlin.compiler.languageVersion>1.9</kotlin.compiler.languageVersion>
     <kotlin.compiler.apiVersion>1.9</kotlin.compiler.apiVersion>
     <kotlin.compiler.incremental>${kp.compile.useIncrementalKotlinCompiler}</kotlin.compiler.incremental>
