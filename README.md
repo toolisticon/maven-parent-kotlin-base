@@ -52,7 +52,7 @@ are included.
 | kotlin                | `2.0.0` | used in kotlin compiler und kotlin libs. |
 | java                  | `17`    | compile target                           |
 | kotlinx-coroutines    | `1.8.1` | BOM                                      |
-| kotlinx-serialization | `1.7.0` | BOM                                      |
+| kotlinx-serialization | `1.7.1` | BOM                                      |
 | kotlin-logging        | `3.0.5` | logging support                          |
 
 ## Libs
@@ -60,7 +60,7 @@ are included.
 | Lib    | Version  | Info                         |
 |--------|----------|------------------------------|
 | jetbrains-annotations | `24.1.0`   | common annotations |
-| junit5 | `5.10.2`   | bom dependency, unit testing |
+| junit5 | `5.10.3`   | bom dependency, unit testing |
 
 ## Plugins
 
