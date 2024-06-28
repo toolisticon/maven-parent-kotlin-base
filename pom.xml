@@ -4,7 +4,7 @@
 
   <groupId>io.toolisticon.maven.parent</groupId>
   <artifactId>maven-parent-kotlin-base</artifactId>
-  <version>2024.6.0</version>
+  <version>2024.6.1</version>
 
   <name>Maven Parent - Kotlin Base</name>
   <description>Maven parent for a holistic kotlin lib project.</description>
@@ -47,14 +47,14 @@
     <java.version>17</java.version>
     <jdk.version>17</jdk.version>
 
-    <kotlinx-serialization.version>1.7.0</kotlinx-serialization.version>
+    <kotlinx-serialization.version>1.7.1</kotlinx-serialization.version>
     <kotlinx-coroutines.version>1.8.1</kotlinx-coroutines.version>
     <kotlin-logging.version>3.0.5</kotlin-logging.version>
 
     <jetbrains-annotations.version>24.1.0</jetbrains-annotations.version>
 
     <!-- TEST -->
-    <junit5.version>5.10.2</junit5.version>
+    <junit5.version>5.10.3</junit5.version>
   </properties>
 
   <dependencyManagement>
@@ -424,14 +424,14 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-clean-plugin</artifactId>
-          <version>3.3.2</version>
+          <version>3.4.0</version>
         </plugin>
 
         <!-- DEPENDENCY (version) -->
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-dependency-plugin</artifactId>
-          <version>3.6.1</version>
+          <version>3.7.1</version>
         </plugin>
 
         <!-- DEPLOY (version, config) -->
@@ -473,7 +473,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-surefire-plugin</artifactId>
-          <version>3.2.5</version>
+          <version>3.3.0</version>
           <configuration>
             <useSystemClassLoader>false</useSystemClassLoader>
             <shutdown>kill</shutdown>
@@ -494,7 +494,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-failsafe-plugin</artifactId>
-          <version>3.2.5</version>
+          <version>3.3.0</version>
           <executions>
             <execution>
               <id>integration-tests</id>
@@ -584,7 +584,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-jar-plugin</artifactId>
-          <version>3.4.1</version>
+          <version>3.4.2</version>
         </plugin>
 
         <!-- ========== //MAVEN OFFICIAL -->
