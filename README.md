@@ -90,7 +90,7 @@ see [official plugins](https://maven.apache.org/plugins/index.html)
 | [jgiven-maven](https://jgiven.org/userguide/#_maven)                                                                      | `1.3.1`  | jgiven test reports                         |
 | [openapi-generator](https://github.com/OpenAPITools/openapi-generator/tree/master/modules/openapi-generator-maven-plugin) | `7.6.0`  | openapi/swagger code generation             |
 | [properties-maven](https://www.mojohaus.org/properties-maven-plugin/)                                                     | `1.2.1`  | generate build properties for project       |
-| [versions-maven](https://www.mojohaus.org/versions/versions-maven-plugin/index.html)                                      | `2.16.2` | modify versions of project                  |
+| [versions-maven](https://www.mojohaus.org/versions/versions-maven-plugin/index.html)                                      | `2.17.0` | modify versions of project                  |
 | [nexus-staging-maven](https://github.com/sonatype/nexus-maven-plugins/blob/main/staging/maven-plugin/README.md)           | `1.6.13` | release on maven central                    |
 
 
