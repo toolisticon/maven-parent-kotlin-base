@@ -4,7 +4,7 @@
 
   <groupId>io.toolisticon.maven.parent</groupId>
   <artifactId>maven-parent-kotlin-base</artifactId>
-  <version>2024.6.2-SNAPSHOT</version>
+  <version>2024.7.0-SNAPSHOT</version>
 
   <name>Maven Parent - Kotlin Base</name>
   <description>Maven parent for a holistic kotlin lib project.</description>
@@ -40,8 +40,8 @@
 
     <!-- LANGUAGE VERSIONS -->
     <kotlin.version>2.0.0</kotlin.version>
-    <kotlin.compiler.languageVersion>1.9</kotlin.compiler.languageVersion>
-    <kotlin.compiler.apiVersion>1.9</kotlin.compiler.apiVersion>
+    <kotlin.compiler.apiVersion>2.0</kotlin.compiler.apiVersion>
+    <kotlin.compiler.languageVersion>2.0</kotlin.compiler.languageVersion>
     <kotlin.compiler.incremental>${kp.compile.useIncrementalKotlinCompiler}</kotlin.compiler.incremental>
     <kotlin.compiler.jvmTarget>${java.version}</kotlin.compiler.jvmTarget>
     <java.version>17</java.version>
@@ -267,8 +267,8 @@
 
           <configuration>
             <jvmTarget>${java.version}</jvmTarget>
-            <apiVersion>1.9</apiVersion>
-            <languageVersion>1.9</languageVersion>
+            <apiVersion>${kotlin.compiler.apiVersion}</apiVersion>
+            <languageVersion>${kotlin.compiler.languageVersion}</languageVersion>
 
             <!-- Compiler plugins need to be configured on this level for IntelliJ to recognize them -->
             <compilerPlugins>
