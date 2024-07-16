@@ -52,7 +52,7 @@ are included.
 | kotlin                | `2.0.0` | used in kotlin compiler und kotlin libs. |
 | java                  | `17`    | compile target                           |
 | kotlinx-coroutines    | `1.8.1` | BOM                                      |
-| kotlinx-serialization | `1.7.0` | BOM                                      |
+| kotlinx-serialization | `1.7.1` | BOM                                      |
 | kotlin-logging        | `3.0.5` | logging support                          |
 
 ## Libs
@@ -60,7 +60,7 @@ are included.
 | Lib    | Version  | Info                         |
 |--------|----------|------------------------------|
 | jetbrains-annotations | `24.1.0`   | common annotations |
-| junit5 | `5.10.2`   | bom dependency, unit testing |
+| junit5 | `5.10.3`   | bom dependency, unit testing |
 
 ## Plugins
 
@@ -77,20 +77,20 @@ see [official plugins](https://maven.apache.org/plugins/index.html)
 | [maven-dependency](https://maven.apache.org/plugins/maven-dependency-plugin/)                                             | `3.7.1`  | check/update dependency versions            |
 | [maven-deploy](https://maven.apache.org/plugins/maven-deploy-plugin/)                                                     | `3.1.2`  | -                                           |
 | [maven-enforcer](https://maven.apache.org/enforcer/maven-enforcer-plugin/)                                                | `3.4.1`  | enforce project setup                       |
-| [maven-failsafe](https://maven.apache.org/surefire/maven-failsafe-plugin/)                                                | `3.3.0`  | testing                                     |
+| [maven-failsafe](https://maven.apache.org/surefire/maven-failsafe-plugin/)                                                | `3.3.1`  | testing                                     |
 | [maven-gpg](https://maven.apache.org/plugins/maven-gpg-plugin/)                                                           | `3.2.4`  | sign artifacts for release                  |
 | [maven-install](https://maven.apache.org/plugins/maven-install-plugin/)                                                   | `3.1.2`  | -                                           |
 | [maven-jar-plugin](https://maven.apache.org/plugins/maven-jar-plugin/)                                                    | `3.4.2`  | -                                           |
 | [maven-resources](https://maven.apache.org/plugins/maven-resources-plugin/)                                               | `3.3.1`  | filter resources                            |
 | [maven-surce](https://maven.apache.org/plugins/maven-source-plugin/)                                                      | `3.3.1`  | add sources to artifacts                    |
-| [maven-surefire](https://maven.apache.org/surefire/maven-surefire-plugin/)                                                | `3.3.0`  | testing                                     |
+| [maven-surefire](https://maven.apache.org/surefire/maven-surefire-plugin/)                                                | `3.3.1`  | testing                                     |
 | [build-helper](https://www.mojohaus.org/build-helper-maven-plugin/)                                                       | `3.6.0`  | define source directories                   |
 | [gitflow-maven](https://aleksandr-m.github.io/gitflow-maven-plugin/)                                                      | `1.21.0` | gitflow relase master/develop/release       |
 | [jacoco-maven](https://www.eclemma.org/jacoco/trunk/doc/maven.html)                                                       | `0.8.12` | test reports                                |
 | [jgiven-maven](https://jgiven.org/userguide/#_maven)                                                                      | `1.3.1`  | jgiven test reports                         |
 | [openapi-generator](https://github.com/OpenAPITools/openapi-generator/tree/master/modules/openapi-generator-maven-plugin) | `7.6.0`  | openapi/swagger code generation             |
 | [properties-maven](https://www.mojohaus.org/properties-maven-plugin/)                                                     | `1.2.1`  | generate build properties for project       |
-| [versions-maven](https://www.mojohaus.org/versions/versions-maven-plugin/index.html)                                      | `2.16.2` | modify versions of project                  |
+| [versions-maven](https://www.mojohaus.org/versions/versions-maven-plugin/index.html)                                      | `2.17.1` | modify versions of project                  |
 | [nexus-staging-maven](https://github.com/sonatype/nexus-maven-plugins/blob/main/staging/maven-plugin/README.md)           | `1.6.13` | release on maven central                    |
 
 
