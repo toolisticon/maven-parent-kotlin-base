@@ -4,7 +4,7 @@
 
   <groupId>io.toolisticon.maven.parent</groupId>
   <artifactId>maven-parent-kotlin-base</artifactId>
-  <version>2024.7.0</version>
+  <version>2024.7.1</version>
 
   <name>Maven Parent - Kotlin Base</name>
   <description>Maven parent for a holistic kotlin lib project.</description>
@@ -184,22 +184,161 @@
       </dependency>
       <!-- // KOTLIN (from kotlin-bom) -->
 
+      <!-- KOTLIN SERIALIZATION -->
       <dependency>
         <groupId>org.jetbrains.kotlinx</groupId>
-        <artifactId>kotlinx-coroutines-bom</artifactId>
-        <version>${kotlinx-coroutines.version}</version>
-        <scope>import</scope>
-        <type>pom</type>
-      </dependency>
-
-      <dependency>
-        <groupId>org.jetbrains.kotlinx</groupId>
-        <artifactId>kotlinx-serialization-bom</artifactId>
+        <artifactId>kotlinx-serialization-cbor-jvm</artifactId>
         <version>${kotlinx-serialization.version}</version>
-        <scope>import</scope>
-        <type>pom</type>
       </dependency>
+      <dependency>
+        <groupId>org.jetbrains.kotlinx</groupId>
+        <artifactId>kotlinx-serialization-cbor</artifactId>
+        <version>${kotlinx-serialization.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jetbrains.kotlinx</groupId>
+        <artifactId>kotlinx-serialization-core-jvm</artifactId>
+        <version>${kotlinx-serialization.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jetbrains.kotlinx</groupId>
+        <artifactId>kotlinx-serialization-core</artifactId>
+        <version>${kotlinx-serialization.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jetbrains.kotlinx</groupId>
+        <artifactId>kotlinx-serialization-hocon</artifactId>
+        <version>${kotlinx-serialization.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jetbrains.kotlinx</groupId>
+        <artifactId>kotlinx-serialization-json-jvm</artifactId>
+        <version>${kotlinx-serialization.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jetbrains.kotlinx</groupId>
+        <artifactId>kotlinx-serialization-json</artifactId>
+        <version>${kotlinx-serialization.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jetbrains.kotlinx</groupId>
+        <artifactId>kotlinx-serialization-json-okio-jvm</artifactId>
+        <version>${kotlinx-serialization.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jetbrains.kotlinx</groupId>
+        <artifactId>kotlinx-serialization-json-okio</artifactId>
+        <version>${kotlinx-serialization.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jetbrains.kotlinx</groupId>
+        <artifactId>kotlinx-serialization-properties-jvm</artifactId>
+        <version>${kotlinx-serialization.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jetbrains.kotlinx</groupId>
+        <artifactId>kotlinx-serialization-properties</artifactId>
+        <version>${kotlinx-serialization.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jetbrains.kotlinx</groupId>
+        <artifactId>kotlinx-serialization-protobuf-jvm</artifactId>
+        <version>${kotlinx-serialization.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jetbrains.kotlinx</groupId>
+        <artifactId>kotlinx-serialization-protobuf</artifactId>
+        <version>${kotlinx-serialization.version}</version>
+      </dependency>
+      <!-- // KOTLIN SERIALIZATION -->
 
+      <!-- KOTLIN COROUTINES -->
+      <dependency>
+        <groupId>org.jetbrains.kotlinx</groupId>
+        <artifactId>kotlinx-coroutines-android</artifactId>
+        <version>${kotlinx-coroutines.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jetbrains.kotlinx</groupId>
+        <artifactId>kotlinx-coroutines-core-jvm</artifactId>
+        <version>${kotlinx-coroutines.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jetbrains.kotlinx</groupId>
+        <artifactId>kotlinx-coroutines-core</artifactId>
+        <version>${kotlinx-coroutines.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jetbrains.kotlinx</groupId>
+        <artifactId>kotlinx-coroutines-debug</artifactId>
+        <version>${kotlinx-coroutines.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jetbrains.kotlinx</groupId>
+        <artifactId>kotlinx-coroutines-guava</artifactId>
+        <version>${kotlinx-coroutines.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jetbrains.kotlinx</groupId>
+        <artifactId>kotlinx-coroutines-javafx</artifactId>
+        <version>${kotlinx-coroutines.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jetbrains.kotlinx</groupId>
+        <artifactId>kotlinx-coroutines-jdk8</artifactId>
+        <version>${kotlinx-coroutines.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jetbrains.kotlinx</groupId>
+        <artifactId>kotlinx-coroutines-jdk9</artifactId>
+        <version>${kotlinx-coroutines.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jetbrains.kotlinx</groupId>
+        <artifactId>kotlinx-coroutines-play-services</artifactId>
+        <version>${kotlinx-coroutines.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jetbrains.kotlinx</groupId>
+        <artifactId>kotlinx-coroutines-reactive</artifactId>
+        <version>${kotlinx-coroutines.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jetbrains.kotlinx</groupId>
+        <artifactId>kotlinx-coroutines-reactor</artifactId>
+        <version>${kotlinx-coroutines.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jetbrains.kotlinx</groupId>
+        <artifactId>kotlinx-coroutines-rx2</artifactId>
+        <version>${kotlinx-coroutines.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jetbrains.kotlinx</groupId>
+        <artifactId>kotlinx-coroutines-rx3</artifactId>
+        <version>${kotlinx-coroutines.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jetbrains.kotlinx</groupId>
+        <artifactId>kotlinx-coroutines-slf4j</artifactId>
+        <version>${kotlinx-coroutines.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jetbrains.kotlinx</groupId>
+        <artifactId>kotlinx-coroutines-swing</artifactId>
+        <version>${kotlinx-coroutines.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jetbrains.kotlinx</groupId>
+        <artifactId>kotlinx-coroutines-test-jvm</artifactId>
+        <version>${kotlinx-coroutines.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jetbrains.kotlinx</groupId>
+        <artifactId>kotlinx-coroutines-test</artifactId>
+        <version>${kotlinx-coroutines.version}</version>
+      </dependency>
+      <!-- // KOTLIN COROUTINES -->
 
       <!-- KLOGGING (use as default) -->
       <dependency>
@@ -230,7 +369,6 @@
 
     <sourceDirectory>${kp.mainSources}</sourceDirectory>
     <testSourceDirectory>${kp.testSources}</testSourceDirectory>
-
 
     <!-- RESOURCES: ignore gitkeep marker files -->
     <resources>
@@ -374,7 +512,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-javadoc-plugin</artifactId>
-          <version>3.7.0</version>
+          <version>3.8.0</version>
           <executions>
             <execution>
               <id>attach-javadocs</id>
