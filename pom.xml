@@ -582,6 +582,13 @@
           </configuration>
         </plugin>
 
+        <!-- WRAPPER (execute maven without central installation) -->
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-wrapper-plugin</artifactId>
+          <version>3.3.2</version>
+        </plugin>
+
         <!-- ENFORCE (version, java target, maven target) -->
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
