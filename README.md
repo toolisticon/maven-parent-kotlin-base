@@ -1,6 +1,6 @@
 # maven-parent-kotlin-base
 
-A common maven parent for usage in kotlin library or application projects. 
+A common maven parent for usage in kotlin library or application projects.
 
 [![stable](https://img.shields.io/badge/lifecycle-STABLE-green.svg)](https://github.com/holisticon#open-source-lifecycle)
 [![Build Status](https://github.com/toolisticon/maven-parent-kotlin-base/workflows/Development%20branches/badge.svg)](https://github.com/toolisticon/maven-parent-kotlin-base/actions)
@@ -12,7 +12,7 @@ A common maven parent for usage in kotlin library or application projects.
 Maven poms are quite bloated, Most of the settings (how to compile, how to deploy) are repeated over and over.
 This maven-parent aims to reduce the xml in your `pom.xml` to the things you really want to express in your library or application project.
 
-By nature of this module, it is a highly opinionated approach. It might fit your needs, but it is explicitly designed to support open source library 
+By nature of this module, it is a highly opinionated approach. It might fit your needs, but it is explicitly designed to support open source library
 projects we are currently building and maintaining under `toolisticon`, `holunda-io` and `holixon`.
 
 ### Versioning
@@ -34,7 +34,7 @@ This is a maven parent. So just include it on the top of your root `pom.xml`:
 </parent>
 ```
 
-Carefully analyse your pom (and the effective pom) and remove duplications, unintended overwrites and possible conflicts ... and you are done. 
+Carefully analyse your pom (and the effective pom) and remove duplications, unintended overwrites and possible conflicts ... and you are done.
 
 ## Features
 
@@ -47,9 +47,9 @@ are included.
 
 ### Language
 
-| Type                  | Version | Info                                      | 
+| Type                  | Version | Info                                      |
 |-----------------------|---------|-------------------------------------------|
-| kotlin                | `2.0.0` | used in kotlin compiler und kotlin libs.  |
+| kotlin                | `2.0.10` | used in kotlin compiler und kotlin libs.  |
 | java                  | `17`    | compile target                            |
 | kotlinx-coroutines    | `1.8.1` | all BOM libs explicitly listed            |
 | kotlinx-serialization | `1.7.1` | all BOM libs explicitly listed            |
