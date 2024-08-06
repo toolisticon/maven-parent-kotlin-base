@@ -4,7 +4,7 @@
 
   <groupId>io.toolisticon.maven.parent</groupId>
   <artifactId>maven-parent-kotlin-base</artifactId>
-  <version>2024.7.1</version>
+  <version>2024.8.0</version>
 
   <name>Maven Parent - Kotlin Base</name>
   <description>Maven parent for a holistic kotlin lib project.</description>
@@ -555,7 +555,7 @@
         <plugin>
           <groupId>org.apache.avro</groupId>
           <artifactId>avro-maven-plugin</artifactId>
-          <version>1.11.3</version>
+          <version>1.12.0</version>
         </plugin>
 
         <!-- CLEAN (version) -->
@@ -580,6 +580,13 @@
           <configuration>
             <skip>${kp.plugin.skipDeploy}</skip>
           </configuration>
+        </plugin>
+
+        <!-- WRAPPER (execute maven without central installation) -->
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-wrapper-plugin</artifactId>
+          <version>3.3.2</version>
         </plugin>
 
         <!-- ENFORCE (version, java target, maven target) -->
