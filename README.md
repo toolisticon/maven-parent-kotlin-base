@@ -49,7 +49,7 @@ are included.
 
 | Type                  | Version | Info                                      |
 |-----------------------|---------|-------------------------------------------|
-| kotlin                | `2.0.10` | used in kotlin compiler und kotlin libs.  |
+| kotlin                | `2.0.20` | used in kotlin compiler und kotlin libs.  |
 | java                  | `17`    | compile target                            |
 | kotlinx-coroutines    | `1.8.1` | all BOM libs explicitly listed            |
 | kotlinx-serialization | `1.7.1` | all BOM libs explicitly listed            |
@@ -74,7 +74,7 @@ see [official plugins](https://maven.apache.org/plugins/index.html)
 | [dokka](https://kotlinlang.org/docs/dokka-maven.html#apply-dokka)                                                          | `1.9.20` | use dokka for javadoc                       |
 | [avro-maven](https://avro.apache.org/docs/1.11.1/getting-started-java/)                                                    | `1.12.0` | avro code generation                        |
 | [maven-clean](https://maven.apache.org/plugins/maven-clean-plugin/)                                                        | `3.4.0`  | clean project                               |
-| [maven-dependency](https://maven.apache.org/plugins/maven-dependency-plugin/)                                              | `3.7.1`  | check/update dependency versions            |
+| [maven-dependency](https://maven.apache.org/plugins/maven-dependency-plugin/)                                              | `3.8.0`  | check/update dependency versions            |
 | [maven-deploy](https://maven.apache.org/plugins/maven-deploy-plugin/)                                                      | `3.1.3`  | -                                           |
 | [maven-enforcer](https://maven.apache.org/enforcer/maven-enforcer-plugin/)                                                 | `3.4.1`  | enforce project setup                       |
 | [maven-failsafe](https://maven.apache.org/surefire/maven-failsafe-plugin/)                                                 | `3.4.0`  | testing                                     |
