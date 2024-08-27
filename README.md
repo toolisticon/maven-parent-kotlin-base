@@ -70,20 +70,20 @@ see [official plugins](https://maven.apache.org/plugins/index.html)
 |----------------------------------------------------------------------------------------------------------------------------|----------|---------------------------------------------|
 | [maven-compiler](https://maven.apache.org/plugins/maven-compiler-plugin/)                                                  | `3.13.0` | disabling java compiler for kotlin projects |
 | [kotlin-maven-plugin](https://kotlinlang.org/docs/maven.html)                                                              | `2.0.0`  | kotlin compiler plugin                      |
-| [maven-javadoc](https://maven.apache.org/plugins/maven-javadoc-plugin/)                                                    | `3.8.0`  | include javadoc                             |
+| [maven-javadoc](https://maven.apache.org/plugins/maven-javadoc-plugin/)                                                    | `3.10.0`  | include javadoc                             |
 | [dokka](https://kotlinlang.org/docs/dokka-maven.html#apply-dokka)                                                          | `1.9.20` | use dokka for javadoc                       |
 | [avro-maven](https://avro.apache.org/docs/1.11.1/getting-started-java/)                                                    | `1.12.0` | avro code generation                        |
 | [maven-clean](https://maven.apache.org/plugins/maven-clean-plugin/)                                                        | `3.4.0`  | clean project                               |
 | [maven-dependency](https://maven.apache.org/plugins/maven-dependency-plugin/)                                              | `3.8.0`  | check/update dependency versions            |
 | [maven-deploy](https://maven.apache.org/plugins/maven-deploy-plugin/)                                                      | `3.1.3`  | -                                           |
 | [maven-enforcer](https://maven.apache.org/enforcer/maven-enforcer-plugin/)                                                 | `3.4.1`  | enforce project setup                       |
-| [maven-failsafe](https://maven.apache.org/surefire/maven-failsafe-plugin/)                                                 | `3.4.0`  | testing                                     |
+| [maven-failsafe](https://maven.apache.org/surefire/maven-failsafe-plugin/)                                                 | `3.5.0`  | testing                                     |
 | [maven-gpg](https://maven.apache.org/plugins/maven-gpg-plugin/)                                                            | `3.2.5`  | sign artifacts for release                  |
 | [maven-install](https://maven.apache.org/plugins/maven-install-plugin/)                                                    | `3.1.3`  | -                                           |
 | [maven-jar-plugin](https://maven.apache.org/plugins/maven-jar-plugin/)                                                     | `3.4.2`  | -                                           |
 | [maven-resources](https://maven.apache.org/plugins/maven-resources-plugin/)                                                | `3.3.1`  | filter resources                            |
 | [maven-surce](https://maven.apache.org/plugins/maven-source-plugin/)                                                       | `3.3.1`  | add sources to artifacts                    |
-| [maven-surefire](https://maven.apache.org/surefire/maven-surefire-plugin/)                                                 | `3.4.0`  | testing                                     |
+| [maven-surefire](https://maven.apache.org/surefire/maven-surefire-plugin/)                                                 | `3.5.0`  | testing                                     |
 | [build-helper](https://www.mojohaus.org/build-helper-maven-plugin/)                                                        | `3.6.0`  | define source directories                   |
 | [gitflow-maven](https://aleksandr-m.github.io/gitflow-maven-plugin/)                                                       | `1.21.0` | gitflow relase master/develop/release       |
 | [jacoco-maven](https://www.eclemma.org/jacoco/trunk/doc/maven.html)                                                        | `0.8.12` | test reports                                |
