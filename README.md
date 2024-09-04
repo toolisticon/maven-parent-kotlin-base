@@ -82,7 +82,7 @@ see [official plugins](https://maven.apache.org/plugins/index.html)
 | [maven-install](https://maven.apache.org/plugins/maven-install-plugin/)                                                    | `3.1.3`  | -                                           |
 | [maven-jar-plugin](https://maven.apache.org/plugins/maven-jar-plugin/)                                                     | `3.4.2`  | -                                           |
 | [maven-resources](https://maven.apache.org/plugins/maven-resources-plugin/)                                                | `3.3.1`  | filter resources                            |
-| [maven-surce](https://maven.apache.org/plugins/maven-source-plugin/)                                                       | `3.3.1`  | add sources to artifacts                    |
+| [maven-source](https://maven.apache.org/plugins/maven-source-plugin/)                                                       | `3.3.1`  | add sources to artifacts                    |
 | [maven-surefire](https://maven.apache.org/surefire/maven-surefire-plugin/)                                                 | `3.5.0`  | testing                                     |
 | [build-helper](https://www.mojohaus.org/build-helper-maven-plugin/)                                                        | `3.6.0`  | define source directories                   |
 | [gitflow-maven](https://aleksandr-m.github.io/gitflow-maven-plugin/)                                                       | `1.21.0` | gitflow relase master/develop/release       |
