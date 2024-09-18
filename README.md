@@ -17,7 +17,7 @@ projects we are currently building and maintaining under `toolisticon`, `holunda
 
 ### Versioning
 
-Since this parent countless versions of other libs and plugins, it cannot have any meaningful version itself.
+Since this parent wraps countless versions of other libs and plugins, it cannot have any meaningful version itself.
 
 The semantic versioning conventions is `YEAR.MONTH.COUNT`, so the first build in September would be `version=2023.9.0` ... and counting.
 
