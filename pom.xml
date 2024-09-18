@@ -4,7 +4,7 @@
 
   <groupId>io.toolisticon.maven.parent</groupId>
   <artifactId>maven-parent-kotlin-base</artifactId>
-  <version>2024.9.0</version>
+  <version>2024.9.1</version>
 
   <name>Maven Parent - Kotlin Base</name>
   <description>Maven parent for a holistic kotlin lib project.</description>
@@ -48,7 +48,7 @@
     <jdk.version>17</jdk.version>
 
     <kotlinx-serialization.version>1.7.2</kotlinx-serialization.version>
-    <kotlinx-coroutines.version>1.8.1</kotlinx-coroutines.version>
+    <kotlinx-coroutines.version>1.9.0</kotlinx-coroutines.version>
     <kotlin-logging.version>3.0.5</kotlin-logging.version>
 
     <jetbrains-annotations.version>24.1.0</jetbrains-annotations.version>
@@ -677,7 +677,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-gpg-plugin</artifactId>
-          <version>3.2.5</version>
+          <version>3.2.6</version>
           <configuration>
             <!-- pass -Dgpg.keyname=.. and -Dgpg.passphrase=... -->
             <gpgArguments>

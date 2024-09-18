@@ -17,7 +17,7 @@ projects we are currently building and maintaining under `toolisticon`, `holunda
 
 ### Versioning
 
-Since this parent countless versions of other libs and plugins, it cannot have any meaningful version itself.
+Since this parent wraps countless versions of other libs and plugins, it cannot have any meaningful version itself.
 
 The semantic versioning conventions is `YEAR.MONTH.COUNT`, so the first build in September would be `version=2023.9.0` ... and counting.
 
@@ -47,13 +47,13 @@ are included.
 
 ### Language
 
-| Type                  | Version | Info                                      |
-|-----------------------|---------|-------------------------------------------|
+| Type                  | Version  | Info                                      |
+|-----------------------|----------|-------------------------------------------|
 | kotlin                | `2.0.20` | used in kotlin compiler und kotlin libs.  |
-| java                  | `17`    | compile target                            |
-| kotlinx-coroutines    | `1.8.1` | all BOM libs explicitly listed            |
-| kotlinx-serialization | `1.7.2` | all BOM libs explicitly listed            |
-| kotlin-logging        | `3.0.5` | logging support                           |
+| java                  | `17`     | compile target                            |
+| kotlinx-coroutines    | `1.9.0`  | all BOM libs explicitly listed            |
+| kotlinx-serialization | `1.7.2`  | all BOM libs explicitly listed            |
+| kotlin-logging        | `3.0.5`  | logging support                           |
 
 ## Libs
 
@@ -70,7 +70,7 @@ see [official plugins](https://maven.apache.org/plugins/index.html)
 |----------------------------------------------------------------------------------------------------------------------------|----------|---------------------------------------------|
 | [maven-compiler](https://maven.apache.org/plugins/maven-compiler-plugin/)                                                  | `3.13.0` | disabling java compiler for kotlin projects |
 | [kotlin-maven-plugin](https://kotlinlang.org/docs/maven.html)                                                              | `2.0.0`  | kotlin compiler plugin                      |
-| [maven-javadoc](https://maven.apache.org/plugins/maven-javadoc-plugin/)                                                    | `3.10.0`  | include javadoc                             |
+| [maven-javadoc](https://maven.apache.org/plugins/maven-javadoc-plugin/)                                                    | `3.10.0` | include javadoc                             |
 | [dokka](https://kotlinlang.org/docs/dokka-maven.html#apply-dokka)                                                          | `1.9.20` | use dokka for javadoc                       |
 | [avro-maven](https://avro.apache.org/docs/1.11.1/getting-started-java/)                                                    | `1.12.0` | avro code generation                        |
 | [maven-clean](https://maven.apache.org/plugins/maven-clean-plugin/)                                                        | `3.4.0`  | clean project                               |
@@ -78,11 +78,11 @@ see [official plugins](https://maven.apache.org/plugins/index.html)
 | [maven-deploy](https://maven.apache.org/plugins/maven-deploy-plugin/)                                                      | `3.1.3`  | -                                           |
 | [maven-enforcer](https://maven.apache.org/enforcer/maven-enforcer-plugin/)                                                 | `3.4.1`  | enforce project setup                       |
 | [maven-failsafe](https://maven.apache.org/surefire/maven-failsafe-plugin/)                                                 | `3.5.0`  | testing                                     |
-| [maven-gpg](https://maven.apache.org/plugins/maven-gpg-plugin/)                                                            | `3.2.5`  | sign artifacts for release                  |
+| [maven-gpg](https://maven.apache.org/plugins/maven-gpg-plugin/)                                                            | `3.2.6`  | sign artifacts for release                  |
 | [maven-install](https://maven.apache.org/plugins/maven-install-plugin/)                                                    | `3.1.3`  | -                                           |
 | [maven-jar-plugin](https://maven.apache.org/plugins/maven-jar-plugin/)                                                     | `3.4.2`  | -                                           |
 | [maven-resources](https://maven.apache.org/plugins/maven-resources-plugin/)                                                | `3.3.1`  | filter resources                            |
-| [maven-surce](https://maven.apache.org/plugins/maven-source-plugin/)                                                       | `3.3.1`  | add sources to artifacts                    |
+| [maven-source](https://maven.apache.org/plugins/maven-source-plugin/)                                                       | `3.3.1`  | add sources to artifacts                    |
 | [maven-surefire](https://maven.apache.org/surefire/maven-surefire-plugin/)                                                 | `3.5.0`  | testing                                     |
 | [build-helper](https://www.mojohaus.org/build-helper-maven-plugin/)                                                        | `3.6.0`  | define source directories                   |
 | [gitflow-maven](https://aleksandr-m.github.io/gitflow-maven-plugin/)                                                       | `1.21.0` | gitflow relase master/develop/release       |
