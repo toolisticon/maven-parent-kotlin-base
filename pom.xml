@@ -4,7 +4,7 @@
 
   <groupId>io.toolisticon.maven.parent</groupId>
   <artifactId>maven-parent-kotlin-base</artifactId>
-  <version>2024.10.0</version>
+  <version>2024.10.1</version>
 
   <name>Maven Parent - Kotlin Base</name>
   <description>Maven parent for a holistic kotlin lib project.</description>
@@ -39,7 +39,7 @@
     <kp.skipITests>false</kp.skipITests>
 
     <!-- LANGUAGE VERSIONS -->
-    <kotlin.version>2.0.20</kotlin.version>
+    <kotlin.version>2.0.21</kotlin.version>
     <kotlin.compiler.apiVersion>2.0</kotlin.compiler.apiVersion>
     <kotlin.compiler.languageVersion>2.0</kotlin.compiler.languageVersion>
     <kotlin.compiler.incremental>${kp.compile.useIncrementalKotlinCompiler}</kotlin.compiler.incremental>
@@ -51,10 +51,10 @@
     <kotlinx-coroutines.version>1.9.0</kotlinx-coroutines.version>
     <kotlin-logging.version>3.0.5</kotlin-logging.version>
 
-    <jetbrains-annotations.version>25.0.0</jetbrains-annotations.version>
+    <jetbrains-annotations.version>26.0.0</jetbrains-annotations.version>
 
     <!-- TEST -->
-    <junit5.version>5.11.1</junit5.version>
+    <junit5.version>5.11.2</junit5.version>
   </properties>
 
   <dependencyManagement>
@@ -628,7 +628,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-surefire-plugin</artifactId>
-          <version>3.5.0</version>
+          <version>3.5.1</version>
           <configuration>
             <useSystemClassLoader>false</useSystemClassLoader>
             <shutdown>kill</shutdown>
@@ -649,7 +649,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-failsafe-plugin</artifactId>
-          <version>3.5.0</version>
+          <version>3.5.1</version>
           <executions>
             <execution>
               <id>integration-tests</id>
@@ -851,7 +851,7 @@
         <plugin>
           <groupId>org.openapitools</groupId>
           <artifactId>openapi-generator-maven-plugin</artifactId>
-          <version>7.8.0</version>
+          <version>7.9.0</version>
         </plugin>
 
         <!-- [GENERATOR]: PROPERTIES (writes maven properties to src) (version,execution) -->
