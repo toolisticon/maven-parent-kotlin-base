@@ -15,6 +15,8 @@ This maven-parent aims to reduce the xml in your `pom.xml` to the things you rea
 By nature of this module, it is a highly opinionated approach. It might fit your needs, but it is explicitly designed to support open source library
 projects we are currently building and maintaining under `toolisticon`, `holunda-io` and `holixon`.
 
+![Alt](https://repobeats.axiom.co/api/embed/e8f5fb21acc9cb5a90b05b63164ce38fbd473b48.svg "Repobeats analytics image")
+
 ### Versioning
 
 Since this parent wraps countless versions of other libs and plugins, it cannot have any meaningful version itself.
