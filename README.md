@@ -49,20 +49,20 @@ are included.
 
 ### Language
 
-| Type                  | Version  | Info                                      |
-|-----------------------|----------|-------------------------------------------|
-| kotlin                | `2.0.21` | used in kotlin compiler und kotlin libs.  |
-| java                  | `17`     | compile target                            |
-| kotlinx-coroutines    | `1.9.0`  | all BOM libs explicitly listed            |
-| kotlinx-serialization | `1.7.3`  | all BOM libs explicitly listed            |
-| kotlin-logging        | `3.0.5`  | logging support                           |
+| Type                  | Version | Info                                      |
+|-----------------------|---------|-------------------------------------------|
+| kotlin                | `2.1.0` | used in kotlin compiler und kotlin libs.  |
+| java                  | `17`    | compile target                            |
+| kotlinx-coroutines    | `1.9.1` | all BOM libs explicitly listed            |
+| kotlinx-serialization | `1.7.3` | all BOM libs explicitly listed            |
+| kotlin-logging        | `3.0.5` | logging support                           |
 
 ## Libs
 
 | Lib    | Version  | Info                                 |
 |--------|----------|--------------------------------------|
-| jetbrains-annotations | `26.0.1`   | common annotations  |
-| junit5 | `5.11.3`   | bom dependency, unit testing       |
+| jetbrains-annotations | `26.0.1` | common annotations  |
+| junit5 | `5.11.4` | bom dependency, unit testing       |
 
 ## Plugins
 
@@ -72,8 +72,8 @@ see [official plugins](https://maven.apache.org/plugins/index.html)
 |----------------------------------------------------------------------------------------------------------------------------|----------|---------------------------------------------|
 | [maven-compiler](https://maven.apache.org/plugins/maven-compiler-plugin/)                                                  | `3.13.0` | disabling java compiler for kotlin projects |
 | [kotlin-maven-plugin](https://kotlinlang.org/docs/maven.html)                                                              | `2.0.0`  | kotlin compiler plugin                      |
-| [maven-javadoc](https://maven.apache.org/plugins/maven-javadoc-plugin/)                                                    | `3.11.1` | include javadoc                             |
-| [dokka](https://kotlinlang.org/docs/dokka-maven.html#apply-dokka)                                                          | `1.9.20` | use dokka for javadoc                       |
+| [maven-javadoc](https://maven.apache.org/plugins/maven-javadoc-plugin/)                                                    | `3.11.2` | include javadoc                             |
+| [dokka](https://kotlinlang.org/docs/dokka-maven.html#apply-dokka)                                                          | `2.0.0`  | use dokka for javadoc                       |
 | [avro-maven](https://avro.apache.org/docs/1.11.1/getting-started-java/)                                                    | `1.12.0` | avro code generation                        |
 | [maven-clean](https://maven.apache.org/plugins/maven-clean-plugin/)                                                        | `3.4.0`  | clean project                               |
 | [maven-dependency](https://maven.apache.org/plugins/maven-dependency-plugin/)                                              | `3.8.1`  | check/update dependency versions            |
@@ -89,8 +89,8 @@ see [official plugins](https://maven.apache.org/plugins/index.html)
 | [build-helper](https://www.mojohaus.org/build-helper-maven-plugin/)                                                        | `3.6.0`  | define source directories                   |
 | [gitflow-maven](https://aleksandr-m.github.io/gitflow-maven-plugin/)                                                       | `1.21.0` | gitflow relase master/develop/release       |
 | [jacoco-maven](https://www.eclemma.org/jacoco/trunk/doc/maven.html)                                                        | `0.8.12` | test reports                                |
-| [jgiven-maven](https://jgiven.org/userguide/#_maven)                                                                       | `1.3.1`  | jgiven test reports                         |
-| [openapi-generator](https://github.com/OpenAPITools/openapi-generator/tree/master/modules/openapi-generator-maven-plugin)  | `7.9.0`  | openapi/swagger code generation             |
+| [jgiven-maven](https://jgiven.org/userguide/#_maven)                                                                       | `2.0.1`  | jgiven test reports                         |
+| [openapi-generator](https://github.com/OpenAPITools/openapi-generator/tree/master/modules/openapi-generator-maven-plugin)  | `7.10.0` | openapi/swagger code generation             |
 | [properties-maven](https://www.mojohaus.org/properties-maven-plugin/)                                                      | `1.2.1`  | generate build properties for project       |
 | [versions-maven](https://www.mojohaus.org/versions/versions-maven-plugin/index.html)                                       | `2.18.0` | modify versions of project                  |
 | [nexus-staging-maven](https://github.com/sonatype/nexus-maven-plugins/blob/main/staging/maven-plugin/README.md)            | `1.6.13` | release on maven central                    |
