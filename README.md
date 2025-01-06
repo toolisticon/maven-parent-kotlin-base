@@ -53,8 +53,8 @@ are included.
 |-----------------------|---------|-------------------------------------------|
 | kotlin                | `2.1.0` | used in kotlin compiler und kotlin libs.  |
 | java                  | `17`    | compile target                            |
-| kotlinx-coroutines    | `1.9.1` | all BOM libs explicitly listed            |
-| kotlinx-serialization | `1.7.3` | all BOM libs explicitly listed            |
+| kotlinx-coroutines    | `1.10.1` | all BOM libs explicitly listed            |
+| kotlinx-serialization | `1.8.0` | all BOM libs explicitly listed            |
 | kotlin-logging        | `3.0.5` | logging support                           |
 
 ## Libs
