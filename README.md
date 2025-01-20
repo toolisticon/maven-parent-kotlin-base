@@ -90,7 +90,7 @@ see [official plugins](https://maven.apache.org/plugins/index.html)
 | [gitflow-maven](https://aleksandr-m.github.io/gitflow-maven-plugin/)                                                       | `1.21.0` | gitflow relase master/develop/release       |
 | [jacoco-maven](https://www.eclemma.org/jacoco/trunk/doc/maven.html)                                                        | `0.8.12` | test reports                                |
 | [jgiven-maven](https://jgiven.org/userguide/#_maven)                                                                       | `2.0.1`  | jgiven test reports                         |
-| [openapi-generator](https://github.com/OpenAPITools/openapi-generator/tree/master/modules/openapi-generator-maven-plugin)  | `7.10.0` | openapi/swagger code generation             |
+| [openapi-generator](https://github.com/OpenAPITools/openapi-generator/tree/master/modules/openapi-generator-maven-plugin)  | `7.11.0` | openapi/swagger code generation             |
 | [properties-maven](https://www.mojohaus.org/properties-maven-plugin/)                                                      | `1.2.1`  | generate build properties for project       |
 | [versions-maven](https://www.mojohaus.org/versions/versions-maven-plugin/index.html)                                       | `2.18.0` | modify versions of project                  |
 | [nexus-staging-maven](https://github.com/sonatype/nexus-maven-plugins/blob/main/staging/maven-plugin/README.md)            | `1.6.13` | release on maven central                    |
