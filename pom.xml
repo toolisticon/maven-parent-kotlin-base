@@ -4,7 +4,7 @@
 
   <groupId>io.toolisticon.maven.parent</groupId>
   <artifactId>maven-parent-kotlin-base</artifactId>
-  <version>2024.12.2</version>
+  <version>2025.1.0</version>
 
   <name>Maven Parent - Kotlin Base</name>
   <description>Maven parent for a holistic kotlin lib project.</description>
@@ -47,11 +47,11 @@
     <java.version>17</java.version>
     <jdk.version>17</jdk.version>
 
-    <kotlinx-serialization.version>1.7.3</kotlinx-serialization.version>
+    <kotlinx-serialization.version>1.8.0</kotlinx-serialization.version>
     <kotlinx-coroutines.version>1.10.1</kotlinx-coroutines.version>
     <kotlin-logging.version>3.0.5</kotlin-logging.version>
 
-    <jetbrains-annotations.version>26.0.1</jetbrains-annotations.version>
+    <jetbrains-annotations.version>26.0.2</jetbrains-annotations.version>
 
     <!-- TEST -->
     <junit5.version>5.11.4</junit5.version>
@@ -856,7 +856,7 @@
         <plugin>
           <groupId>org.openapitools</groupId>
           <artifactId>openapi-generator-maven-plugin</artifactId>
-          <version>7.10.0</version>
+          <version>7.11.0</version>
         </plugin>
 
         <!-- [GENERATOR]: PROPERTIES (writes maven properties to src) (version,execution) -->
