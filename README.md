@@ -51,7 +51,7 @@ are included.
 
 | Type                  | Version | Info                                      |
 |-----------------------|---------|-------------------------------------------|
-| kotlin                | `2.1.0` | used in kotlin compiler und kotlin libs.  |
+| kotlin                | `2.1.10` | used in kotlin compiler und kotlin libs.  |
 | java                  | `17`    | compile target                            |
 | kotlinx-coroutines    | `1.10.1` | all BOM libs explicitly listed            |
 | kotlinx-serialization | `1.8.0` | all BOM libs explicitly listed            |
