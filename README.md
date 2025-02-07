@@ -49,13 +49,13 @@ are included.
 
 ### Language
 
-| Type                  | Version | Info                                      |
-|-----------------------|---------|-------------------------------------------|
+| Type                  | Version  | Info                                      |
+|-----------------------|----------|-------------------------------------------|
 | kotlin                | `2.1.10` | used in kotlin compiler und kotlin libs.  |
-| java                  | `17`    | compile target                            |
+| java                  | `17`     | compile target                            |
 | kotlinx-coroutines    | `1.10.1` | all BOM libs explicitly listed            |
-| kotlinx-serialization | `1.8.0` | all BOM libs explicitly listed            |
-| kotlin-logging        | `3.0.5` | logging support                           |
+| kotlinx-serialization | `1.8.0`  | all BOM libs explicitly listed            |
+| [kotlin-logging](https://github.com/oshai/kotlin-logging)    | `7.0.4`  | logging support                           |
 
 ## Libs
 
