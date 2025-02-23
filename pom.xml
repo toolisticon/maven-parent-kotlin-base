@@ -4,7 +4,7 @@
 
   <groupId>io.toolisticon.maven.parent</groupId>
   <artifactId>maven-parent-kotlin-base</artifactId>
-  <version>2025.2.0</version>
+  <version>2025.2.1</version>
 
   <name>Maven Parent - Kotlin Base</name>
   <description>Maven parent for a holistic kotlin lib project.</description>
@@ -54,7 +54,7 @@
     <jetbrains-annotations.version>26.0.2</jetbrains-annotations.version>
 
     <!-- TEST -->
-    <junit5.version>5.11.4</junit5.version>
+    <junit5.version>5.12.0</junit5.version>
   </properties>
 
   <dependencyManagement>
@@ -488,7 +488,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.13.0</version>
+          <version>3.14.0</version>
           <configuration>
             <encoding>${project.build.sourceEncoding}</encoding>
             <source>${java.version}</source>
@@ -577,7 +577,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-clean-plugin</artifactId>
-          <version>3.4.0</version>
+          <version>3.4.1</version>
         </plugin>
 
         <!-- DEPENDENCY (version) -->
