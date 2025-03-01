@@ -81,7 +81,7 @@ see [official plugins](https://maven.apache.org/plugins/index.html)
 | [maven-enforcer](https://maven.apache.org/enforcer/maven-enforcer-plugin/)                                                 | `3.4.1`  | enforce project setup                       |
 | [maven-failsafe](https://maven.apache.org/surefire/maven-failsafe-plugin/)                                                 | `3.5.2`  | testing                                     |
 | [maven-gpg](https://maven.apache.org/plugins/maven-gpg-plugin/)                                                            | `3.2.7`  | sign artifacts for release                  |
-| [maven-install](https://maven.apache.org/plugins/maven-install-plugin/)                                                    | `3.1.3`  | -                                           |
+| [maven-install](https://maven.apache.org/plugins/maven-install-plugin/)                                                    | `3.1.4`  | -                                           |
 | [maven-jar-plugin](https://maven.apache.org/plugins/maven-jar-plugin/)                                                     | `3.4.2`  | -                                           |
 | [maven-resources](https://maven.apache.org/plugins/maven-resources-plugin/)                                                | `3.3.1`  | filter resources                            |
 | [maven-source](https://maven.apache.org/plugins/maven-source-plugin/)                                                       | `3.3.1`  | add sources to artifacts                    |
