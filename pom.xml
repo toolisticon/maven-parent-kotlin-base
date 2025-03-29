@@ -4,7 +4,7 @@
 
   <groupId>io.toolisticon.maven.parent</groupId>
   <artifactId>maven-parent-kotlin-base</artifactId>
-  <version>2025.3.0</version>
+  <version>2025.3.1</version>
 
   <name>Maven Parent - Kotlin Base</name>
   <description>Maven parent for a holistic kotlin lib project.</description>
@@ -39,7 +39,7 @@
     <kp.skipITests>false</kp.skipITests>
 
     <!-- LANGUAGE VERSIONS -->
-    <kotlin.version>2.1.10</kotlin.version>
+    <kotlin.version>2.1.20</kotlin.version>
     <kotlin.compiler.apiVersion>2.1</kotlin.compiler.apiVersion>
     <kotlin.compiler.languageVersion>2.1</kotlin.compiler.languageVersion>
     <kotlin.compiler.incremental>${kp.compile.useIncrementalKotlinCompiler}</kotlin.compiler.incremental>
@@ -49,12 +49,12 @@
 
     <kotlinx-serialization.version>1.8.0</kotlinx-serialization.version>
     <kotlinx-coroutines.version>1.10.1</kotlinx-coroutines.version>
-    <kotlin-logging.version>7.0.4</kotlin-logging.version>
+    <kotlin-logging.version>7.0.5</kotlin-logging.version>
 
     <jetbrains-annotations.version>26.0.2</jetbrains-annotations.version>
 
     <!-- TEST -->
-    <junit5.version>5.12.0</junit5.version>
+    <junit5.version>5.12.1</junit5.version>
   </properties>
 
   <dependencyManagement>
