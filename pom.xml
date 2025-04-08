@@ -48,7 +48,7 @@
     <jdk.version>17</jdk.version>
 
     <kotlinx-serialization.version>1.8.1</kotlinx-serialization.version>
-    <kotlinx-coroutines.version>1.10.1</kotlinx-coroutines.version>
+    <kotlinx-coroutines.version>1.10.2</kotlinx-coroutines.version>
     <kotlin-logging.version>7.0.6</kotlin-logging.version>
 
     <jetbrains-annotations.version>26.0.2</jetbrains-annotations.version>
