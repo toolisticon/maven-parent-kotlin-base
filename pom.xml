@@ -4,7 +4,7 @@
 
   <groupId>io.toolisticon.maven.parent</groupId>
   <artifactId>maven-parent-kotlin-base</artifactId>
-  <version>2025.3.1</version>
+  <version>2025.4.0</version>
 
   <name>Maven Parent - Kotlin Base</name>
   <description>Maven parent for a holistic kotlin lib project.</description>
@@ -47,14 +47,14 @@
     <java.version>17</java.version>
     <jdk.version>17</jdk.version>
 
-    <kotlinx-serialization.version>1.8.0</kotlinx-serialization.version>
-    <kotlinx-coroutines.version>1.10.1</kotlinx-coroutines.version>
-    <kotlin-logging.version>7.0.5</kotlin-logging.version>
+    <kotlinx-serialization.version>1.8.1</kotlinx-serialization.version>
+    <kotlinx-coroutines.version>1.10.2</kotlinx-coroutines.version>
+    <kotlin-logging.version>7.0.7</kotlin-logging.version>
 
     <jetbrains-annotations.version>26.0.2</jetbrains-annotations.version>
 
     <!-- TEST -->
-    <junit5.version>5.12.1</junit5.version>
+    <junit5.version>5.12.2</junit5.version>
   </properties>
 
   <dependencyManagement>
@@ -633,7 +633,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-surefire-plugin</artifactId>
-          <version>3.5.2</version>
+          <version>3.5.3</version>
           <configuration>
             <useSystemClassLoader>false</useSystemClassLoader>
             <shutdown>kill</shutdown>
@@ -654,7 +654,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-failsafe-plugin</artifactId>
-          <version>3.5.2</version>
+          <version>3.5.3</version>
           <executions>
             <execution>
               <id>integration-tests</id>
@@ -752,7 +752,7 @@
         <plugin>
           <groupId>org.jacoco</groupId>
           <artifactId>jacoco-maven-plugin</artifactId>
-          <version>0.8.12</version>
+          <version>0.8.13</version>
           <executions>
             <execution>
               <id>pre-unit-test</id>
