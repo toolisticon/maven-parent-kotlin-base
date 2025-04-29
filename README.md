@@ -53,16 +53,16 @@ are included.
 |-----------------------|----------|-------------------------------------------|
 | kotlin                | `2.1.20` | used in kotlin compiler und kotlin libs.  |
 | java                  | `17`     | compile target                            |
-| kotlinx-coroutines    | `1.10.1` | all BOM libs explicitly listed            |
+| kotlinx-coroutines    | `1.10.2` | all BOM libs explicitly listed            |
 | kotlinx-serialization | `1.8.1`  | all BOM libs explicitly listed            |
-| [kotlin-logging](https://github.com/oshai/kotlin-logging)    | `7.0.6`  | logging support                           |
+| [kotlin-logging](https://github.com/oshai/kotlin-logging)    | `7.0.7`  | logging support                           |
 
 ## Libs
 
 | Lib    | Version  | Info                                 |
 |--------|----------|--------------------------------------|
 | jetbrains-annotations | `26.0.1` | common annotations  |
-| junit5 | `5.12.1` | bom dependency, unit testing       |
+| junit5 | `5.12.2` | bom dependency, unit testing       |
 
 ## Plugins
 
@@ -88,7 +88,7 @@ see [official plugins](https://maven.apache.org/plugins/index.html)
 | [maven-surefire](https://maven.apache.org/surefire/maven-surefire-plugin/)                                                 | `3.5.3`  | testing                                     |
 | [build-helper](https://www.mojohaus.org/build-helper-maven-plugin/)                                                        | `3.6.0`  | define source directories                   |
 | [gitflow-maven](https://aleksandr-m.github.io/gitflow-maven-plugin/)                                                       | `1.21.0` | gitflow relase master/develop/release       |
-| [jacoco-maven](https://www.eclemma.org/jacoco/trunk/doc/maven.html)                                                        | `0.8.12` | test reports                                |
+| [jacoco-maven](https://www.eclemma.org/jacoco/trunk/doc/maven.html)                                                        | `0.8.13` | test reports                                |
 | [jgiven-maven](https://jgiven.org/userguide/#_maven)                                                                       | `2.0.2`  | jgiven test reports                         |
 | [openapi-generator](https://github.com/OpenAPITools/openapi-generator/tree/master/modules/openapi-generator-maven-plugin)  | `7.11.0` | openapi/swagger code generation             |
 | [properties-maven](https://www.mojohaus.org/properties-maven-plugin/)                                                      | `1.2.1`  | generate build properties for project       |
