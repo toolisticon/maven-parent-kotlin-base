@@ -811,6 +811,24 @@
           <version>3.6.0</version>
         </plugin>
 
+        <plugin>
+          <groupId>com.github.hazendaz.maven</groupId>
+          <artifactId>directory-maven-plugin</artifactId>
+          <version>1.2.1</version>
+          <executions>
+            <execution>
+              <id>directories</id>
+              <goals>
+                <goal>execution-root</goal>
+              </goals>
+              <phase>initialize</phase>
+              <configuration>
+                <property>project.root.dir</property>
+              </configuration>
+            </execution>
+          </executions>
+        </plugin>
+
         <!-- [RELEASE] GITFLOW (version, config) -->
         <plugin>
           <groupId>com.amashchenko.maven.plugin</groupId>
