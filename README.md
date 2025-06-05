@@ -87,7 +87,7 @@ see [official plugins](https://maven.apache.org/plugins/index.html)
 | [maven-source](https://maven.apache.org/plugins/maven-source-plugin/)                                                   | `3.3.1`  | add sources to artifacts                    |
 | [maven-surefire](https://maven.apache.org/surefire/maven-surefire-plugin/)                                              | `3.5.3`  | testing                                     |
 | [directory-maven-plugin](https://github.com/hazendaz/directory-maven-plugin)                                                                   | `1.2.1`  | expose root dir for multimudule | 
-| [build-helper](https://www.mojohaus.org/build-helper-maven-plugin/)                                                     | `3.6.0`  | define source directories                   |
+| [build-helper](https://www.mojohaus.org/build-helper-maven-plugin/)                                                     | `3.6.1`  | define source directories                   |
 | [gitflow-maven](https://aleksandr-m.github.io/gitflow-maven-plugin/)                                                    | `1.21.0` | gitflow relase master/develop/release       |
 | [jacoco-maven](https://www.eclemma.org/jacoco/trunk/doc/maven.html)                                                     | `0.8.13` | test reports                                |
 | [jgiven-maven](https://jgiven.org/userguide/#_maven)                                                                    | `2.0.2`  | jgiven test reports                         |
