@@ -62,7 +62,7 @@ are included.
 | Lib    | Version  | Info                                 |
 |--------|----------|--------------------------------------|
 | jetbrains-annotations | `26.0.1` | common annotations  |
-| junit5 | `5.13.20` | bom dependency, unit testing       |
+| junit5 | `5.13.1` | bom dependency, unit testing       |
 
 ## Plugins
 
