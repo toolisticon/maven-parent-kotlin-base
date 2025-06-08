@@ -4,7 +4,7 @@
 
   <groupId>io.toolisticon.maven.parent</groupId>
   <artifactId>maven-parent-kotlin-base</artifactId>
-  <version>2025.5.0</version>
+  <version>2025.6.0</version>
 
   <name>Maven Parent - Kotlin Base</name>
   <description>Maven parent for a holistic kotlin lib project.</description>
@@ -54,7 +54,7 @@
     <jetbrains-annotations.version>26.0.2</jetbrains-annotations.version>
 
     <!-- TEST -->
-    <junit5.version>5.12.2</junit5.version>
+    <junit5.version>5.13.1</junit5.version>
   </properties>
 
   <dependencyManagement>
@@ -577,7 +577,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-clean-plugin</artifactId>
-          <version>3.4.1</version>
+          <version>3.5.0</version>
         </plugin>
 
         <!-- DEPENDENCY (version) -->
@@ -808,7 +808,7 @@
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>build-helper-maven-plugin</artifactId>
-          <version>3.6.0</version>
+          <version>3.6.1</version>
         </plugin>
 
         <!-- [RELEASE] GITFLOW (version, config) -->
