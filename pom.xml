@@ -833,6 +833,12 @@
           </configuration>
         </plugin>
 
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>flatten-maven-plugin</artifactId>
+          <version>1.7.0</version>
+        </plugin>
+
         <!-- [TEST] - JGIVEN (version, configuration, execution) -->
         <plugin>
           <groupId>com.tngtech.jgiven</groupId>
