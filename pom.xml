@@ -51,7 +51,7 @@
     <java.version>17</java.version>
     <jdk.version>17</jdk.version>
 
-    <kotlinx-serialization.version>1.8.1</kotlinx-serialization.version>
+    <kotlinx-serialization.version>1.9.0</kotlinx-serialization.version>
     <kotlinx-coroutines.version>1.10.2</kotlinx-coroutines.version>
     <kotlin-logging.version>7.0.7</kotlin-logging.version>
 
