@@ -43,7 +43,7 @@
 
     <!-- FIXME: 2.1.21 was the last release with kotlin-annotation-processing-compiler -->
     <kotlin-annotation-processing-compiler.version>2.1.21</kotlin-annotation-processing-compiler.version>
-    <version>${kotlin.version}</version>
+
     <kotlin.compiler.apiVersion>2.1</kotlin.compiler.apiVersion>
     <kotlin.compiler.languageVersion>2.1</kotlin.compiler.languageVersion>
     <kotlin.compiler.incremental>${kp.compile.useIncrementalKotlinCompiler}</kotlin.compiler.incremental>
