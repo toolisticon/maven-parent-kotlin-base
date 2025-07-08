@@ -4,7 +4,7 @@
 
   <groupId>io.toolisticon.maven.parent</groupId>
   <artifactId>maven-parent-kotlin-base</artifactId>
-  <version>2025.7.1</version>
+  <version>2025.7.2</version>
 
   <name>Maven Parent - Kotlin Base</name>
   <description>Maven parent for a holistic kotlin lib project.</description>
@@ -41,9 +41,6 @@
     <!-- LANGUAGE VERSIONS -->
     <kotlin.version>2.2.0</kotlin.version>
 
-    <!-- FIXME: 2.1.21 was the last release with kotlin-annotation-processing-compiler -->
-    <kotlin-annotation-processing-compiler.version>2.1.21</kotlin-annotation-processing-compiler.version>
-    <version>${kotlin.version}</version>
     <kotlin.compiler.apiVersion>2.1</kotlin.compiler.apiVersion>
     <kotlin.compiler.languageVersion>2.1</kotlin.compiler.languageVersion>
     <kotlin.compiler.incremental>${kp.compile.useIncrementalKotlinCompiler}</kotlin.compiler.incremental>
@@ -58,7 +55,7 @@
     <jetbrains-annotations.version>26.0.2</jetbrains-annotations.version>
 
     <!-- TEST -->
-    <junit5.version>5.13.2</junit5.version>
+    <junit5.version>5.13.3</junit5.version>
   </properties>
 
   <dependencyManagement>
@@ -196,11 +193,6 @@
         <groupId>org.jetbrains.kotlin</groupId>
         <artifactId>kotlin-annotation-processing-embeddable</artifactId>
         <version>${kotlin.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.jetbrains.kotlin</groupId>
-        <artifactId>kotlin-annotation-processing-compiler</artifactId>
-        <version>${kotlin-annotation-processing-compiler.version}</version>
       </dependency>
 
       <!-- KOTLIN SERIALIZATION -->
@@ -612,7 +604,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-enforcer-plugin</artifactId>
-          <version>3.5.0</version>
+          <version>3.6.0</version>
           <executions>
             <execution>
               <id>enforce-maven</id>
@@ -686,7 +678,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-gpg-plugin</artifactId>
-          <version>3.2.7</version>
+          <version>3.2.8</version>
           <configuration>
             <!-- pass -Dgpg.keyname=.. and -Dgpg.passphrase=... -->
             <gpgArguments>

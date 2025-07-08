@@ -5,7 +5,8 @@ A common maven parent for usage in kotlin library or application projects.
 [![stable](https://img.shields.io/badge/lifecycle-STABLE-green.svg)](https://github.com/holisticon#open-source-lifecycle)
 [![Build Status](https://github.com/toolisticon/maven-parent-kotlin-base/workflows/Development%20branches/badge.svg)](https://github.com/toolisticon/maven-parent-kotlin-base/actions)
 [![sponsored](https://img.shields.io/badge/sponsoredBy-Holisticon-RED.svg)](https://holisticon.de/)
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.toolisticon.maven.parent/maven-parent-kotlin-base/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.toolisticon.maven.parent/maven-parent-kotlin-base)
+[![Kotlin](https://img.shields.io/badge/kotlin-2.2.0-blue.svg?logo=kotlin)](http://kotlinlang.org)
+[![Maven Central Version](https://img.shields.io/maven-central/v/io.toolisticon.maven.parent/maven-parent-kotlin-base)](https://central.sonatype.com/artifact/io.toolisticon.maven.parent/maven-parent-kotlin-base)
 
 ## About
 
@@ -51,10 +52,10 @@ are included.
 
 | Type                  | Version  | Info                                      |
 |-----------------------|----------|-------------------------------------------|
-| kotlin                | `2.1.21` | used in kotlin compiler und kotlin libs.  |
+| kotlin                | `2.2.0` | used in kotlin compiler und kotlin libs.  |
 | java                  | `17`     | compile target                            |
 | kotlinx-coroutines    | `1.10.2` | all BOM libs explicitly listed            |
-| kotlinx-serialization | `1.8.1`  | all BOM libs explicitly listed            |
+| kotlinx-serialization | `1.9.0`  | all BOM libs explicitly listed            |
 | [kotlin-logging](https://github.com/oshai/kotlin-logging)    | `7.0.7`  | logging support                           |
 
 ## Libs
@@ -62,7 +63,7 @@ are included.
 | Lib    | Version  | Info                                 |
 |--------|----------|--------------------------------------|
 | jetbrains-annotations | `26.0.1` | common annotations  |
-| junit5 | `5.13.1` | bom dependency, unit testing       |
+| junit5 | `5.13.2` | bom dependency, unit testing       |
 
 ## Plugins
 
@@ -78,9 +79,9 @@ see [official plugins](https://maven.apache.org/plugins/index.html)
 | [maven-clean](https://maven.apache.org/plugins/maven-clean-plugin/)                                                       | `3.5.0`  | clean project                               |
 | [maven-dependency](https://maven.apache.org/plugins/maven-dependency-plugin/)                                             | `3.8.1`  | check/update dependency versions            |
 | [maven-deploy](https://maven.apache.org/plugins/maven-deploy-plugin/)                                                     | `3.1.4`  | -                                           |
-| [maven-enforcer](https://maven.apache.org/enforcer/maven-enforcer-plugin/)                                                | `3.4.1`  | enforce project setup                       |
+| [maven-enforcer](https://maven.apache.org/enforcer/maven-enforcer-plugin/)                                                | `3.6.0`  | enforce project setup                       |
 | [maven-failsafe](https://maven.apache.org/surefire/maven-failsafe-plugin/)                                                | `3.5.3`  | testing                                     |
-| [maven-gpg](https://maven.apache.org/plugins/maven-gpg-plugin/)                                                           | `3.2.7`  | sign artifacts for release                  |
+| [maven-gpg](https://maven.apache.org/plugins/maven-gpg-plugin/)                                                           | `3.2.8`  | sign artifacts for release                  |
 | [maven-install](https://maven.apache.org/plugins/maven-install-plugin/)                                                   | `3.1.4`  | -                                           |
 | [maven-jar-plugin](https://maven.apache.org/plugins/maven-jar-plugin/)                                                    | `3.4.2`  | -                                           |
 | [maven-resources](https://maven.apache.org/plugins/maven-resources-plugin/)                                               | `3.3.1`  | filter resources                            |
@@ -91,12 +92,12 @@ see [official plugins](https://maven.apache.org/plugins/index.html)
 | [gitflow-maven](https://aleksandr-m.github.io/gitflow-maven-plugin/)                                                      | `1.21.0` | gitflow relase master/develop/release       |
 | [jacoco-maven](https://www.eclemma.org/jacoco/trunk/doc/maven.html)                                                       | `0.8.13` | test reports                                |
 | [jgiven-maven](https://jgiven.org/userguide/#_maven)                                                                      | `2.0.2`  | jgiven test reports                         |
-| [openapi-generator](https://github.com/OpenAPITools/openapi-generator/tree/master/modules/openapi-generator-maven-plugin) | `7.11.0` | openapi/swagger code generation             |
+| [openapi-generator](https://github.com/OpenAPITools/openapi-generator/tree/master/modules/openapi-generator-maven-plugin) | `7.14.0` | openapi/swagger code generation             |
 | [properties-maven](https://www.mojohaus.org/properties-maven-plugin/)                                                     | `1.2.1`  | generate build properties for project       |
 | [versions-maven](https://www.mojohaus.org/versions/versions-maven-plugin/index.html)                                      | `2.18.0` | modify versions of project                  |
 | [nexus-staging-maven](https://github.com/sonatype/nexus-maven-plugins/blob/main/staging/maven-plugin/README.md)           | `1.6.13` | release on maven central                    |
 | [maven-wrapper](https://maven.apache.org/wrapper/maven-wrapper-plugin/plugin-info.html)                                   | `3.3.2`  | execute maven without central installation  |
-| [flatten-maven](https://www.mojohaus.org/flatten-maven-plugin/)                                   | `1.7.0`  | flatten the released pom                    |
+| [flatten-maven](https://www.mojohaus.org/flatten-maven-plugin/)                                   | `1.7.1`  | flatten the released pom                    |
 
 ## Release a new version
 
