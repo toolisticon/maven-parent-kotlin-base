@@ -56,14 +56,14 @@ are included.
 | java                  | `17`     | compile target                            |
 | kotlinx-coroutines    | `1.10.2` | all BOM libs explicitly listed            |
 | kotlinx-serialization | `1.9.0`  | all BOM libs explicitly listed            |
-| [kotlin-logging](https://github.com/oshai/kotlin-logging)    | `7.0.7`  | logging support                           |
+| [kotlin-logging](https://github.com/oshai/kotlin-logging)    | `7.0.10`  | logging support                           |
 
 ## Libs
 
 | Lib    | Version  | Info                                 |
 |--------|----------|--------------------------------------|
 | jetbrains-annotations | `26.0.1` | common annotations  |
-| junit5 | `5.13.2` | bom dependency, unit testing       |
+| junit5 | `5.13.4` | bom dependency, unit testing       |
 
 ## Plugins
 
@@ -97,7 +97,7 @@ see [official plugins](https://maven.apache.org/plugins/index.html)
 | [versions-maven](https://www.mojohaus.org/versions/versions-maven-plugin/index.html)                                      | `2.18.0` | modify versions of project                  |
 | [nexus-staging-maven](https://github.com/sonatype/nexus-maven-plugins/blob/main/staging/maven-plugin/README.md)           | `1.6.13` | release on maven central                    |
 | [maven-wrapper](https://maven.apache.org/wrapper/maven-wrapper-plugin/plugin-info.html)                                   | `3.3.2`  | execute maven without central installation  |
-| [flatten-maven](https://www.mojohaus.org/flatten-maven-plugin/)                                   | `1.7.1`  | flatten the released pom                    |
+| [flatten-maven](https://www.mojohaus.org/flatten-maven-plugin/)                                   | `1.7.2`  | flatten the released pom                    |
 
 ## Release a new version
 
