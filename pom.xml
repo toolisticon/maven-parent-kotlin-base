@@ -50,7 +50,7 @@
 
     <kotlinx-serialization.version>1.9.0</kotlinx-serialization.version>
     <kotlinx-coroutines.version>1.10.2</kotlinx-coroutines.version>
-    <kotlin-logging.version>7.0.11</kotlin-logging.version>
+    <kotlin-logging.version>7.0.12</kotlin-logging.version>
 
     <jetbrains-annotations.version>26.0.2</jetbrains-annotations.version>
 
