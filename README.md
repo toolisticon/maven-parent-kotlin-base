@@ -56,7 +56,7 @@ are included.
 | java                  | `17`     | compile target                            |
 | kotlinx-coroutines    | `1.10.2` | all BOM libs explicitly listed            |
 | kotlinx-serialization | `1.9.0`  | all BOM libs explicitly listed            |
-| [kotlin-logging](https://github.com/oshai/kotlin-logging)    | `7.0.10`  | logging support                           |
+| [kotlin-logging](https://github.com/oshai/kotlin-logging)    | `7.0.12`  | logging support                           |
 
 ## Libs
 
