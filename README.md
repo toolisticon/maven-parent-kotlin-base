@@ -52,18 +52,18 @@ are included.
 
 | Type                  | Version  | Info                                      |
 |-----------------------|----------|-------------------------------------------|
-| kotlin                | `2.2.0` | used in kotlin compiler und kotlin libs.  |
+| kotlin                | `2.2.10` | used in kotlin compiler und kotlin libs.  |
 | java                  | `17`     | compile target                            |
 | kotlinx-coroutines    | `1.10.2` | all BOM libs explicitly listed            |
 | kotlinx-serialization | `1.9.0`  | all BOM libs explicitly listed            |
-| [kotlin-logging](https://github.com/oshai/kotlin-logging)    | `7.0.7`  | logging support                           |
+| [kotlin-logging](https://github.com/oshai/kotlin-logging)    | `7.0.13`  | logging support                           |
 
 ## Libs
 
 | Lib    | Version  | Info                                 |
 |--------|----------|--------------------------------------|
 | jetbrains-annotations | `26.0.1` | common annotations  |
-| junit5 | `5.13.2` | bom dependency, unit testing       |
+| junit5 | `5.13.4` | bom dependency, unit testing       |
 
 ## Plugins
 
@@ -73,13 +73,13 @@ see [official plugins](https://maven.apache.org/plugins/index.html)
 |---------------------------------------------------------------------------------------------------------------------------|----------|---------------------------------------------|
 | [maven-compiler](https://maven.apache.org/plugins/maven-compiler-plugin/)                                                 | `3.14.0` | disabling java compiler for kotlin projects |
 | [kotlin-maven-plugin](https://kotlinlang.org/docs/maven.html)                                                             | `2.0.0`  | kotlin compiler plugin                      |
-| [maven-javadoc](https://maven.apache.org/plugins/maven-javadoc-plugin/)                                                   | `3.11.2` | include javadoc                             |
+| [maven-javadoc](https://maven.apache.org/plugins/maven-javadoc-plugin/)                                                   | `3.11.3` | include javadoc                             |
 | [dokka](https://kotlinlang.org/docs/dokka-maven.html#apply-dokka)                                                         | `2.0.0`  | use dokka for javadoc                       |
 | [avro-maven](https://avro.apache.org/docs/1.11.1/getting-started-java/)                                                   | `1.12.0` | avro code generation                        |
 | [maven-clean](https://maven.apache.org/plugins/maven-clean-plugin/)                                                       | `3.5.0`  | clean project                               |
 | [maven-dependency](https://maven.apache.org/plugins/maven-dependency-plugin/)                                             | `3.8.1`  | check/update dependency versions            |
 | [maven-deploy](https://maven.apache.org/plugins/maven-deploy-plugin/)                                                     | `3.1.4`  | -                                           |
-| [maven-enforcer](https://maven.apache.org/enforcer/maven-enforcer-plugin/)                                                | `3.6.0`  | enforce project setup                       |
+| [maven-enforcer](https://maven.apache.org/enforcer/maven-enforcer-plugin/)                                                | `3.6.1`  | enforce project setup                       |
 | [maven-failsafe](https://maven.apache.org/surefire/maven-failsafe-plugin/)                                                | `3.5.3`  | testing                                     |
 | [maven-gpg](https://maven.apache.org/plugins/maven-gpg-plugin/)                                                           | `3.2.8`  | sign artifacts for release                  |
 | [maven-install](https://maven.apache.org/plugins/maven-install-plugin/)                                                   | `3.1.4`  | -                                           |
@@ -97,7 +97,7 @@ see [official plugins](https://maven.apache.org/plugins/index.html)
 | [versions-maven](https://www.mojohaus.org/versions/versions-maven-plugin/index.html)                                      | `2.18.0` | modify versions of project                  |
 | [nexus-staging-maven](https://github.com/sonatype/nexus-maven-plugins/blob/main/staging/maven-plugin/README.md)           | `1.6.13` | release on maven central                    |
 | [maven-wrapper](https://maven.apache.org/wrapper/maven-wrapper-plugin/plugin-info.html)                                   | `3.3.2`  | execute maven without central installation  |
-| [flatten-maven](https://www.mojohaus.org/flatten-maven-plugin/)                                   | `1.7.1`  | flatten the released pom                    |
+| [flatten-maven](https://www.mojohaus.org/flatten-maven-plugin/)                                   | `1.7.2`  | flatten the released pom                    |
 
 ## Release a new version
 
