@@ -611,7 +611,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-wrapper-plugin</artifactId>
-          <version>3.3.2</version>
+          <version>3.3.3</version>
         </plugin>
 
         <!-- ENFORCE (version, java target, maven target) -->
