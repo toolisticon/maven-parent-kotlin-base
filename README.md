@@ -5,7 +5,7 @@ A common maven parent for usage in kotlin library or application projects.
 [![stable](https://img.shields.io/badge/lifecycle-STABLE-green.svg)](https://github.com/holisticon#open-source-lifecycle)
 [![Build Status](https://github.com/toolisticon/maven-parent-kotlin-base/workflows/Development%20branches/badge.svg)](https://github.com/toolisticon/maven-parent-kotlin-base/actions)
 [![sponsored](https://img.shields.io/badge/sponsoredBy-Holisticon-RED.svg)](https://holisticon.de/)
-[![Kotlin](https://img.shields.io/badge/kotlin-2.2.0-blue.svg?logo=kotlin)](http://kotlinlang.org)
+[![Kotlin](https://img.shields.io/badge/kotlin-2.2.10-blue.svg?logo=kotlin)](http://kotlinlang.org)
 [![Maven Central Version](https://img.shields.io/maven-central/v/io.toolisticon.maven.parent/maven-parent-kotlin-base)](https://central.sonatype.com/artifact/io.toolisticon.maven.parent/maven-parent-kotlin-base)
 
 ## About
@@ -52,7 +52,7 @@ are included.
 
 | Type                  | Version  | Info                                      |
 |-----------------------|----------|-------------------------------------------|
-| kotlin                | `2.2.10` | used in kotlin compiler und kotlin libs.  |
+| kotlin                | `2.2.20` | used in kotlin compiler und kotlin libs.  |
 | java                  | `17`     | compile target                            |
 | kotlinx-coroutines    | `1.10.2` | all BOM libs explicitly listed            |
 | kotlinx-serialization | `1.9.0`  | all BOM libs explicitly listed            |
@@ -62,7 +62,7 @@ are included.
 
 | Lib    | Version  | Info                                 |
 |--------|----------|--------------------------------------|
-| jetbrains-annotations | `26.0.1` | common annotations  |
+| jetbrains-annotations | `26.0.2-1` | common annotations  |
 | junit5 | `5.13.4` | bom dependency, unit testing       |
 
 ## Plugins
@@ -92,11 +92,11 @@ see [official plugins](https://maven.apache.org/plugins/index.html)
 | [gitflow-maven](https://aleksandr-m.github.io/gitflow-maven-plugin/)                                                      | `1.21.0` | gitflow relase master/develop/release       |
 | [jacoco-maven](https://www.eclemma.org/jacoco/trunk/doc/maven.html)                                                       | `0.8.13` | test reports                                |
 | [jgiven-maven](https://jgiven.org/userguide/#_maven)                                                                      | `2.0.2`  | jgiven test reports                         |
-| [openapi-generator](https://github.com/OpenAPITools/openapi-generator/tree/master/modules/openapi-generator-maven-plugin) | `7.14.0` | openapi/swagger code generation             |
+| [openapi-generator](https://github.com/OpenAPITools/openapi-generator/tree/master/modules/openapi-generator-maven-plugin) | `7.15.0` | openapi/swagger code generation             |
 | [properties-maven](https://www.mojohaus.org/properties-maven-plugin/)                                                     | `1.2.1`  | generate build properties for project       |
-| [versions-maven](https://www.mojohaus.org/versions/versions-maven-plugin/index.html)                                      | `2.18.0` | modify versions of project                  |
+| [versions-maven](https://www.mojohaus.org/versions/versions-maven-plugin/index.html)                                      | `2.19.0` | modify versions of project                  |
 | [nexus-staging-maven](https://github.com/sonatype/nexus-maven-plugins/blob/main/staging/maven-plugin/README.md)           | `1.6.13` | release on maven central                    |
-| [maven-wrapper](https://maven.apache.org/wrapper/maven-wrapper-plugin/plugin-info.html)                                   | `3.3.2`  | execute maven without central installation  |
+| [maven-wrapper](https://maven.apache.org/wrapper/maven-wrapper-plugin/plugin-info.html)                                   | `3.3.3`  | execute maven without central installation  |
 | [flatten-maven](https://www.mojohaus.org/flatten-maven-plugin/)                                   | `1.7.2`  | flatten the released pom                    |
 
 ## Release a new version
