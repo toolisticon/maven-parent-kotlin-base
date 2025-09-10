@@ -17,20 +17,14 @@
   <properties>
     <!-- MAVEN PROJECT SETTINGS -->
     <project.encoding>UTF-8</project.encoding>
-    <project.build.sourceEncoding
-    >${project.encoding}</project.build.sourceEncoding>
-    <project.reporting.outputEncoding
-    >${project.encoding}</project.reporting.outputEncoding>
+    <project.build.sourceEncoding>${project.encoding}</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>${project.encoding}</project.reporting.outputEncoding>
 
     <!-- KOTLIN PROJECT (KP) CUSTOM SETTINGS -->
-    <kp.generatedSources
-    >${project.build.directory}/generated-sources</kp.generatedSources>
-    <kp.generatedTestSources
-    >${project.build.directory}/generated-test-sources</kp.generatedTestSources>
-    <kp.generatedResources
-    >${project.build.directory}/generated-resources</kp.generatedResources>
-    <kp.generatedTestResources
-    >${project.build.directory}/generated-test-resources</kp.generatedTestResources>
+    <kp.generatedSources>${project.build.directory}/generated-sources</kp.generatedSources>
+    <kp.generatedTestSources>${project.build.directory}/generated-test-sources</kp.generatedTestSources>
+    <kp.generatedResources>${project.build.directory}/generated-resources</kp.generatedResources>
+    <kp.generatedTestResources>${project.build.directory}/generated-test-resources</kp.generatedTestResources>
 
     <kp.mainSources>${project.basedir}/src/main/kotlin</kp.mainSources>
     <kp.mainResources>${project.basedir}/src/main/resources</kp.mainResources>
@@ -40,22 +34,18 @@
     <!-- set to true to skip deployment (of submodule e.g.) -->
     <kp.plugin.skipDeploy>false</kp.plugin.skipDeploy>
     <kp.plugin.generateBackupPoms>false</kp.plugin.generateBackupPoms>
-    <kp.compile.useIncrementalKotlinCompiler
-    >false</kp.compile.useIncrementalKotlinCompiler>
+    <kp.compile.useIncrementalKotlinCompiler>false</kp.compile.useIncrementalKotlinCompiler>
     <kp.patternClassITest>**/*ITest.*</kp.patternClassITest>
     <kp.patternClassTCTest>**/*TCTest.*</kp.patternClassTCTest>
-    <kp.javaOpenModules
-    >--add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED
-    </kp.javaOpenModules>
+    <kp.javaOpenModules>--add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED</kp.javaOpenModules>
     <kp.skipITests>false</kp.skipITests>
 
     <!-- LANGUAGE VERSIONS -->
-    <kotlin.version>2.2.10</kotlin.version>
+    <kotlin.version>2.2.20</kotlin.version>
 
     <kotlin.compiler.apiVersion>2.2</kotlin.compiler.apiVersion>
     <kotlin.compiler.languageVersion>2.2</kotlin.compiler.languageVersion>
-    <kotlin.compiler.incremental
-    >${kp.compile.useIncrementalKotlinCompiler}</kotlin.compiler.incremental>
+    <kotlin.compiler.incremental>${kp.compile.useIncrementalKotlinCompiler}</kotlin.compiler.incremental>
     <kotlin.compiler.jvmTarget>${java.version}</kotlin.compiler.jvmTarget>
     <java.version>17</java.version>
     <jdk.version>17</jdk.version>
@@ -430,7 +420,8 @@
             <jvmTarget>${java.version}</jvmTarget>
             <apiVersion>${kotlin.compiler.apiVersion}</apiVersion>
             <languageVersion
-            >${kotlin.compiler.languageVersion}</languageVersion>
+            >${kotlin.compiler.languageVersion}
+            </languageVersion>
 
             <!-- Compiler plugins need to be configured on this level for IntelliJ to recognize them -->
             <compilerPlugins>
@@ -445,7 +436,8 @@
               <!--              <option>all-open:annotation=javax.persistence.MappedSuperclass</option>-->
               <!--              <option>all-open:annotation=javax.persistence.Embeddable</option>-->
               <option
-              >all-open:annotation=io.toolisticon.testing.jgiven.JGivenKotlinStage</option>
+              >all-open:annotation=io.toolisticon.testing.jgiven.JGivenKotlinStage
+              </option>
             </pluginOptions>
           </configuration>
 
@@ -654,10 +646,12 @@
             </excludes>
             <!--suppress UnresolvedMavenProperty -->
             <argLine
-            >${surefireArgLine} ${kp.javaOpenModules} -Djava.awt.headless=true -XX:+StartAttachListener</argLine>
+            >${surefireArgLine} ${kp.javaOpenModules} -Djava.awt.headless=true -XX:+StartAttachListener
+            </argLine>
             <systemPropertyVariables>
               <jgiven.report.dir
-              >${project.build.directory}/jgiven-reports/json</jgiven.report.dir>
+              >${project.build.directory}/jgiven-reports/json
+              </jgiven.report.dir>
             </systemPropertyVariables>
           </configuration>
         </plugin>
@@ -676,17 +670,20 @@
               <configuration>
                 <skip>${kp.skipITests}</skip>
                 <classesDirectory
-                >${project.build.outputDirectory}</classesDirectory>
+                >${project.build.outputDirectory}
+                </classesDirectory>
                 <includes>
                   <include>${kp.patternClassITest}</include>
                   <include>${kp.patternClassTCTest}</include>
                 </includes>
                 <!--suppress UnresolvedMavenProperty -->
                 <argLine
-                >${failsafeArgLine} ${kp.javaOpenModules} -Djava.awt.headless=true -XX:+StartAttachListener</argLine>
+                >${failsafeArgLine} ${kp.javaOpenModules} -Djava.awt.headless=true -XX:+StartAttachListener
+                </argLine>
                 <systemPropertyVariables>
                   <jgiven.report.dir
-                  >${project.build.directory}/jgiven-reports/json</jgiven.report.dir>
+                  >${project.build.directory}/jgiven-reports/json
+                  </jgiven.report.dir>
                 </systemPropertyVariables>
               </configuration>
             </execution>
@@ -778,7 +775,8 @@
                 <!--suppress UnresolvedMavenProperty -->
                 <skip>${skipTests}</skip>
                 <destFile
-                >${project.build.directory}/coverage-reports/jacoco-ut.exec</destFile>
+                >${project.build.directory}/coverage-reports/jacoco-ut.exec
+                </destFile>
                 <propertyName>surefireArgLine</propertyName>
               </configuration>
             </execution>
@@ -790,7 +788,8 @@
               <configuration>
                 <skip>${kp.skipITests}</skip>
                 <destFile
-                >${project.build.directory}/coverage-reports/jacoco-it.exec</destFile>
+                >${project.build.directory}/coverage-reports/jacoco-it.exec
+                </destFile>
                 <propertyName>failsafeArgLine</propertyName>
               </configuration>
             </execution>
@@ -803,9 +802,11 @@
               <configuration>
                 <skip>${skipTests}</skip>
                 <dataFile
-                >${project.build.directory}/coverage-reports/jacoco-ut.exec</dataFile>
+                >${project.build.directory}/coverage-reports/jacoco-ut.exec
+                </dataFile>
                 <outputDirectory
-                >${project.reporting.outputDirectory}/jacoco-ut</outputDirectory>
+                >${project.reporting.outputDirectory}/jacoco-ut
+                </outputDirectory>
               </configuration>
             </execution>
             <execution>
@@ -817,9 +818,11 @@
               <configuration>
                 <skip>${kp.skipITests}</skip>
                 <dataFile
-                >${project.build.directory}/coverage-reports/jacoco-it.exec</dataFile>
+                >${project.build.directory}/coverage-reports/jacoco-it.exec
+                </dataFile>
                 <outputDirectory
-                >${project.reporting.outputDirectory}/jacoco-it</outputDirectory>
+                >${project.reporting.outputDirectory}/jacoco-it
+                </outputDirectory>
               </configuration>
             </execution>
           </executions>
@@ -898,7 +901,8 @@
               </goals>
               <configuration>
                 <outputFile
-                >${project.build.outputDirectory}/${project.artifactId}-maven.properties</outputFile>
+                >${project.build.outputDirectory}/${project.artifactId}-maven.properties
+                </outputFile>
               </configuration>
             </execution>
           </executions>
@@ -929,7 +933,8 @@
           <version>2.19.0</version>
           <configuration>
             <generateBackupPoms
-            >${kp.plugin.generateBackupPoms}</generateBackupPoms>
+            >${kp.plugin.generateBackupPoms}
+            </generateBackupPoms>
           </configuration>
         </plugin>
 
@@ -1032,9 +1037,11 @@
               <archive>
                 <manifest>
                   <addDefaultImplementationEntries
-                  >true</addDefaultImplementationEntries>
+                  >true
+                  </addDefaultImplementationEntries>
                   <addDefaultSpecificationEntries
-                  >true</addDefaultSpecificationEntries>
+                  >true
+                  </addDefaultSpecificationEntries>
                 </manifest>
               </archive>
             </configuration>
@@ -1072,10 +1079,12 @@
 
   <scm>
     <connection
-    >scm:git:git@github.com:toolisticon/maven-parent-kotlin-base.git</connection>
+    >scm:git:git@github.com:toolisticon/maven-parent-kotlin-base.git
+    </connection>
     <url>scm:git:git@github.com:toolisticon/maven-parent-kotlin-base.git</url>
     <developerConnection
-    >scm:git:git@github.com:toolisticon/maven-parent-kotlin-base.git</developerConnection>
+    >scm:git:git@github.com:toolisticon/maven-parent-kotlin-base.git
+    </developerConnection>
     <tag>HEAD</tag>
   </scm>
 
