@@ -60,10 +60,12 @@ are included.
 
 ## Libs
 
-| Lib    | Version  | Info                                 |
-|--------|----------|--------------------------------------|
-| jetbrains-annotations | `26.0.2-1` | common annotations  |
-| junit5 | `5.13.4` | bom dependency, unit testing       |
+| Lib                   | Version    | Info                 |
+|-----------------------|------------|----------------------|
+| jetbrains-annotations | `26.0.2-1` | common annotations   |
+| junit5                | `5.13.4`   | bom, unit testing    |
+| assertj               | `3.27.4`   | bom, test assertions |
+| mockito-kotlin        | `6.0.0`    | test, mocking        |
 
 ## Plugins
 
