@@ -5,7 +5,7 @@ A common maven parent for usage in kotlin library or application projects.
 [![stable](https://img.shields.io/badge/lifecycle-STABLE-green.svg)](https://github.com/holisticon#open-source-lifecycle)
 [![Build Status](https://github.com/toolisticon/maven-parent-kotlin-base/workflows/Development%20branches/badge.svg)](https://github.com/toolisticon/maven-parent-kotlin-base/actions)
 [![sponsored](https://img.shields.io/badge/sponsoredBy-Holisticon-RED.svg)](https://holisticon.de/)
-[![Kotlin](https://img.shields.io/badge/kotlin-2.2.10-blue.svg?logo=kotlin)](http://kotlinlang.org)
+[![Kotlin](https://img.shields.io/badge/kotlin-2.2.20-blue.svg?logo=kotlin)](http://kotlinlang.org)
 [![Maven Central Version](https://img.shields.io/maven-central/v/io.toolisticon.maven.parent/maven-parent-kotlin-base)](https://central.sonatype.com/artifact/io.toolisticon.maven.parent/maven-parent-kotlin-base)
 
 ## About
@@ -60,10 +60,12 @@ are included.
 
 ## Libs
 
-| Lib    | Version  | Info                                 |
-|--------|----------|--------------------------------------|
-| jetbrains-annotations | `26.0.2-1` | common annotations  |
-| junit5 | `5.13.4` | bom dependency, unit testing       |
+| Lib                   | Version    | Info                 |
+|-----------------------|------------|----------------------|
+| jetbrains-annotations | `26.0.2-1` | common annotations   |
+| junit5                | `5.13.4`   | bom, unit testing    |
+| assertj               | `3.27.4`   | bom, test assertions |
+| mockito-kotlin        | `6.0.0`    | test, mocking        |
 
 ## Plugins
 
@@ -80,13 +82,13 @@ see [official plugins](https://maven.apache.org/plugins/index.html)
 | [maven-dependency](https://maven.apache.org/plugins/maven-dependency-plugin/)                                             | `3.8.1`  | check/update dependency versions            |
 | [maven-deploy](https://maven.apache.org/plugins/maven-deploy-plugin/)                                                     | `3.1.4`  | -                                           |
 | [maven-enforcer](https://maven.apache.org/enforcer/maven-enforcer-plugin/)                                                | `3.6.1`  | enforce project setup                       |
-| [maven-failsafe](https://maven.apache.org/surefire/maven-failsafe-plugin/)                                                | `3.5.3`  | testing                                     |
+| [maven-failsafe](https://maven.apache.org/surefire/maven-failsafe-plugin/)                                                | `3.5.4`  | testing                                     |
 | [maven-gpg](https://maven.apache.org/plugins/maven-gpg-plugin/)                                                           | `3.2.8`  | sign artifacts for release                  |
 | [maven-install](https://maven.apache.org/plugins/maven-install-plugin/)                                                   | `3.1.4`  | -                                           |
 | [maven-jar-plugin](https://maven.apache.org/plugins/maven-jar-plugin/)                                                    | `3.4.2`  | -                                           |
 | [maven-resources](https://maven.apache.org/plugins/maven-resources-plugin/)                                               | `3.3.1`  | filter resources                            |
 | [maven-source](https://maven.apache.org/plugins/maven-source-plugin/)                                                     | `3.3.1`  | add sources to artifacts                    |
-| [maven-surefire](https://maven.apache.org/surefire/maven-surefire-plugin/)                                                | `3.5.3`  | testing                                     |
+| [maven-surefire](https://maven.apache.org/surefire/maven-surefire-plugin/)                                                | `3.5.4`  | testing                                     |
 | [directory-maven-plugin](https://github.com/hazendaz/directory-maven-plugin)                                              | `1.2.1`  | expose root dir for multimudule             | 
 | [build-helper](https://www.mojohaus.org/build-helper-maven-plugin/)                                                       | `3.6.1`  | define source directories                   |
 | [gitflow-maven](https://aleksandr-m.github.io/gitflow-maven-plugin/)                                                      | `1.21.0` | gitflow relase master/develop/release       |
@@ -96,7 +98,7 @@ see [official plugins](https://maven.apache.org/plugins/index.html)
 | [properties-maven](https://www.mojohaus.org/properties-maven-plugin/)                                                     | `1.2.1`  | generate build properties for project       |
 | [versions-maven](https://www.mojohaus.org/versions/versions-maven-plugin/index.html)                                      | `2.19.0` | modify versions of project                  |
 | [nexus-staging-maven](https://github.com/sonatype/nexus-maven-plugins/blob/main/staging/maven-plugin/README.md)           | `1.6.13` | release on maven central                    |
-| [maven-wrapper](https://maven.apache.org/wrapper/maven-wrapper-plugin/plugin-info.html)                                   | `3.3.3`  | execute maven without central installation  |
+| [maven-wrapper](https://maven.apache.org/wrapper/maven-wrapper-plugin/plugin-info.html)                                   | `3.3.4`  | execute maven without central installation  |
 | [flatten-maven](https://www.mojohaus.org/flatten-maven-plugin/)                                   | `1.7.2`  | flatten the released pom                    |
 
 ## Release a new version
