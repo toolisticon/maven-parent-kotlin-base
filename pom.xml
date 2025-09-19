@@ -7,7 +7,7 @@
 
   <groupId>io.toolisticon.maven.parent</groupId>
   <artifactId>maven-parent-kotlin-base</artifactId>
-  <version>2025.9.1</version>
+  <version>2025.9.2</version>
 
   <name>Maven Parent - Kotlin Base</name>
   <description>Maven parent for a holistic kotlin lib project.</description>
@@ -54,6 +54,7 @@
     <kotlinx-coroutines.version>1.10.2</kotlinx-coroutines.version>
     <kotlin-logging.version>7.0.13</kotlin-logging.version>
 
+    <apiguardian.version>1.1.2</apiguardian.version>
     <jetbrains-annotations.version>26.0.2-1</jetbrains-annotations.version>
 
     <!-- TEST -->
@@ -366,6 +367,12 @@
         <groupId>org.jetbrains</groupId>
         <artifactId>annotations</artifactId>
         <version>${jetbrains-annotations.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apiguardian</groupId>
+        <artifactId>apiguardian-api</artifactId>
+        <version>${apiguardian.version}</version>
       </dependency>
 
       <!-- TEST -->
