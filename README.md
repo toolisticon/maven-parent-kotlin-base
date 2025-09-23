@@ -100,6 +100,7 @@ see [official plugins](https://maven.apache.org/plugins/index.html)
 | [nexus-staging-maven](https://github.com/sonatype/nexus-maven-plugins/blob/main/staging/maven-plugin/README.md)           | `1.6.13` | release on maven central                    |
 | [maven-wrapper](https://maven.apache.org/wrapper/maven-wrapper-plugin/plugin-info.html)                                   | `3.3.4`  | execute maven without central installation  |
 | [flatten-maven](https://www.mojohaus.org/flatten-maven-plugin/)                                                           | `1.7.3`  | flatten the released pom                    |
+| [central-publishing](https://central.sonatype.org/publish/publish-portal-maven/)                                          | `0.9.0`  | sonatype publish                            |
 
 ## Release a new version
 
