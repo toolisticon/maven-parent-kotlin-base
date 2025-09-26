@@ -15,12 +15,13 @@
   <packaging>pom</packaging>
 
   <properties>
-    <!-- MAVEN PROJECT SETTINGS -->
+    <!-- region [MAVEN PROJECT SETTINGS] -->
     <project.encoding>UTF-8</project.encoding>
     <project.build.sourceEncoding>${project.encoding}</project.build.sourceEncoding>
     <project.reporting.outputEncoding>${project.encoding}</project.reporting.outputEncoding>
+    <!-- endregion [MAVEN PROJECT SETTINGS] -->
 
-    <!-- KOTLIN PROJECT (KP) CUSTOM SETTINGS -->
+    <!-- region [KOTLIN PROJECT (KP) CUSTOM SETTINGS] -->
     <kp.generatedSources>${project.build.directory}/generated-sources</kp.generatedSources>
     <kp.generatedTestSources>${project.build.directory}/generated-test-sources</kp.generatedTestSources>
     <kp.generatedResources>${project.build.directory}/generated-resources</kp.generatedResources>
@@ -37,10 +38,12 @@
     <kp.compile.useIncrementalKotlinCompiler>false</kp.compile.useIncrementalKotlinCompiler>
     <kp.patternClassITest>**/*ITest.*</kp.patternClassITest>
     <kp.patternClassTCTest>**/*TCTest.*</kp.patternClassTCTest>
-    <kp.javaOpenModules>--add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED</kp.javaOpenModules>
+    <kp.javaOpenModules>--add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED
+    </kp.javaOpenModules>
     <kp.skipITests>false</kp.skipITests>
+    <!-- endregion [KOTLIN PROJECT (KP) CUSTOM SETTINGS] -->
 
-    <!-- LANGUAGE VERSIONS -->
+    <!-- region [LANGUAGE VERSIONS] -->
     <kotlin.version>2.2.20</kotlin.version>
 
     <kotlin.compiler.apiVersion>2.2</kotlin.compiler.apiVersion>
@@ -49,25 +52,32 @@
     <kotlin.compiler.jvmTarget>${java.version}</kotlin.compiler.jvmTarget>
     <java.version>17</java.version>
     <jdk.version>17</jdk.version>
+    <!-- endregion [LANGUAGE VERSIONS] -->
 
+    <!-- region [KOTLIN VERSIONS] -->
     <kotlinx-serialization.version>1.9.0</kotlinx-serialization.version>
     <kotlinx-coroutines.version>1.10.2</kotlinx-coroutines.version>
     <kotlin-logging.version>7.0.13</kotlin-logging.version>
+    <!-- endregion [KOTLIN VERSIONS] -->
 
+    <!-- region [RUNTIME VERSIONS] -->
     <apiguardian.version>1.1.2</apiguardian.version>
     <jetbrains-annotations.version>26.0.2-1</jetbrains-annotations.version>
+    <!-- endregion [RUNTIME VERSIONS] -->
 
-    <!-- TEST -->
+    <!-- region [TEST VERSIONS] -->
     <assertj.version>3.27.6</assertj.version>
+    <awaitility.version>4.3.0</awaitility.version>
+    <jgiven.version>2.0.3</jgiven.version>
     <junit5.version>5.13.4</junit5.version>
     <mockito-kotlin.version>6.0.0</mockito-kotlin.version>
+    <!-- endregion [TEST VERSIONS] -->
   </properties>
 
   <dependencyManagement>
     <dependencies>
-      <!-- KOTLIN (from kotlin-bom) -->
+      <!-- region [KOTLIN-BOM] -->
       <!-- Using the kotlin-bom directly leads to problems with other boms, for example the spring-boot-dependencies -->
-      <!-- Standard Library -->
       <dependency>
         <groupId>org.jetbrains.kotlin</groupId>
         <artifactId>kotlin-stdlib</artifactId>
@@ -193,14 +203,17 @@
         <artifactId>kotlin-daemon-client</artifactId>
         <version>${kotlin.version}</version>
       </dependency>
-      <!-- // KOTLIN (from kotlin-bom) -->
+      <!-- endregion [KOTLIN-BOM]  -->
+
+      <!-- region [KOTLIN-KSP] -->
       <dependency>
         <groupId>org.jetbrains.kotlin</groupId>
         <artifactId>kotlin-annotation-processing-embeddable</artifactId>
         <version>${kotlin.version}</version>
       </dependency>
+      <!-- endregion [KOTLIN-KSP] -->
 
-      <!-- KOTLIN SERIALIZATION -->
+      <!-- region [KOTLIN SERIALIZATION] -->
       <dependency>
         <groupId>org.jetbrains.kotlinx</groupId>
         <artifactId>kotlinx-serialization-cbor-jvm</artifactId>
@@ -266,9 +279,9 @@
         <artifactId>kotlinx-serialization-protobuf</artifactId>
         <version>${kotlinx-serialization.version}</version>
       </dependency>
-      <!-- // KOTLIN SERIALIZATION -->
+      <!-- endregion [KOTLIN SERIALIZATION] -->
 
-      <!-- KOTLIN COROUTINES -->
+      <!-- region [KOTLIN COROUTINES] -->
       <dependency>
         <groupId>org.jetbrains.kotlinx</groupId>
         <artifactId>kotlinx-coroutines-android</artifactId>
@@ -354,7 +367,7 @@
         <artifactId>kotlinx-coroutines-test</artifactId>
         <version>${kotlinx-coroutines.version}</version>
       </dependency>
-      <!-- // KOTLIN COROUTINES -->
+      <!-- endregion [KOTLIN COROUTINES] -->
 
       <!-- KLOGGING (use as default) -->
       <dependency>
@@ -363,19 +376,21 @@
         <version>${kotlin-logging.version}</version>
       </dependency>
 
-      <dependency>
-        <groupId>org.jetbrains</groupId>
-        <artifactId>annotations</artifactId>
-        <version>${jetbrains-annotations.version}</version>
-      </dependency>
-
+      <!-- region [RUNTIME DEPENDENCIES] -->
       <dependency>
         <groupId>org.apiguardian</groupId>
         <artifactId>apiguardian-api</artifactId>
         <version>${apiguardian.version}</version>
       </dependency>
 
-      <!-- TEST -->
+      <dependency>
+        <groupId>org.jetbrains</groupId>
+        <artifactId>annotations</artifactId>
+        <version>${jetbrains-annotations.version}</version>
+      </dependency>
+      <!-- endregion [RUNTIME DEPENDENCIES] -->
+
+      <!-- region [TEST DEPENDENCIES] -->
       <dependency>
         <groupId>org.junit</groupId>
         <artifactId>junit-bom</artifactId>
@@ -396,6 +411,13 @@
         <version>${mockito-kotlin.version}</version>
         <scope>test</scope>
       </dependency>
+      <dependency>
+        <groupId>org.awaitility</groupId>
+        <artifactId>awaitility-kotlin</artifactId>
+        <version>${awaitility.version}</version>
+        <scope>test</scope>
+      </dependency>
+      <!-- endregion [TEST DEPENDENCIES] -->
     </dependencies>
   </dependencyManagement>
 
@@ -405,7 +427,8 @@
     <sourceDirectory>${kp.mainSources}</sourceDirectory>
     <testSourceDirectory>${kp.testSources}</testSourceDirectory>
 
-    <!-- RESOURCES: ignore gitkeep marker files -->
+    <!-- region [RESOURCES] -->
+    <!-- ignore gitkeep marker files -->
     <resources>
       <resource>
         <directory>${kp.mainResources}</directory>
@@ -425,12 +448,14 @@
         </excludes>
       </testResource>
     </testResources>
+    <!-- endregion [RESOURCES] -->
 
     <pluginManagement>
       <plugins>
         <!-- LANGUAGE SETUP -->
         <!-- from kotlin doc: "To compile projects that include Kotlin and Java source code, invoke the Kotlin compiler before the Java compiler." -->
 
+        <!-- region [COMPILER CONFIGURATION] -->
         <!-- KOTLIN -->
         <plugin>
           <!-- KAPT is optional and has to be configured in modules using it -->
@@ -457,9 +482,7 @@
               <!--              <option>all-open:annotation=javax.persistence.Entity</option>-->
               <!--              <option>all-open:annotation=javax.persistence.MappedSuperclass</option>-->
               <!--              <option>all-open:annotation=javax.persistence.Embeddable</option>-->
-              <option
-              >all-open:annotation=io.toolisticon.testing.jgiven.JGivenKotlinStage
-              </option>
+              <option>all-open:annotation=io.toolisticon.testing.jgiven.JGivenKotlinStage</option>
             </pluginOptions>
           </configuration>
 
@@ -546,7 +569,9 @@
             </execution>
           </executions>
         </plugin>
+        <!-- endregion [COMPILER CONFIGURATION] -->
 
+        <!-- region [DOC CONFIGURATION] -->
         <!-- JAVADOC -->
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -585,8 +610,7 @@
             <skipEmptyPackages>true</skipEmptyPackages>
           </configuration>
         </plugin>
-
-        <!-- // LANGUAGE SETUP -->
+        <!-- endregion [DOC CONFIGURATION] -->
 
         <!-- ========== MAVEN OFFICIAL PLUGINS -->
 
@@ -703,9 +727,7 @@
                 >${failsafeArgLine} ${kp.javaOpenModules} -Djava.awt.headless=true -XX:+StartAttachListener
                 </argLine>
                 <systemPropertyVariables>
-                  <jgiven.report.dir
-                  >${project.build.directory}/jgiven-reports/json
-                  </jgiven.report.dir>
+                  <jgiven.report.dir>${project.build.directory}/jgiven-reports/json</jgiven.report.dir>
                 </systemPropertyVariables>
               </configuration>
             </execution>
@@ -889,7 +911,7 @@
         <plugin>
           <groupId>com.tngtech.jgiven</groupId>
           <artifactId>jgiven-maven-plugin</artifactId>
-          <version>2.0.3</version>
+          <version>${jgiven.version}</version>
           <executions>
             <execution>
               <id>generate-report</id>
