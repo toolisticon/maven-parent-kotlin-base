@@ -7,7 +7,7 @@
 
   <groupId>io.toolisticon.maven.parent</groupId>
   <artifactId>maven-parent-kotlin-base</artifactId>
-  <version>2025.9.3</version>
+  <version>2025.10.0</version>
 
   <name>Maven Parent - Kotlin Base</name>
   <description>Maven parent for a holistic kotlin lib project.</description>
@@ -69,8 +69,8 @@
     <assertj.version>3.27.6</assertj.version>
     <awaitility.version>4.3.0</awaitility.version>
     <jgiven.version>2.0.3</jgiven.version>
-    <junit5.version>5.13.4</junit5.version>
-    <mockito-kotlin.version>6.0.0</mockito-kotlin.version>
+    <junit5.version>6.0.0</junit5.version>
+    <mockito-kotlin.version>6.1.0</mockito-kotlin.version>
     <!-- endregion [TEST VERSIONS] -->
   </properties>
 
@@ -632,7 +632,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-dependency-plugin</artifactId>
-          <version>3.8.1</version>
+          <version>3.9.0</version>
         </plugin>
 
         <!-- DEPLOY (version, config) -->
@@ -656,7 +656,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-enforcer-plugin</artifactId>
-          <version>3.6.1</version>
+          <version>3.6.2</version>
           <executions>
             <execution>
               <id>enforce-maven</id>
@@ -929,7 +929,7 @@
         <plugin>
           <groupId>org.openapitools</groupId>
           <artifactId>openapi-generator-maven-plugin</artifactId>
-          <version>7.15.0</version>
+          <version>7.16.0</version>
         </plugin>
 
         <!-- [GENERATOR]: PROPERTIES (writes maven properties to src) (version,execution) -->

@@ -64,11 +64,11 @@ are included.
 |-----------------------|------------|----------------------|
 | api-guardian          | `1.1.2`    | api annotations      |
 | jetbrains-annotations | `26.0.2-1` | common annotations   |
-| assertj               | `3.27.4`   | bom, test assertions |
+| assertj               | `3.27.6`   | bom, test assertions |
 | awaitility            | `4.3.0`    | async testing        |
 | jgiven                | `2.0.3`    | BDD testing          |
-| junit5                | `5.13.4`   | bom, unit testing    |
-| mockito-kotlin        | `6.0.0`    | test, mocking        |
+| junit                | `6.0.0`    | bom, unit testing    |
+| mockito-kotlin        | `6.1.0`    | test, mocking        |
 
 ## Plugins
 
@@ -77,14 +77,14 @@ see [official plugins](https://maven.apache.org/plugins/index.html)
 | Plugin                                                                                                                    | Version  | Info                                        |
 |---------------------------------------------------------------------------------------------------------------------------|----------|---------------------------------------------|
 | [maven-compiler](https://maven.apache.org/plugins/maven-compiler-plugin/)                                                 | `3.14.1` | disabling java compiler for kotlin projects |
-| [kotlin-maven-plugin](https://kotlinlang.org/docs/maven.html)                                                             | `2.0.0`  | kotlin compiler plugin                      |
+| [kotlin-maven-plugin](https://kotlinlang.org/docs/maven.html)                                                             | `2.2.0`  | kotlin compiler plugin                      |
 | [maven-javadoc](https://maven.apache.org/plugins/maven-javadoc-plugin/)                                                   | `3.12.0` | include javadoc                             |
 | [dokka](https://kotlinlang.org/docs/dokka-maven.html#apply-dokka)                                                         | `2.0.0`  | use dokka for javadoc                       |
 | [avro-maven](https://avro.apache.org/docs/1.12.0/getting-started-java/)                                                   | `1.12.0` | avro code generation                        |
 | [maven-clean](https://maven.apache.org/plugins/maven-clean-plugin/)                                                       | `3.5.0`  | clean project                               |
-| [maven-dependency](https://maven.apache.org/plugins/maven-dependency-plugin/)                                             | `3.8.1`  | check/update dependency versions            |
+| [maven-dependency](https://maven.apache.org/plugins/maven-dependency-plugin/)                                             | `3.9.0`  | check/update dependency versions            |
 | [maven-deploy](https://maven.apache.org/plugins/maven-deploy-plugin/)                                                     | `3.1.4`  | -                                           |
-| [maven-enforcer](https://maven.apache.org/enforcer/maven-enforcer-plugin/)                                                | `3.6.1`  | enforce project setup                       |
+| [maven-enforcer](https://maven.apache.org/enforcer/maven-enforcer-plugin/)                                                | `3.6.2`  | enforce project setup                       |
 | [maven-failsafe](https://maven.apache.org/surefire/maven-failsafe-plugin/)                                                | `3.5.4`  | testing                                     |
 | [maven-gpg](https://maven.apache.org/plugins/maven-gpg-plugin/)                                                           | `3.2.8`  | sign artifacts for release                  |
 | [maven-install](https://maven.apache.org/plugins/maven-install-plugin/)                                                   | `3.1.4`  | -                                           |
@@ -96,12 +96,12 @@ see [official plugins](https://maven.apache.org/plugins/index.html)
 | [build-helper](https://www.mojohaus.org/build-helper-maven-plugin/)                                                       | `3.6.1`  | define source directories                   |
 | [gitflow-maven](https://aleksandr-m.github.io/gitflow-maven-plugin/)                                                      | `1.21.0` | gitflow relase master/develop/release       |
 | [jacoco-maven](https://www.eclemma.org/jacoco/trunk/doc/maven.html)                                                       | `0.8.13` | test reports                                |
-| [jgiven-maven](https://jgiven.org/userguide/#_maven)                                                                      | `2.0.2`  | jgiven test reports                         |
-| [openapi-generator](https://github.com/OpenAPITools/openapi-generator/tree/master/modules/openapi-generator-maven-plugin) | `7.15.0` | openapi/swagger code generation             |
+| [jgiven-maven](https://jgiven.org/userguide/#_maven)                                                                      | `2.0.3`  | jgiven test reports                         |
+| [openapi-generator](https://github.com/OpenAPITools/openapi-generator/tree/master/modules/openapi-generator-maven-plugin) | `7.16.0` | openapi/swagger code generation             |
 | [properties-maven](https://www.mojohaus.org/properties-maven-plugin/)                                                     | `1.2.1`  | generate build properties for project       |
 | [versions-maven](https://www.mojohaus.org/versions/versions-maven-plugin/index.html)                                      | `2.19.1` | modify versions of project                  |
 | [central-publishing](https://central.sonatype.org/publish/publish-portal-maven/)            | `0.9.0`  | release on maven central                    |
-| [nexus-staging-maven](https://github.com/sonatype/nexus-maven-plugins/blob/main/staging/maven-plugin/README.md)           | `1.6.13` | release on maven central                    |
+| [nexus-staging-maven](https://github.com/sonatype/nexus-maven-plugins/blob/main/staging/maven-plugin/README.md)           | `1.7.0`  | release on maven central                    |
 | [maven-wrapper](https://maven.apache.org/wrapper/maven-wrapper-plugin/plugin-info.html)                                   | `3.3.4`  | execute maven without central installation  |
 | [flatten-maven](https://www.mojohaus.org/flatten-maven-plugin/)                                                           | `1.7.3`  | flatten the released pom                    |
 
