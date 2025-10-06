@@ -82,7 +82,7 @@ see [official plugins](https://maven.apache.org/plugins/index.html)
 | [dokka](https://kotlinlang.org/docs/dokka-maven.html#apply-dokka)                                                         | `2.0.0`  | use dokka for javadoc                       |
 | [avro-maven](https://avro.apache.org/docs/1.12.0/getting-started-java/)                                                   | `1.12.0` | avro code generation                        |
 | [maven-clean](https://maven.apache.org/plugins/maven-clean-plugin/)                                                       | `3.5.0`  | clean project                               |
-| [maven-dependency](https://maven.apache.org/plugins/maven-dependency-plugin/)                                             | `3.8.1`  | check/update dependency versions            |
+| [maven-dependency](https://maven.apache.org/plugins/maven-dependency-plugin/)                                             | `3.9.0`  | check/update dependency versions            |
 | [maven-deploy](https://maven.apache.org/plugins/maven-deploy-plugin/)                                                     | `3.1.4`  | -                                           |
 | [maven-enforcer](https://maven.apache.org/enforcer/maven-enforcer-plugin/)                                                | `3.6.2`  | enforce project setup                       |
 | [maven-failsafe](https://maven.apache.org/surefire/maven-failsafe-plugin/)                                                | `3.5.4`  | testing                                     |
