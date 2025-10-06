@@ -67,7 +67,7 @@ are included.
 | assertj               | `3.27.6`   | bom, test assertions |
 | awaitility            | `4.3.0`    | async testing        |
 | jgiven                | `2.0.3`    | BDD testing          |
-| junit5                | `6.0.0`    | bom, unit testing    |
+| junit                | `6.0.0`    | bom, unit testing    |
 | mockito-kotlin        | `6.1.0`    | test, mocking        |
 
 ## Plugins
