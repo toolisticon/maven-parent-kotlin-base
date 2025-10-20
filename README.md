@@ -64,10 +64,11 @@ are included.
 |-----------------------|------------|----------------------|
 | api-guardian          | `1.1.2`    | api annotations      |
 | jetbrains-annotations | `26.0.2-1` | common annotations   |
+| logback-classic       | `1.5.20`   | logging              |
 | assertj               | `3.27.6`   | bom, test assertions |
 | awaitility            | `4.3.0`    | async testing        |
 | jgiven                | `2.0.3`    | BDD testing          |
-| junit                | `6.0.0`    | bom, unit testing    |
+| junit                 | `6.0.0`    | bom, unit testing    |
 | mockito-kotlin        | `6.1.0`    | test, mocking        |
 
 ## Plugins
@@ -79,8 +80,8 @@ see [official plugins](https://maven.apache.org/plugins/index.html)
 | [maven-compiler](https://maven.apache.org/plugins/maven-compiler-plugin/)                                                 | `3.14.1` | disabling java compiler for kotlin projects |
 | [kotlin-maven-plugin](https://kotlinlang.org/docs/maven.html)                                                             | `2.2.0`  | kotlin compiler plugin                      |
 | [maven-javadoc](https://maven.apache.org/plugins/maven-javadoc-plugin/)                                                   | `3.12.0` | include javadoc                             |
-| [dokka](https://kotlinlang.org/docs/dokka-maven.html#apply-dokka)                                                         | `2.0.0`  | use dokka for javadoc                       |
-| [avro-maven](https://avro.apache.org/docs/1.12.0/getting-started-java/)                                                   | `1.12.0` | avro code generation                        |
+| [dokka](https://kotlinlang.org/docs/dokka-maven.html#apply-dokka)                                                         | `2.1.0`  | use dokka for javadoc                       |
+| [avro-maven](https://avro.apache.org/docs/1.12.0/getting-started-java/)                                                   | `1.12.1` | avro code generation                        |
 | [maven-clean](https://maven.apache.org/plugins/maven-clean-plugin/)                                                       | `3.5.0`  | clean project                               |
 | [maven-dependency](https://maven.apache.org/plugins/maven-dependency-plugin/)                                             | `3.9.0`  | check/update dependency versions            |
 | [maven-deploy](https://maven.apache.org/plugins/maven-deploy-plugin/)                                                     | `3.1.4`  | -                                           |
@@ -92,10 +93,10 @@ see [official plugins](https://maven.apache.org/plugins/index.html)
 | [maven-resources](https://maven.apache.org/plugins/maven-resources-plugin/)                                               | `3.3.1`  | filter resources                            |
 | [maven-source](https://maven.apache.org/plugins/maven-source-plugin/)                                                     | `3.3.1`  | add sources to artifacts                    |
 | [maven-surefire](https://maven.apache.org/surefire/maven-surefire-plugin/)                                                | `3.5.4`  | testing                                     |
-| [directory-maven-plugin](https://github.com/hazendaz/directory-maven-plugin)                                              | `1.2.1`  | expose root dir for multimudule             | 
+| [directory-maven-plugin](https://github.com/hazendaz/directory-maven-plugin)                                              | `1.2.2`  | expose root dir for multimudule             | 
 | [build-helper](https://www.mojohaus.org/build-helper-maven-plugin/)                                                       | `3.6.1`  | define source directories                   |
 | [gitflow-maven](https://aleksandr-m.github.io/gitflow-maven-plugin/)                                                      | `1.21.0` | gitflow relase master/develop/release       |
-| [jacoco-maven](https://www.eclemma.org/jacoco/trunk/doc/maven.html)                                                       | `0.8.13` | test reports                                |
+| [jacoco-maven](https://www.eclemma.org/jacoco/trunk/doc/maven.html)                                                       | `0.8.14` | test reports                                |
 | [jgiven-maven](https://jgiven.org/userguide/#_maven)                                                                      | `2.0.3`  | jgiven test reports                         |
 | [openapi-generator](https://github.com/OpenAPITools/openapi-generator/tree/master/modules/openapi-generator-maven-plugin) | `7.16.0` | openapi/swagger code generation             |
 | [properties-maven](https://www.mojohaus.org/properties-maven-plugin/)                                                     | `1.2.1`  | generate build properties for project       |

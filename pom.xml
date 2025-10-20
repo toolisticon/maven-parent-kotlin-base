@@ -7,7 +7,7 @@
 
   <groupId>io.toolisticon.maven.parent</groupId>
   <artifactId>maven-parent-kotlin-base</artifactId>
-  <version>2025.10.0</version>
+  <version>2025.10.1</version>
 
   <name>Maven Parent - Kotlin Base</name>
   <description>Maven parent for a holistic kotlin lib project.</description>
@@ -63,6 +63,7 @@
     <!-- region [RUNTIME VERSIONS] -->
     <apiguardian.version>1.1.2</apiguardian.version>
     <jetbrains-annotations.version>26.0.2-1</jetbrains-annotations.version>
+    <logback.version>1.5.20</logback.version>
     <!-- endregion [RUNTIME VERSIONS] -->
 
     <!-- region [TEST VERSIONS] -->
@@ -369,14 +370,19 @@
       </dependency>
       <!-- endregion [KOTLIN COROUTINES] -->
 
-      <!-- KLOGGING (use as default) -->
+      <!-- region [RUNTIME DEPENDENCIES] -->
       <dependency>
         <groupId>io.github.oshai</groupId>
         <artifactId>kotlin-logging-jvm</artifactId>
         <version>${kotlin-logging.version}</version>
       </dependency>
 
-      <!-- region [RUNTIME DEPENDENCIES] -->
+      <dependency>
+        <groupId>ch.qos.logback</groupId>
+        <artifactId>logback-classic</artifactId>
+        <version>${logback.version}</version>
+      </dependency>
+
       <dependency>
         <groupId>org.apiguardian</groupId>
         <artifactId>apiguardian-api</artifactId>
@@ -594,7 +600,7 @@
         <plugin>
           <groupId>org.jetbrains.dokka</groupId>
           <artifactId>dokka-maven-plugin</artifactId>
-          <version>2.0.0</version>
+          <version>2.1.0</version>
           <executions>
             <execution>
               <phase>package</phase>
@@ -618,7 +624,7 @@
         <plugin>
           <groupId>org.apache.avro</groupId>
           <artifactId>avro-maven-plugin</artifactId>
-          <version>1.12.0</version>
+          <version>1.12.1</version>
         </plugin>
 
         <!-- CLEAN (version) -->
@@ -808,7 +814,7 @@
         <plugin>
           <groupId>org.jacoco</groupId>
           <artifactId>jacoco-maven-plugin</artifactId>
-          <version>0.8.13</version>
+          <version>0.8.14</version>
           <executions>
             <execution>
               <id>pre-unit-test</id>
@@ -955,7 +961,7 @@
         <plugin>
           <groupId>com.github.hazendaz.maven</groupId>
           <artifactId>directory-maven-plugin</artifactId>
-          <version>1.2.1</version>
+          <version>1.2.2</version>
           <executions>
             <execution>
               <id>directories</id>
