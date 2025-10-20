@@ -63,6 +63,7 @@
     <!-- region [RUNTIME VERSIONS] -->
     <apiguardian.version>1.1.2</apiguardian.version>
     <jetbrains-annotations.version>26.0.2-1</jetbrains-annotations.version>
+    <logback.version>1.5.20</logback.version>
     <!-- endregion [RUNTIME VERSIONS] -->
 
     <!-- region [TEST VERSIONS] -->
@@ -369,14 +370,19 @@
       </dependency>
       <!-- endregion [KOTLIN COROUTINES] -->
 
-      <!-- KLOGGING (use as default) -->
+      <!-- region [RUNTIME DEPENDENCIES] -->
       <dependency>
         <groupId>io.github.oshai</groupId>
         <artifactId>kotlin-logging-jvm</artifactId>
         <version>${kotlin-logging.version}</version>
       </dependency>
 
-      <!-- region [RUNTIME DEPENDENCIES] -->
+      <dependency>
+        <groupId>ch.qos.logback</groupId>
+        <artifactId>logback-classic</artifactId>
+        <version>${logback.version}</version>
+      </dependency>
+
       <dependency>
         <groupId>org.apiguardian</groupId>
         <artifactId>apiguardian-api</artifactId>

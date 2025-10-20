@@ -64,10 +64,11 @@ are included.
 |-----------------------|------------|----------------------|
 | api-guardian          | `1.1.2`    | api annotations      |
 | jetbrains-annotations | `26.0.2-1` | common annotations   |
+| logback-classic       | `1.5.20`   | logging              |
 | assertj               | `3.27.6`   | bom, test assertions |
 | awaitility            | `4.3.0`    | async testing        |
 | jgiven                | `2.0.3`    | BDD testing          |
-| junit                | `6.0.0`    | bom, unit testing    |
+| junit                 | `6.0.0`    | bom, unit testing    |
 | mockito-kotlin        | `6.1.0`    | test, mocking        |
 
 ## Plugins
