@@ -52,27 +52,9 @@
     <kotlin.compiler.jvmTarget>${java.version}</kotlin.compiler.jvmTarget>
     <java.version>17</java.version>
     <jdk.version>17</jdk.version>
-    <!-- endregion [LANGUAGE VERSIONS] -->
-
-    <!-- region [KOTLIN VERSIONS] -->
     <kotlinx-serialization.version>1.9.0</kotlinx-serialization.version>
     <kotlinx-coroutines.version>1.10.2</kotlinx-coroutines.version>
-    <kotlin-logging.version>7.0.13</kotlin-logging.version>
-    <!-- endregion [KOTLIN VERSIONS] -->
-
-    <!-- region [RUNTIME VERSIONS] -->
-    <apiguardian.version>1.1.2</apiguardian.version>
-    <jetbrains-annotations.version>26.0.2-1</jetbrains-annotations.version>
-    <logback.version>1.5.20</logback.version>
-    <!-- endregion [RUNTIME VERSIONS] -->
-
-    <!-- region [TEST VERSIONS] -->
-    <assertj.version>3.27.6</assertj.version>
-    <awaitility.version>4.3.0</awaitility.version>
-    <jgiven.version>2.0.3</jgiven.version>
-    <junit5.version>6.0.0</junit5.version>
-    <mockito-kotlin.version>6.1.0</mockito-kotlin.version>
-    <!-- endregion [TEST VERSIONS] -->
+    <!-- endregion [LANGUAGE VERSIONS] -->
   </properties>
 
   <dependencyManagement>
@@ -374,53 +356,85 @@
       <dependency>
         <groupId>io.github.oshai</groupId>
         <artifactId>kotlin-logging-jvm</artifactId>
-        <version>${kotlin-logging.version}</version>
+        <version>7.0.13</version>
       </dependency>
 
       <dependency>
         <groupId>ch.qos.logback</groupId>
         <artifactId>logback-classic</artifactId>
-        <version>${logback.version}</version>
+        <version>1.5.20</version>
       </dependency>
 
       <dependency>
         <groupId>org.apiguardian</groupId>
         <artifactId>apiguardian-api</artifactId>
-        <version>${apiguardian.version}</version>
+        <version>1.1.2</version>
       </dependency>
 
       <dependency>
         <groupId>org.jetbrains</groupId>
         <artifactId>annotations</artifactId>
-        <version>${jetbrains-annotations.version}</version>
+        <version>26.0.2-1</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-bom</artifactId>
+        <version>2.0.17</version>
+        <scope>import</scope>
+        <type>pom</type>
       </dependency>
       <!-- endregion [RUNTIME DEPENDENCIES] -->
 
       <!-- region [TEST DEPENDENCIES] -->
       <dependency>
-        <groupId>org.junit</groupId>
-        <artifactId>junit-bom</artifactId>
-        <version>${junit5.version}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-      <dependency>
         <groupId>org.assertj</groupId>
         <artifactId>assertj-bom</artifactId>
-        <version>${assertj.version}</version>
+        <version>3.27.6</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
-      <dependency>
-        <groupId>org.mockito.kotlin</groupId>
-        <artifactId>mockito-kotlin</artifactId>
-        <version>${mockito-kotlin.version}</version>
-        <scope>test</scope>
-      </dependency>
+
       <dependency>
         <groupId>org.awaitility</groupId>
         <artifactId>awaitility-kotlin</artifactId>
-        <version>${awaitility.version}</version>
+        <version>4.3.0</version>
+        <scope>test</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>nl.jqno.equalsverifier</groupId>
+        <artifactId>equalsverifier</artifactId>
+        <version>4.2.1</version>
+        <scope>test</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>com.tngtech.jgiven</groupId>
+        <artifactId>jgiven-junit5</artifactId>
+        <version>2.0.3</version>
+        <scope>test</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>com.tngtech.jgiven</groupId>
+        <artifactId>jgiven-spring-junit5</artifactId>
+        <version>2.0.3</version>
+        <scope>test</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>org.junit</groupId>
+        <artifactId>junit-bom</artifactId>
+        <version>6.0.0</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>org.mockito.kotlin</groupId>
+        <artifactId>mockito-kotlin</artifactId>
+        <version>6.1.0</version>
         <scope>test</scope>
       </dependency>
       <!-- endregion [TEST DEPENDENCIES] -->
@@ -917,7 +931,7 @@
         <plugin>
           <groupId>com.tngtech.jgiven</groupId>
           <artifactId>jgiven-maven-plugin</artifactId>
-          <version>${jgiven.version}</version>
+          <version>2.0.3</version>
           <executions>
             <execution>
               <id>generate-report</id>
@@ -935,7 +949,7 @@
         <plugin>
           <groupId>org.openapitools</groupId>
           <artifactId>openapi-generator-maven-plugin</artifactId>
-          <version>7.16.0</version>
+          <version>7.17.0</version>
         </plugin>
 
         <!-- [GENERATOR]: PROPERTIES (writes maven properties to src) (version,execution) -->
