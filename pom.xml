@@ -7,7 +7,7 @@
 
   <groupId>io.toolisticon.maven.parent</groupId>
   <artifactId>maven-parent-kotlin-base</artifactId>
-  <version>2025.10.2</version>
+  <version>2025.11.0</version>
 
   <name>Maven Parent - Kotlin Base</name>
   <description>Maven parent for a holistic kotlin lib project.</description>
@@ -362,7 +362,7 @@
       <dependency>
         <groupId>ch.qos.logback</groupId>
         <artifactId>logback-classic</artifactId>
-        <version>1.5.20</version>
+        <version>1.5.21</version>
       </dependency>
 
       <dependency>
@@ -405,7 +405,7 @@
       <dependency>
         <groupId>nl.jqno.equalsverifier</groupId>
         <artifactId>equalsverifier</artifactId>
-        <version>4.2.1</version>
+        <version>4.2.2</version>
         <scope>test</scope>
       </dependency>
 
@@ -426,7 +426,7 @@
       <dependency>
         <groupId>org.junit</groupId>
         <artifactId>junit-bom</artifactId>
-        <version>6.0.0</version>
+        <version>6.0.1</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
