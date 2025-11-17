@@ -68,7 +68,7 @@ are included.
 | slf4j                 | `2.0.17`   | logging              |
 | assertj               | `3.27.6`   | bom, test assertions |
 | awaitility            | `4.3.0`    | async testing        |
-| equalsverifier        | `4.2.1`    | test                 |
+| equalsverifier        | `4.2.3`    | test                 |
 | jgiven                | `2.0.3`    | BDD testing          |
 | junit                 | `6.0.0`    | bom, unit testing    |
 | mockito-kotlin        | `6.1.0`    | test, mocking        |
@@ -91,7 +91,7 @@ see [official plugins](https://maven.apache.org/plugins/index.html)
 | [maven-failsafe](https://maven.apache.org/surefire/maven-failsafe-plugin/)                                                | `3.5.4`  | testing                                     |
 | [maven-gpg](https://maven.apache.org/plugins/maven-gpg-plugin/)                                                           | `3.2.8`  | sign artifacts for release                  |
 | [maven-install](https://maven.apache.org/plugins/maven-install-plugin/)                                                   | `3.1.4`  | -                                           |
-| [maven-jar-plugin](https://maven.apache.org/plugins/maven-jar-plugin/)                                                    | `3.4.2`  | -                                           |
+| [maven-jar-plugin](https://maven.apache.org/plugins/maven-jar-plugin/)                                                    | `3.5.0`  | -                                           |
 | [maven-resources](https://maven.apache.org/plugins/maven-resources-plugin/)                                               | `3.3.1`  | filter resources                            |
 | [maven-source](https://maven.apache.org/plugins/maven-source-plugin/)                                                     | `3.3.1`  | add sources to artifacts                    |
 | [maven-surefire](https://maven.apache.org/surefire/maven-surefire-plugin/)                                                | `3.5.4`  | testing                                     |
