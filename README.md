@@ -92,8 +92,8 @@ see [official plugins](https://maven.apache.org/plugins/index.html)
 | [maven-gpg](https://maven.apache.org/plugins/maven-gpg-plugin/)                                                           | `3.2.8`  | sign artifacts for release                  |
 | [maven-install](https://maven.apache.org/plugins/maven-install-plugin/)                                                   | `3.1.4`  | -                                           |
 | [maven-jar-plugin](https://maven.apache.org/plugins/maven-jar-plugin/)                                                    | `3.5.0`  | -                                           |
-| [maven-resources](https://maven.apache.org/plugins/maven-resources-plugin/)                                               | `3.3.1`  | filter resources                            |
-| [maven-source](https://maven.apache.org/plugins/maven-source-plugin/)                                                     | `3.3.1`  | add sources to artifacts                    |
+| [maven-resources](https://maven.apache.org/plugins/maven-resources-plugin/)                                               | `3.4.0`  | filter resources                            |
+| [maven-source](https://maven.apache.org/plugins/maven-source-plugin/)                                                     | `3.4.0`  | add sources to artifacts                    |
 | [maven-surefire](https://maven.apache.org/surefire/maven-surefire-plugin/)                                                | `3.5.4`  | testing                                     |
 | [directory-maven-plugin](https://github.com/hazendaz/directory-maven-plugin)                                              | `1.2.2`  | expose root dir for multimudule             | 
 | [build-helper](https://www.mojohaus.org/build-helper-maven-plugin/)                                                       | `3.6.1`  | define source directories                   |
