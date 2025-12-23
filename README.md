@@ -5,7 +5,7 @@ A common maven parent for usage in kotlin library or application projects.
 [![stable](https://img.shields.io/badge/lifecycle-STABLE-green.svg)](https://github.com/holisticon#open-source-lifecycle)
 [![Build Status](https://github.com/toolisticon/maven-parent-kotlin-base/workflows/Development%20branches/badge.svg)](https://github.com/toolisticon/maven-parent-kotlin-base/actions)
 [![sponsored](https://img.shields.io/badge/sponsoredBy-Holisticon-RED.svg)](https://holisticon.de/)
-[![Kotlin](https://img.shields.io/badge/kotlin-2.2.21-blue.svg?logo=kotlin)](http://kotlinlang.org)
+[![Kotlin](https://img.shields.io/badge/kotlin-2.3.0-blue.svg?logo=kotlin)](http://kotlinlang.org)
 [![Maven Central Version](https://img.shields.io/maven-central/v/io.toolisticon.maven.parent/maven-parent-kotlin-base)](https://central.sonatype.com/artifact/io.toolisticon.maven.parent/maven-parent-kotlin-base)
 
 ## About
@@ -52,11 +52,11 @@ are included.
 
 | Type                  | Version  | Info                                      |
 |-----------------------|----------|-------------------------------------------|
-| kotlin                | `2.2.21` | used in kotlin compiler und kotlin libs.  |
+| kotlin                | `2.3.0`  | used in kotlin compiler und kotlin libs.  |
 | java                  | `17`     | compile target                            |
 | kotlinx-coroutines    | `1.10.2` | all BOM libs explicitly listed            |
 | kotlinx-serialization | `1.9.0`  | all BOM libs explicitly listed            |
-| [kotlin-logging](https://github.com/oshai/kotlin-logging)    | `7.0.13`  | logging support                           |
+| [kotlin-logging](https://github.com/oshai/kotlin-logging)    | `7.0.13` | logging support                           |
 
 ## Libs
 
@@ -64,11 +64,11 @@ are included.
 |-----------------------|------------|----------------------|
 | api-guardian          | `1.1.2`    | api annotations      |
 | jetbrains-annotations | `26.0.2-1` | common annotations   |
-| logback-classic       | `1.5.20`   | logging              |
+| logback-classic       | `1.5.23`   | logging              |
 | slf4j                 | `2.0.17`   | logging              |
 | assertj               | `3.27.6`   | bom, test assertions |
 | awaitility            | `4.3.0`    | async testing        |
-| equalsverifier        | `4.2.1`    | test                 |
+| equalsverifier        | `4.2.5`    | test                 |
 | jgiven                | `2.0.3`    | BDD testing          |
 | junit                 | `6.0.0`    | bom, unit testing    |
 | mockito-kotlin        | `6.1.0`    | test, mocking        |
@@ -91,9 +91,9 @@ see [official plugins](https://maven.apache.org/plugins/index.html)
 | [maven-failsafe](https://maven.apache.org/surefire/maven-failsafe-plugin/)                                                | `3.5.4`  | testing                                     |
 | [maven-gpg](https://maven.apache.org/plugins/maven-gpg-plugin/)                                                           | `3.2.8`  | sign artifacts for release                  |
 | [maven-install](https://maven.apache.org/plugins/maven-install-plugin/)                                                   | `3.1.4`  | -                                           |
-| [maven-jar-plugin](https://maven.apache.org/plugins/maven-jar-plugin/)                                                    | `3.4.2`  | -                                           |
-| [maven-resources](https://maven.apache.org/plugins/maven-resources-plugin/)                                               | `3.3.1`  | filter resources                            |
-| [maven-source](https://maven.apache.org/plugins/maven-source-plugin/)                                                     | `3.3.1`  | add sources to artifacts                    |
+| [maven-jar-plugin](https://maven.apache.org/plugins/maven-jar-plugin/)                                                    | `3.5.0`  | -                                           |
+| [maven-resources](https://maven.apache.org/plugins/maven-resources-plugin/)                                               | `3.4.0`  | filter resources                            |
+| [maven-source](https://maven.apache.org/plugins/maven-source-plugin/)                                                     | `3.4.0`  | add sources to artifacts                    |
 | [maven-surefire](https://maven.apache.org/surefire/maven-surefire-plugin/)                                                | `3.5.4`  | testing                                     |
 | [directory-maven-plugin](https://github.com/hazendaz/directory-maven-plugin)                                              | `1.2.2`  | expose root dir for multimudule             | 
 | [build-helper](https://www.mojohaus.org/build-helper-maven-plugin/)                                                       | `3.6.1`  | define source directories                   |
@@ -102,7 +102,7 @@ see [official plugins](https://maven.apache.org/plugins/index.html)
 | [jgiven-maven](https://jgiven.org/userguide/#_maven)                                                                      | `2.0.3`  | jgiven test reports                         |
 | [openapi-generator](https://github.com/OpenAPITools/openapi-generator/tree/master/modules/openapi-generator-maven-plugin) | `7.17.0` | openapi/swagger code generation             |
 | [properties-maven](https://www.mojohaus.org/properties-maven-plugin/)                                                     | `1.2.1`  | generate build properties for project       |
-| [versions-maven](https://www.mojohaus.org/versions/versions-maven-plugin/index.html)                                      | `2.19.1` | modify versions of project                  |
+| [versions-maven](https://www.mojohaus.org/versions/versions-maven-plugin/index.html)                                      | `2.20.1` | modify versions of project                  |
 | [central-publishing](https://central.sonatype.org/publish/publish-portal-maven/)            | `0.9.0`  | release on maven central                    |
 | [nexus-staging-maven](https://github.com/sonatype/nexus-maven-plugins/blob/main/staging/maven-plugin/README.md)           | `1.7.0`  | release on maven central                    |
 | [maven-wrapper](https://maven.apache.org/wrapper/maven-wrapper-plugin/plugin-info.html)                                   | `3.3.4`  | execute maven without central installation  |
