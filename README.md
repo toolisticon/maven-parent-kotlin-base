@@ -5,7 +5,7 @@ A common maven parent for usage in kotlin library or application projects.
 [![stable](https://img.shields.io/badge/lifecycle-STABLE-green.svg)](https://github.com/holisticon#open-source-lifecycle)
 [![Build Status](https://github.com/toolisticon/maven-parent-kotlin-base/workflows/Development%20branches/badge.svg)](https://github.com/toolisticon/maven-parent-kotlin-base/actions)
 [![sponsored](https://img.shields.io/badge/sponsoredBy-Holisticon-RED.svg)](https://holisticon.de/)
-[![Kotlin](https://img.shields.io/badge/kotlin-2.2.21-blue.svg?logo=kotlin)](http://kotlinlang.org)
+[![Kotlin](https://img.shields.io/badge/kotlin-2.3.0-blue.svg?logo=kotlin)](http://kotlinlang.org)
 [![Maven Central Version](https://img.shields.io/maven-central/v/io.toolisticon.maven.parent/maven-parent-kotlin-base)](https://central.sonatype.com/artifact/io.toolisticon.maven.parent/maven-parent-kotlin-base)
 
 ## About
@@ -52,11 +52,11 @@ are included.
 
 | Type                  | Version  | Info                                      |
 |-----------------------|----------|-------------------------------------------|
-| kotlin                | `2.2.21` | used in kotlin compiler und kotlin libs.  |
+| kotlin                | `2.3.0`  | used in kotlin compiler und kotlin libs.  |
 | java                  | `17`     | compile target                            |
 | kotlinx-coroutines    | `1.10.2` | all BOM libs explicitly listed            |
 | kotlinx-serialization | `1.9.0`  | all BOM libs explicitly listed            |
-| [kotlin-logging](https://github.com/oshai/kotlin-logging)    | `7.0.13`  | logging support                           |
+| [kotlin-logging](https://github.com/oshai/kotlin-logging)    | `7.0.13` | logging support                           |
 
 ## Libs
 
@@ -64,7 +64,7 @@ are included.
 |-----------------------|------------|----------------------|
 | api-guardian          | `1.1.2`    | api annotations      |
 | jetbrains-annotations | `26.0.2-1` | common annotations   |
-| logback-classic       | `1.5.20`   | logging              |
+| logback-classic       | `1.5.23`   | logging              |
 | slf4j                 | `2.0.17`   | logging              |
 | assertj               | `3.27.6`   | bom, test assertions |
 | awaitility            | `4.3.0`    | async testing        |

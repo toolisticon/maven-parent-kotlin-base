@@ -44,7 +44,7 @@
     <!-- endregion [KOTLIN PROJECT (KP) CUSTOM SETTINGS] -->
 
     <!-- region [LANGUAGE VERSIONS] -->
-    <kotlin.version>2.2.21</kotlin.version>
+    <kotlin.version>2.3.0</kotlin.version>
 
     <kotlin.compiler.apiVersion>2.2</kotlin.compiler.apiVersion>
     <kotlin.compiler.languageVersion>2.2</kotlin.compiler.languageVersion>
@@ -362,7 +362,7 @@
       <dependency>
         <groupId>ch.qos.logback</groupId>
         <artifactId>logback-classic</artifactId>
-        <version>1.5.22</version>
+        <version>1.5.23</version>
       </dependency>
 
       <dependency>
