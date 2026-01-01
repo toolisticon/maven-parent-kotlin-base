@@ -68,7 +68,7 @@ are included.
 | slf4j                 | `2.0.17`   | logging              |
 | assertj               | `3.27.6`   | bom, test assertions |
 | awaitility            | `4.3.0`    | async testing        |
-| equalsverifier        | `4.2.5`    | test                 |
+| equalsverifier        | `4.2.6`    | test                 |
 | jgiven                | `2.0.3`    | BDD testing          |
 | junit                 | `6.0.0`    | bom, unit testing    |
 | mockito-kotlin        | `6.1.0`    | test, mocking        |
