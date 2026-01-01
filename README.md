@@ -56,7 +56,7 @@ are included.
 | java                  | `17`     | compile target                            |
 | kotlinx-coroutines    | `1.10.2` | all BOM libs explicitly listed            |
 | kotlinx-serialization | `1.9.0`  | all BOM libs explicitly listed            |
-| [kotlin-logging](https://github.com/oshai/kotlin-logging)    | `7.0.13` | logging support                           |
+| [kotlin-logging](https://github.com/oshai/kotlin-logging)    | `7.0.14` | logging support                           |
 
 ## Libs
 
@@ -68,7 +68,7 @@ are included.
 | slf4j                 | `2.0.17`   | logging              |
 | assertj               | `3.27.6`   | bom, test assertions |
 | awaitility            | `4.3.0`    | async testing        |
-| equalsverifier        | `4.2.6`    | test                 |
+| equalsverifier        | `4.3`    | test                 |
 | jgiven                | `2.0.3`    | BDD testing          |
 | junit                 | `6.0.0`    | bom, unit testing    |
 | mockito-kotlin        | `6.1.0`    | test, mocking        |
