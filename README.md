@@ -70,7 +70,7 @@ are included.
 | awaitility            | `4.3.0`    | async testing        |
 | equalsverifier        | `4.3`    | test                 |
 | jgiven                | `2.0.3`    | BDD testing          |
-| junit                 | `6.0.0`    | bom, unit testing    |
+| junit                 | `6.0.2`    | bom, unit testing    |
 | mockito-kotlin        | `6.1.0`    | test, mocking        |
 
 ## Plugins
