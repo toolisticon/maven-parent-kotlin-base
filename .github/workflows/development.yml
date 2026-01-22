@@ -41,9 +41,3 @@ jobs:
       # itest
       - name: Run itest
         run: ./mvnw integration-test failsafe:verify -Pitest -U -B -T4 -ntp
-
-#      - name: Upload coverage to Codecov
-#        if: github.event_name == 'push' && github.actor != 'dependabot[bot]'
-#        uses: codecov/codecov-action@v1.0.2
-#        with:
-#          token: ${{secrets.CODECOV_TOKEN}}
