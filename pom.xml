@@ -70,7 +70,7 @@
     <mockito-kotlin.version>6.2.2</mockito-kotlin.version>
     <jgiven-junit5.version>2.0.3</jgiven-junit5.version>
     <awaitility-kotlin.version>4.3.0</awaitility-kotlin.version>
-    <equalsverifier.version>4.3</equalsverifier.version>
+    <equalsverifier.version>4.3.1</equalsverifier.version>
     <!-- endregion [TESTING DEPENDENCIES VERSIONS] -->
 
   </properties>
