@@ -7,7 +7,7 @@
 
   <groupId>io.toolisticon.maven.parent</groupId>
   <artifactId>maven-parent-kotlin-base</artifactId>
-  <version>2026.01.1</version>
+  <version>2026.01.2</version>
 
   <name>Maven Parent - Kotlin Base</name>
   <description>Maven parent for a holistic kotlin lib project.</description>
@@ -58,7 +58,7 @@
 
     <!-- region [RUNTIME DEPENDENCIES VERSIONS] -->
     <kotlin-logging-jvm.version>7.0.14</kotlin-logging-jvm.version>
-    <logback-classic.version>1.5.25</logback-classic.version>
+    <logback-classic.version>1.5.26</logback-classic.version>
     <apiguardian-api.version>1.1.2</apiguardian-api.version>
     <annotations.version>26.0.2-1</annotations.version>
     <slf4j-bom.version>2.0.17</slf4j-bom.version>
@@ -66,11 +66,11 @@
 
     <!-- region [TESTING DEPENDENCIES VERSIONS] -->
     <junit-bom.version>6.0.2</junit-bom.version>
-    <assertj-bom.version>3.27.6</assertj-bom.version>
-    <mockito-kotlin.version>6.2.2</mockito-kotlin.version>
+    <assertj-bom.version>3.27.7</assertj-bom.version>
+    <mockito-kotlin.version>6.2.3</mockito-kotlin.version>
     <jgiven-junit5.version>2.0.3</jgiven-junit5.version>
     <awaitility-kotlin.version>4.3.0</awaitility-kotlin.version>
-    <equalsverifier.version>4.3</equalsverifier.version>
+    <equalsverifier.version>4.3.1</equalsverifier.version>
     <!-- endregion [TESTING DEPENDENCIES VERSIONS] -->
 
   </properties>
