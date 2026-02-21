@@ -57,7 +57,7 @@
     <!-- endregion [LANGUAGE VERSIONS] -->
 
     <!-- region [RUNTIME DEPENDENCIES VERSIONS] -->
-    <kotlin-logging-jvm.version>7.0.14</kotlin-logging-jvm.version>
+    <kotlin-logging-jvm.version>8.0.01</kotlin-logging-jvm.version>
     <logback-classic.version>1.5.29</logback-classic.version>
     <apiguardian-api.version>1.1.2</apiguardian-api.version>
     <annotations.version>26.0.2-1</annotations.version>
