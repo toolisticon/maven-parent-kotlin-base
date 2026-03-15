@@ -60,18 +60,18 @@ are included.
 
 ## Libs
 
-| Lib                   | Version    | Info                 |
-|-----------------------|------------|----------------------|
-| api-guardian          | `1.1.2`    | api annotations      |
-| jetbrains-annotations | `26.0.2-1` | common annotations   |
-| logback-classic       | `1.5.26`   | logging              |
-| slf4j                 | `2.0.17`   | logging              |
-| assertj               | `3.27.7`   | bom, test assertions |
-| awaitility            | `4.3.0`    | async testing        |
-| equalsverifier        | `4.3.1`      | test                 |
-| jgiven                | `2.0.3`    | BDD testing          |
-| junit                 | `6.0.3`    | bom, unit testing    |
-| mockito-kotlin        | `6.2.2`    | test, mocking        |
+| Lib                   | Version  | Info                 |
+|-----------------------|----------|----------------------|
+| api-guardian          | `1.1.2`  | api annotations      |
+| jetbrains-annotations | `26.1.0` | common annotations   |
+| logback-classic       | `1.5.26` | logging              |
+| slf4j                 | `2.0.17` | logging              |
+| assertj               | `3.27.7` | bom, test assertions |
+| awaitility            | `4.3.0`  | async testing        |
+| equalsverifier        | `4.3.1`  | test                 |
+| jgiven                | `2.0.3`  | BDD testing          |
+| junit                 | `6.0.3`  | bom, unit testing    |
+| mockito-kotlin        | `6.2.2`  | test, mocking        |
 
 ## Plugins
 
