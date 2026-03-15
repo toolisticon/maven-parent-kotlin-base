@@ -52,26 +52,26 @@ are included.
 
 | Type                  | Version  | Info                                      |
 |-----------------------|----------|-------------------------------------------|
-| kotlin                | `2.3.0`  | used in kotlin compiler und kotlin libs.  |
+| kotlin                | `2.3.10` | used in kotlin compiler und kotlin libs.  |
 | java                  | `17`     | compile target                            |
 | kotlinx-coroutines    | `1.10.2` | all BOM libs explicitly listed            |
 | kotlinx-serialization | `1.10.0` | all BOM libs explicitly listed            |
-| [kotlin-logging](https://github.com/oshai/kotlin-logging)    | `7.0.14` | logging support                           |
+| [kotlin-logging](https://github.com/oshai/kotlin-logging)    | `8.0.01` | logging support                           |
 
 ## Libs
 
-| Lib                   | Version    | Info                 |
-|-----------------------|------------|----------------------|
-| api-guardian          | `1.1.2`    | api annotations      |
-| jetbrains-annotations | `26.0.2-1` | common annotations   |
-| logback-classic       | `1.5.26`   | logging              |
-| slf4j                 | `2.0.17`   | logging              |
-| assertj               | `3.27.7`   | bom, test assertions |
-| awaitility            | `4.3.0`    | async testing        |
-| equalsverifier        | `4.3.1`      | test                 |
-| jgiven                | `2.0.3`    | BDD testing          |
-| junit                 | `6.0.3`    | bom, unit testing    |
-| mockito-kotlin        | `6.2.2`    | test, mocking        |
+| Lib                   | Version  | Info                 |
+|-----------------------|----------|----------------------|
+| api-guardian          | `1.1.2`  | api annotations      |
+| jetbrains-annotations | `26.1.0` | common annotations   |
+| logback-classic       | `1.5.32` | logging              |
+| slf4j                 | `2.0.17` | logging              |
+| assertj               | `3.27.7` | bom, test assertions |
+| awaitility            | `4.3.0`  | async testing        |
+| equalsverifier        | `4.3.1`  | test                 |
+| jgiven                | `2.0.3`  | BDD testing          |
+| junit                 | `6.0.3`  | bom, unit testing    |
+| mockito-kotlin        | `6.2.2`  | test, mocking        |
 
 ## Plugins
 
@@ -85,7 +85,7 @@ see [official plugins](https://maven.apache.org/plugins/index.html)
 | [dokka](https://kotlinlang.org/docs/dokka-maven.html#apply-dokka)                                                         | `2.1.0`  | use dokka for javadoc                       |
 | [avro-maven](https://avro.apache.org/docs/1.12.0/getting-started-java/)                                                   | `1.12.1` | avro code generation                        |
 | [maven-clean](https://maven.apache.org/plugins/maven-clean-plugin/)                                                       | `3.5.0`  | clean project                               |
-| [maven-dependency](https://maven.apache.org/plugins/maven-dependency-plugin/)                                             | `3.9.0`  | check/update dependency versions            |
+| [maven-dependency](https://maven.apache.org/plugins/maven-dependency-plugin/)                                             | `3.10.0` | check/update dependency versions            |
 | [maven-deploy](https://maven.apache.org/plugins/maven-deploy-plugin/)                                                     | `3.1.4`  | -                                           |
 | [maven-enforcer](https://maven.apache.org/enforcer/maven-enforcer-plugin/)                                                | `3.6.2`  | enforce project setup                       |
 | [maven-failsafe](https://maven.apache.org/surefire/maven-failsafe-plugin/)                                                | `3.5.4`  | testing                                     |
@@ -100,7 +100,7 @@ see [official plugins](https://maven.apache.org/plugins/index.html)
 | [gitflow-maven](https://aleksandr-m.github.io/gitflow-maven-plugin/)                                                      | `1.21.0` | gitflow relase master/develop/release       |
 | [jacoco-maven](https://www.eclemma.org/jacoco/trunk/doc/maven.html)                                                       | `0.8.14` | test reports                                |
 | [jgiven-maven](https://jgiven.org/userguide/#_maven)                                                                      | `2.0.3`  | jgiven test reports                         |
-| [openapi-generator](https://github.com/OpenAPITools/openapi-generator/tree/master/modules/openapi-generator-maven-plugin) | `7.19.0` | openapi/swagger code generation             |
+| [openapi-generator](https://github.com/OpenAPITools/openapi-generator/tree/master/modules/openapi-generator-maven-plugin) | `7.20.0` | openapi/swagger code generation             |
 | [properties-maven](https://www.mojohaus.org/properties-maven-plugin/)                                                     | `1.3.0`  | generate build properties for project       |
 | [versions-maven](https://www.mojohaus.org/versions/versions-maven-plugin/index.html)                                      | `2.21.0` | modify versions of project                  |
 | [central-publishing](https://central.sonatype.org/publish/publish-portal-maven/)            | `0.10.0` | release on maven central                    |

@@ -7,7 +7,7 @@
 
   <groupId>io.toolisticon.maven.parent</groupId>
   <artifactId>maven-parent-kotlin-base</artifactId>
-  <version>2026.01.2</version>
+  <version>2026.03.0</version>
 
   <name>Maven Parent - Kotlin Base</name>
   <description>Maven parent for a holistic kotlin lib project.</description>
@@ -44,7 +44,7 @@
     <!-- endregion [KOTLIN PROJECT (KP) CUSTOM SETTINGS] -->
 
     <!-- region [LANGUAGE VERSIONS] -->
-    <kotlin.version>2.3.0</kotlin.version>
+    <kotlin.version>2.3.10</kotlin.version>
 
     <kotlin.compiler.apiVersion>2.2</kotlin.compiler.apiVersion>
     <kotlin.compiler.languageVersion>2.2</kotlin.compiler.languageVersion>
@@ -57,20 +57,20 @@
     <!-- endregion [LANGUAGE VERSIONS] -->
 
     <!-- region [RUNTIME DEPENDENCIES VERSIONS] -->
-    <kotlin-logging-jvm.version>7.0.14</kotlin-logging-jvm.version>
-    <logback-classic.version>1.5.26</logback-classic.version>
+    <kotlin-logging-jvm.version>8.0.01</kotlin-logging-jvm.version>
+    <logback-classic.version>1.5.32</logback-classic.version>
     <apiguardian-api.version>1.1.2</apiguardian-api.version>
-    <annotations.version>26.0.2-1</annotations.version>
+    <annotations.version>26.1.0</annotations.version>
     <slf4j-bom.version>2.0.17</slf4j-bom.version>
     <!-- endregion [RUNTIME DEPENDENCIES VERSIONS] -->
 
     <!-- region [TESTING DEPENDENCIES VERSIONS] -->
-    <junit-bom.version>6.0.2</junit-bom.version>
+    <junit-bom.version>6.0.3</junit-bom.version>
     <assertj-bom.version>3.27.7</assertj-bom.version>
     <mockito-kotlin.version>6.2.3</mockito-kotlin.version>
     <jgiven-junit5.version>2.0.3</jgiven-junit5.version>
     <awaitility-kotlin.version>4.3.0</awaitility-kotlin.version>
-    <equalsverifier.version>4.3.1</equalsverifier.version>
+    <equalsverifier.version>4.4.1</equalsverifier.version>
     <!-- endregion [TESTING DEPENDENCIES VERSIONS] -->
 
   </properties>
@@ -573,7 +573,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.14.1</version>
+          <version>3.15.0</version>
           <configuration>
             <encoding>${project.build.sourceEncoding}</encoding>
             <source>${java.version}</source>
@@ -670,7 +670,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-dependency-plugin</artifactId>
-          <version>3.9.0</version>
+          <version>3.10.0</version>
         </plugin>
 
         <!-- DEPLOY (version, config) -->
@@ -719,7 +719,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-surefire-plugin</artifactId>
-          <version>3.5.4</version>
+          <version>3.5.5</version>
           <configuration>
             <useSystemClassLoader>false</useSystemClassLoader>
             <shutdown>kill</shutdown>
@@ -744,7 +744,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-failsafe-plugin</artifactId>
-          <version>3.5.4</version>
+          <version>3.5.5</version>
           <executions>
             <execution>
               <id>integration-tests</id>
@@ -829,7 +829,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-resources-plugin</artifactId>
-          <version>3.4.0</version>
+          <version>3.5.0</version>
           <configuration>
             <encoding>${project.encoding}</encoding>
           </configuration>
@@ -967,7 +967,7 @@
         <plugin>
           <groupId>org.openapitools</groupId>
           <artifactId>openapi-generator-maven-plugin</artifactId>
-          <version>7.19.0</version>
+          <version>7.20.0</version>
         </plugin>
 
         <!-- [GENERATOR]: PROPERTIES (writes maven properties to src) (version,execution) -->
