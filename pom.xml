@@ -44,14 +44,14 @@
     <!-- endregion [KOTLIN PROJECT (KP) CUSTOM SETTINGS] -->
 
     <!-- region [LANGUAGE VERSIONS] -->
-    <kotlin.version>2.3.10</kotlin.version>
+    <kotlin.version>2.3.20</kotlin.version>
+    <java.version>21</java.version>
+    <jdk.version>${java.version}</jdk.version>
 
     <kotlin.compiler.apiVersion>2.2</kotlin.compiler.apiVersion>
     <kotlin.compiler.languageVersion>2.2</kotlin.compiler.languageVersion>
     <kotlin.compiler.incremental>${kp.compile.useIncrementalKotlinCompiler}</kotlin.compiler.incremental>
     <kotlin.compiler.jvmTarget>${java.version}</kotlin.compiler.jvmTarget>
-    <java.version>17</java.version>
-    <jdk.version>17</jdk.version>
     <kotlinx-serialization.version>1.10.0</kotlinx-serialization.version>
     <kotlinx-coroutines.version>1.10.2</kotlinx-coroutines.version>
     <!-- endregion [LANGUAGE VERSIONS] -->
@@ -462,9 +462,6 @@
   <build>
     <defaultGoal>clean package</defaultGoal>
 
-    <sourceDirectory>${kp.mainSources}</sourceDirectory>
-    <testSourceDirectory>${kp.testSources}</testSourceDirectory>
-
     <!-- region [RESOURCES] -->
     <!-- ignore gitkeep marker files -->
     <resources>
@@ -489,12 +486,12 @@
     <!-- endregion [RESOURCES] -->
 
     <pluginManagement>
+
       <plugins>
         <!-- LANGUAGE SETUP -->
-        <!-- from kotlin doc: "To compile projects that include Kotlin and Java source code, invoke the Kotlin compiler before the Java compiler." -->
-
         <!-- region [COMPILER CONFIGURATION] -->
         <!-- KOTLIN -->
+        <!-- from kotlin doc: "To compile projects that include Kotlin and Java source code, invoke the Kotlin compiler before the Java compiler." -->
         <plugin>
           <!-- KAPT is optional and has to be configured in modules using it -->
           <groupId>org.jetbrains.kotlin</groupId>
@@ -704,11 +701,18 @@
               <configuration>
                 <rules>
                   <requireJavaVersion>
-                    <version>${java.version}</version>
+                    <!-- TODO: keep for a while, then update to 21 -->
+                    <version>17</version>
                   </requireJavaVersion>
                   <requireMavenVersion>
                     <version>3.9.0</version>
                   </requireMavenVersion>
+                  <bannedDependencies>
+                    <excludes>
+                      <exclude>junit:junit</exclude>
+                    </excludes>
+                    <message>JUnit 4 is not allowed. Use JUnit 5 (org.junit.jupiter) instead.</message>
+                  </bannedDependencies>
                 </rules>
               </configuration>
             </execution>

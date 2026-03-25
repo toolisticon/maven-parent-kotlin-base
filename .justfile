@@ -17,5 +17,4 @@ mvn-updates:
   @just mvn-plugin-updates
 
 gh-create-issue title:
-  @gh issue create --title "{{title}}" --label="Type: dependencies" -m="2026.03.0" --body "Version update." -a @me
-
+  @gh issue create --title "{{title}}" --label="Type: dependencies" -m="2026.x" --body "Version update." -a @me
