@@ -7,7 +7,7 @@
 
   <groupId>io.toolisticon.maven.parent</groupId>
   <artifactId>maven-parent-kotlin-base</artifactId>
-  <version>2026.03.1-SNAPSHOT</version>
+  <version>2026.03.2-SNAPSHOT</version>
 
   <name>Maven Parent - Kotlin Base</name>
   <description>Maven parent for a holistic kotlin lib project.</description>
@@ -45,6 +45,7 @@
 
     <!-- region [LANGUAGE VERSIONS] -->
     <kotlin.version>2.3.20</kotlin.version>
+    <kotlin.version>2.3.20</kotlin.version>
     <java.version>21</java.version>
     <jdk.version>${java.version}</jdk.version>
 
@@ -67,7 +68,7 @@
     <!-- region [TESTING DEPENDENCIES VERSIONS] -->
     <junit-bom.version>6.0.3</junit-bom.version>
     <assertj-bom.version>3.27.7</assertj-bom.version>
-    <mockito-kotlin.version>6.2.3</mockito-kotlin.version>
+    <mockito-kotlin.version>6.3.0</mockito-kotlin.version>
     <jgiven-junit5.version>2.0.3</jgiven-junit5.version>
     <awaitility-kotlin.version>4.3.0</awaitility-kotlin.version>
     <equalsverifier.version>4.4.1</equalsverifier.version>
@@ -501,8 +502,7 @@
           <configuration>
             <jvmTarget>${java.version}</jvmTarget>
             <apiVersion>${kotlin.compiler.apiVersion}</apiVersion>
-            <languageVersion
-            >${kotlin.compiler.languageVersion}
+            <languageVersion>${kotlin.compiler.languageVersion}
             </languageVersion>
 
             <!-- Compiler plugins need to be configured on this level for IntelliJ to recognize them -->
@@ -733,12 +733,10 @@
               <exclude>${kp.patternClassTCTest}</exclude>
             </excludes>
             <!--suppress UnresolvedMavenProperty -->
-            <argLine
-            >${surefireArgLine} ${kp.javaOpenModules} -Djava.awt.headless=true -XX:+StartAttachListener
+            <argLine>${surefireArgLine} ${kp.javaOpenModules} -Djava.awt.headless=true -XX:+StartAttachListener
             </argLine>
             <systemPropertyVariables>
-              <jgiven.report.dir
-              >${project.build.directory}/jgiven-reports/json
+              <jgiven.report.dir>${project.build.directory}/jgiven-reports/json
               </jgiven.report.dir>
             </systemPropertyVariables>
           </configuration>
@@ -757,16 +755,14 @@
               </goals>
               <configuration>
                 <skip>${kp.skipITests}</skip>
-                <classesDirectory
-                >${project.build.outputDirectory}
+                <classesDirectory>${project.build.outputDirectory}
                 </classesDirectory>
                 <includes>
                   <include>${kp.patternClassITest}</include>
                   <include>${kp.patternClassTCTest}</include>
                 </includes>
                 <!--suppress UnresolvedMavenProperty -->
-                <argLine
-                >${failsafeArgLine} ${kp.javaOpenModules} -Djava.awt.headless=true -XX:+StartAttachListener
+                <argLine>${failsafeArgLine} ${kp.javaOpenModules} -Djava.awt.headless=true -XX:+StartAttachListener
                 </argLine>
                 <systemPropertyVariables>
                   <jgiven.report.dir>${project.build.directory}/jgiven-reports/json</jgiven.report.dir>
@@ -860,8 +856,7 @@
               <configuration>
                 <!--suppress UnresolvedMavenProperty -->
                 <skip>${skipTests}</skip>
-                <destFile
-                >${project.build.directory}/coverage-reports/jacoco-ut.exec
+                <destFile>${project.build.directory}/coverage-reports/jacoco-ut.exec
                 </destFile>
                 <propertyName>surefireArgLine</propertyName>
               </configuration>
@@ -873,8 +868,7 @@
               </goals>
               <configuration>
                 <skip>${kp.skipITests}</skip>
-                <destFile
-                >${project.build.directory}/coverage-reports/jacoco-it.exec
+                <destFile>${project.build.directory}/coverage-reports/jacoco-it.exec
                 </destFile>
                 <propertyName>failsafeArgLine</propertyName>
               </configuration>
@@ -887,11 +881,9 @@
               </goals>
               <configuration>
                 <skip>${skipTests}</skip>
-                <dataFile
-                >${project.build.directory}/coverage-reports/jacoco-ut.exec
+                <dataFile>${project.build.directory}/coverage-reports/jacoco-ut.exec
                 </dataFile>
-                <outputDirectory
-                >${project.reporting.outputDirectory}/jacoco-ut
+                <outputDirectory>${project.reporting.outputDirectory}/jacoco-ut
                 </outputDirectory>
               </configuration>
             </execution>
@@ -903,11 +895,9 @@
               </goals>
               <configuration>
                 <skip>${kp.skipITests}</skip>
-                <dataFile
-                >${project.build.directory}/coverage-reports/jacoco-it.exec
+                <dataFile>${project.build.directory}/coverage-reports/jacoco-it.exec
                 </dataFile>
-                <outputDirectory
-                >${project.reporting.outputDirectory}/jacoco-it
+                <outputDirectory>${project.reporting.outputDirectory}/jacoco-it
                 </outputDirectory>
               </configuration>
             </execution>
@@ -971,7 +961,7 @@
         <plugin>
           <groupId>org.openapitools</groupId>
           <artifactId>openapi-generator-maven-plugin</artifactId>
-          <version>7.20.0</version>
+          <version>7.21.0</version>
         </plugin>
 
         <!-- [GENERATOR]: PROPERTIES (writes maven properties to src) (version,execution) -->
@@ -986,8 +976,7 @@
                 <goal>write-project-properties</goal>
               </goals>
               <configuration>
-                <outputFile
-                >${project.build.outputDirectory}/${project.artifactId}-maven.properties
+                <outputFile>${project.build.outputDirectory}/${project.artifactId}-maven.properties
                 </outputFile>
               </configuration>
             </execution>
@@ -1018,8 +1007,7 @@
           <artifactId>versions-maven-plugin</artifactId>
           <version>2.21.0</version>
           <configuration>
-            <generateBackupPoms
-            >${kp.plugin.generateBackupPoms}
+            <generateBackupPoms>${kp.plugin.generateBackupPoms}
             </generateBackupPoms>
           </configuration>
         </plugin>
@@ -1116,11 +1104,9 @@
             <configuration>
               <archive>
                 <manifest>
-                  <addDefaultImplementationEntries
-                  >true
+                  <addDefaultImplementationEntries>true
                   </addDefaultImplementationEntries>
-                  <addDefaultSpecificationEntries
-                  >true
+                  <addDefaultSpecificationEntries>true
                   </addDefaultSpecificationEntries>
                 </manifest>
               </archive>
@@ -1158,12 +1144,10 @@
   </licenses>
 
   <scm>
-    <connection
-    >scm:git:git@github.com:toolisticon/maven-parent-kotlin-base.git
+    <connection>scm:git:git@github.com:toolisticon/maven-parent-kotlin-base.git
     </connection>
     <url>scm:git:git@github.com:toolisticon/maven-parent-kotlin-base.git</url>
-    <developerConnection
-    >scm:git:git@github.com:toolisticon/maven-parent-kotlin-base.git
+    <developerConnection>scm:git:git@github.com:toolisticon/maven-parent-kotlin-base.git
     </developerConnection>
     <tag>HEAD</tag>
   </scm>
