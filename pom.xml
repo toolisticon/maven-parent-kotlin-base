@@ -7,7 +7,7 @@
 
   <groupId>io.toolisticon.maven.parent</groupId>
   <artifactId>maven-parent-kotlin-base</artifactId>
-  <version>2026.08.2-SNAPSHOT</version>
+  <version>2026.09.0-SNAPSHOT</version>
 
   <name>Maven Parent - Kotlin Base</name>
   <description>Maven parent for a holistic kotlin lib project.</description>
@@ -44,7 +44,7 @@
     <!-- endregion [KOTLIN PROJECT (KP) CUSTOM SETTINGS] -->
 
     <!-- region [LANGUAGE VERSIONS] -->
-    <kotlin.version>2.4.10</kotlin.version>
+    <kotlin.version>2.4.20</kotlin.version>
 
     <kotlin.compiler.apiVersion>2.2</kotlin.compiler.apiVersion>
     <kotlin.compiler.languageVersion>2.2</kotlin.compiler.languageVersion>
