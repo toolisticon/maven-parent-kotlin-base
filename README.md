@@ -5,7 +5,7 @@ A common maven parent for usage in kotlin library or application projects.
 [![stable](https://img.shields.io/badge/lifecycle-STABLE-green.svg)](https://github.com/holisticon#open-source-lifecycle)
 [![Build Status](https://github.com/toolisticon/maven-parent-kotlin-base/workflows/Development%20branches/badge.svg)](https://github.com/toolisticon/maven-parent-kotlin-base/actions)
 [![sponsored](https://img.shields.io/badge/sponsoredBy-Holisticon-RED.svg)](https://holisticon.de/)
-[![Kotlin](https://img.shields.io/badge/kotlin-2.4.20-blue.svg?logo=kotlin)](http://kotlinlang.org)
+[![Kotlin](https://img.shields.io/badge/kotlin-2.4.21-blue.svg?logo=kotlin)](http://kotlinlang.org)
 [![Maven Central Version](https://img.shields.io/maven-central/v/io.toolisticon.maven.parent/maven-parent-kotlin-base)](https://central.sonatype.com/artifact/io.toolisticon.maven.parent/maven-parent-kotlin-base)
 
 ## About
@@ -52,7 +52,7 @@ are included.
 
 | Type                  | Version  | Info                                      |
 |-----------------------|----------|-------------------------------------------|
-| kotlin                | `2.4.20` | used in kotlin compiler und kotlin libs.  |
+| kotlin                | `2.4.21` | used in kotlin compiler und kotlin libs.  |
 | java                  | `17`     | compile target                            |
 | kotlinx-coroutines    | `1.11.0` | all BOM libs explicitly listed            |
 | kotlinx-serialization | `1.11.0` | all BOM libs explicitly listed            |
