@@ -55,7 +55,7 @@ are included.
 | kotlin                | `2.4.21` | used in kotlin compiler und kotlin libs.  |
 | java                  | `17`     | compile target                            |
 | kotlinx-coroutines    | `1.11.0` | all BOM libs explicitly listed            |
-| kotlinx-serialization | `1.11.0` | all BOM libs explicitly listed            |
+| kotlinx-serialization | `1.12.0` | all BOM libs explicitly listed            |
 | [kotlin-logging](https://github.com/oshai/kotlin-logging)    | `8.0.4`  | logging support                           |
 
 ## Libs
