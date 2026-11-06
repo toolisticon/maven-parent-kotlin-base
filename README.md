@@ -82,7 +82,7 @@ see [official plugins](https://maven.apache.org/plugins/index.html)
 | [maven-compiler](https://maven.apache.org/plugins/maven-compiler-plugin/)                                                 | `3.16.0` | disabling java compiler for kotlin projects |
 | [kotlin-maven-plugin](https://kotlinlang.org/docs/maven.html)                                                             | `2.4.20` | kotlin compiler plugin                      |
 | [maven-javadoc](https://maven.apache.org/plugins/maven-javadoc-plugin/)                                                   | `3.12.0` | include javadoc                             |
-| [dokka](https://kotlinlang.org/docs/dokka-maven.html#apply-dokka)                                                         | `2.2.0`  | use dokka for javadoc                       |
+| [dokka](https://kotlinlang.org/docs/dokka-maven.html#apply-dokka)                                                         | `2.3.0`  | use dokka for javadoc                       |
 | [avro-maven](https://avro.apache.org/docs/1.12.0/getting-started-java/)                                                   | `1.12.2` | avro code generation                        |
 | [maven-clean](https://maven.apache.org/plugins/maven-clean-plugin/)                                                       | `3.5.0`  | clean project                               |
 | [maven-dependency](https://maven.apache.org/plugins/maven-dependency-plugin/)                                             | `3.11.0` | check/update dependency versions            |
