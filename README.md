@@ -55,8 +55,8 @@ are included.
 | kotlin                | `2.4.21` | used in kotlin compiler und kotlin libs.  |
 | java                  | `17`     | compile target                            |
 | kotlinx-coroutines    | `1.11.0` | all BOM libs explicitly listed            |
-| kotlinx-serialization | `1.12.0` | all BOM libs explicitly listed            |
-| [kotlin-logging](https://github.com/oshai/kotlin-logging)    | `8.0.4`  | logging support                           |
+| kotlinx-serialization | `1.13.0` | all BOM libs explicitly listed            |
+| [kotlin-logging](https://github.com/oshai/kotlin-logging)    | `8.0.7`  | logging support                           |
 
 ## Libs
 
@@ -80,7 +80,7 @@ see [official plugins](https://maven.apache.org/plugins/index.html)
 | Plugin                                                                                                                    | Version  | Info                                        |
 |---------------------------------------------------------------------------------------------------------------------------|----------|---------------------------------------------|
 | [maven-compiler](https://maven.apache.org/plugins/maven-compiler-plugin/)                                                 | `3.16.0` | disabling java compiler for kotlin projects |
-| [kotlin-maven-plugin](https://kotlinlang.org/docs/maven.html)                                                             | `2.4.20` | kotlin compiler plugin                      |
+| [kotlin-maven-plugin](https://kotlinlang.org/docs/maven.html)                                                             | `2.4.21` | kotlin compiler plugin                      |
 | [maven-javadoc](https://maven.apache.org/plugins/maven-javadoc-plugin/)                                                   | `3.12.0` | include javadoc                             |
 | [dokka](https://kotlinlang.org/docs/dokka-maven.html#apply-dokka)                                                         | `2.3.0`  | use dokka for javadoc                       |
 | [avro-maven](https://avro.apache.org/docs/1.12.0/getting-started-java/)                                                   | `1.12.2` | avro code generation                        |
@@ -96,13 +96,13 @@ see [official plugins](https://maven.apache.org/plugins/index.html)
 | [maven-source](https://maven.apache.org/plugins/maven-source-plugin/)                                                     | `3.4.0`  | add sources to artifacts                    |
 | [maven-surefire](https://maven.apache.org/surefire/maven-surefire-plugin/)                                                | `3.6.1`  | testing                                     |
 | [directory-maven-plugin](https://github.com/hazendaz/directory-maven-plugin)                                              | `1.3.0`  | expose root dir for multimudule             | 
-| [build-helper](https://www.mojohaus.org/build-helper-maven-plugin/)                                                       | `3.6.2`  | define source directories                   |
+| [build-helper](https://www.mojohaus.org/build-helper-maven-plugin/)                                                       | `3.8.0`  | define source directories                   |
 | [gitflow-maven](https://aleksandr-m.github.io/gitflow-maven-plugin/)                                                      | `1.21.0` | gitflow relase master/develop/release       |
 | [jacoco-maven](https://www.eclemma.org/jacoco/trunk/doc/maven.html)                                                       | `0.8.16` | test reports                                |
 | [jgiven-maven](https://jgiven.org/userguide/#_maven)                                                                      | `2.0.3`  | jgiven test reports                         |
 | [openapi-generator](https://github.com/OpenAPITools/openapi-generator/tree/master/modules/openapi-generator-maven-plugin) | `7.27.0` | openapi/swagger code generation             |
-| [properties-maven](https://www.mojohaus.org/properties-maven-plugin/)                                                     | `1.3.1`  | generate build properties for project       |
-| [versions-maven](https://www.mojohaus.org/versions/versions-maven-plugin/index.html)                                      | `2.23.0` | modify versions of project                  |
+| [properties-maven](https://www.mojohaus.org/properties-maven-plugin/)                                                     | `1.4.0`  | generate build properties for project       |
+| [versions-maven](https://www.mojohaus.org/versions/versions-maven-plugin/index.html)                                      | `2.25.1` | modify versions of project                  |
 | [central-publishing](https://central.sonatype.org/publish/publish-portal-maven/)            | `0.12.0` | release on maven central                    |
 | [maven-wrapper](https://maven.apache.org/wrapper/maven-wrapper-plugin/plugin-info.html)                                   | `3.3.4`  | execute maven without central installation  |
 | [flatten-maven](https://www.mojohaus.org/flatten-maven-plugin/)                                                           | `1.8.0`  | flatten the released pom                    |
