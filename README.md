@@ -64,7 +64,7 @@ are included.
 |-----------------------|----------|----------------------|
 | api-guardian          | `1.1.2`  | api annotations      |
 | jetbrains-annotations | `26.1.0` | common annotations   |
-| logback-classic       | `1.6.6`  | logging              |
+| logback-classic       | `1.6.7`  | logging              |
 | slf4j                 | `2.0.20` | logging              |
 | assertj               | `3.27.7` | bom, test assertions |
 | awaitility            | `4.3.0`  | async testing        |
@@ -102,7 +102,7 @@ see [official plugins](https://maven.apache.org/plugins/index.html)
 | [jgiven-maven](https://jgiven.org/userguide/#_maven)                                                                      | `2.0.3`  | jgiven test reports                         |
 | [openapi-generator](https://github.com/OpenAPITools/openapi-generator/tree/master/modules/openapi-generator-maven-plugin) | `7.27.0` | openapi/swagger code generation             |
 | [properties-maven](https://www.mojohaus.org/properties-maven-plugin/)                                                     | `1.4.0`  | generate build properties for project       |
-| [versions-maven](https://www.mojohaus.org/versions/versions-maven-plugin/index.html)                                      | `2.25.1` | modify versions of project                  |
+| [versions-maven](https://www.mojohaus.org/versions/versions-maven-plugin/index.html)                                      | `2.25.2` | modify versions of project                  |
 | [central-publishing](https://central.sonatype.org/publish/publish-portal-maven/)            | `0.12.0` | release on maven central                    |
 | [maven-wrapper](https://maven.apache.org/wrapper/maven-wrapper-plugin/plugin-info.html)                                   | `3.3.4`  | execute maven without central installation  |
 | [flatten-maven](https://www.mojohaus.org/flatten-maven-plugin/)                                                           | `1.8.0`  | flatten the released pom                    |
