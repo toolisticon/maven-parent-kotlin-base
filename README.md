@@ -64,7 +64,7 @@ are included.
 |-----------------------|----------|----------------------|
 | api-guardian          | `1.1.2`  | api annotations      |
 | jetbrains-annotations | `26.1.0` | common annotations   |
-| logback-classic       | `1.6.7`  | logging              |
+| logback-classic       | `1.6.8`  | logging              |
 | slf4j                 | `2.0.20` | logging              |
 | assertj               | `3.27.7` | bom, test assertions |
 | awaitility            | `4.3.0`  | async testing        |
